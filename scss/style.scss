@@ -1,0 +1,180 @@
+body,
+.misc * {
+	font-size: 16px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	padding: 0 10px;
+	max-width: 900px;
+	margin: 15px auto;
+	color: #666666;
+	background-image: url("http://www.lancefarrow.ca/wp-content/uploads/2014/06/triangle-background-17.png");
+	background-size: 150% auto;
+
+	h1, h3, p, label, div {
+		font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+		font-weight: 100;
+		letter-spacing: 0.5px;
+	}
+
+	h1 {
+		font-size: 40px;
+		text-align: center;
+	}
+}
+
+.container {
+	border: 1px solid #CCCCCC;
+	border-radius: 4px;
+	overflow: hidden;
+	padding: 0 30px;
+	min-height: 600px;
+	display: block;
+	background: white;
+	
+	$border: 1px;
+	$options-width: 250px;
+	
+	.generator {
+		border-top: 1px solid #CCCCCC;
+		padding-top: 30px;
+		overflow: hidden;
+
+		div.options {
+			width: $options-width;
+			vertical-align: top;
+			float: left;
+			padding: 10px 20px 10px 0;
+			
+			> div {
+				margin-bottom: 25px;
+			}
+
+			select {
+				display: inline-block;
+				-webkit-appearance: none;
+				box-sizing: border-box;
+				border: 1px solid #CCCCCC;
+				box-shadow: 0;
+				padding: 8px 30px 8px 10px;
+				font-size: 16px;
+				width: 100%;
+				background-color: #FFFFFF;
+				background-image: url("https://www.pigeonholelive.com/images/chevron-down.png");
+				background-repeat: no-repeat;
+				background-size: 20px;
+				background-position: right 10px center;
+				color: #555555;
+				
+				&.nth {
+					margin-top: 10px;
+				}
+			}
+
+			.value {
+				font-size: 18px;
+				padding: 20px;
+				border: 1px dashed #CCCCCC;
+				background: #F1F1F1;
+				border-radius: 5px;
+				font-weight: 300;
+			}
+		}
+
+		div.example {
+			width: calc(100% - (#{$options-width} + #{$border}));
+			float: left;
+			border-left: $border solid #DDDDDD;
+			padding: 10px 0 10px 20px;
+			
+			> div {
+				background: #F1F1F1;
+				border: 1px dashed #CCCCCC;
+				border-radius: 5px;
+				overflow: hidden;
+				padding: 15px;
+				margin-top: 15px;
+			}
+			
+			.list p {
+				margin-left: 20px;
+			}
+
+			table {
+				border-collapse: collapse;
+				width: 100%;
+
+				td {
+					padding: 20px 10px;
+					border: 1px solid #CCCCCC;
+					background: white;
+				}
+			}
+
+			.misc {
+
+				label {
+					margin: 0;
+					font-size: 16px;
+				}
+				
+				input {
+					background: white;
+				}
+
+				div *:not(.input) {
+					margin-bottom: 5px;
+					padding: 3px 0;
+				}
+				
+				div > div:not(input) *:first-child:not(input),
+				div:not(input) *:first-child:not(input) {
+					margin-top: 5px;	
+				}
+				
+				div *:not(input) {
+					margin-left: 20px;	
+				}
+			}
+
+			ul:before { content: "<ul>"; }
+			ul:after { content: "</ul>"; }
+			li:before { content: "<li>"; }
+			li:after { content: "</li>"; }
+			p:before { content: "<p>"; }
+			p:after { content: "</p>"; }
+			.misc div:not(.input):before { content: "<div>"; }
+			.misc div:not(.input):after { content: "</div>"; }
+			.misc label:before { content: "<label>"; }
+			.misc label:after { content: "</label>"; }
+		}
+		
+		label {
+			display: block;
+			margin-bottom: 10px;
+			font-size: 20px;
+		}
+
+		ul {
+			float: left;
+			color: #666666;
+			margin: 0 0 0 10px;
+			padding: 0;
+			
+			li {
+				list-style: none;
+				margin: 5px 0 5px 20px;
+				padding: 3px;
+			}
+		}
+		
+		p {
+			margin: 0 0 5px 0;
+			padding: 3px;
+		}
+	}
+}
