@@ -1,219 +1,46 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>CSS3 Pseudo Selector Generator</title>
-	<link rel="stylesheet" href="css/style.css">
-  </head>
-
-  <body>
-
-    <div class="container">
-	<h1>CSS3 Pseudo Selector Generator</h1>
-	<div class="generator">
-		<div class="options">
-			<div>
-				<label>Select the HTML example:</label>
-				<select class="changehtml">
-					<option>list</option>
-					<option>table</option>
-					<option value="misc">miscellaneous</option>
-				</select>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>CSS3 Pseudo Selector Generator</title>
+		<link rel="stylesheet" href="css/styles.css">
+		<script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
+		<script src="js/navigation.js"></script>
+	</head>
+	<body>
+		<header class="static-header">
+			<img src="images/rb-logo-circled.png" height="100" height="auto"/>
+			<nav>
+				<a href="#aboutme">About me</a>
+				<a href="#experience">Experience</a>
+				<a href="#creative">Creative</a>
+				<a href="#contact">Contact</a>
+			</nav>
+		</header>
+		<header class="fixed-header">
+			<div class="fheader__container">
+				<img src="images/rb-logo-circled.png" width="30px" height="auto"/>
+				<nav>
+					<a href="#aboutme">About me</a>
+					<a href="#experience">Experience</a>
+					<a href="#creative">Creative</a>
+					<a href="#contact">Contact</a>
+				</nav>
 			</div>
-			<div>
-				<label>Select an element:</label>
-				<select class="element list-elements">
-					<option>li</option>
-					<option>p</option>
-				</select>
-				<select class="element table-elements" style="display: none;">
-					<option>tr</option>
-					<option>td</option>
-				</select>
-				<select class="element misc-elements" style="display: none;">
-					<option>p</option>
-					<option>label</option>
-					<option>input</option>
-					<option>div</option>
-				</select>
+		</header>
+		<div class="container__content">
+			<div id="aboutme" class="section1">
 			</div>
-			<div>
-				<label>Select a selector:</label>
-				<select class="selector">
-					<option value=":first-of-type">:first-of-type</option>
-					<option value=":last-of-type">:last-of-type</option>
-					<option value=":first-child">:first-child</option>
-					<option value=":last-child">:last-child</option>
-					<option value=":only-child">:only-child</option>
-					<option value=":only-child">:only-of-type</option>
-					<option value=":nth-child">:nth-child</option>
-					<option value=":nth-last-child">:nth-last-child</option>
-					<option value=":nth-last-of-type">:nth-last-of-type</option>
-					<option value=":nth-of-type">:nth-of-type</option>
-				</select>
-				<select class="nth" style="display: none;">
-					<option>(n)</option>
-					<option>(2)</option>
-					<option>(3)</option>
-					<option>(n+1)</option>
-					<option>(n+2)</option>
-					<option>(n+3)</option>
-					<option>(2n)</option>
-					<option>(2n+1)</option>
-					<option>(2n+2)</option>
-					<option>(2n+3)</option>
-					<option>(3n)</option>
-					<option>(3n+1)</option>
-					<option>(3n+2)</option>
-					<option>(3n+3)</option>
-					<option>(2n-1)</option>
-					<option>(2n-2)</option>
-					<option>(2n-3)</option>
-					<option>(3n-1)</option>
-					<option>(3n-2)</option>
-					<option>(3n-3)</option>
-					<option>(-n+1)</option>
-					<option>(-n+2)</option>
-					<option>(-n+3)</option>
-					<option>(-2n)</option>
-					<option>(-2n+1)</option>
-					<option>(-2n+2)</option>
-					<option>(-2n+3)</option>
-					<option>(-3n)</option>
-					<option>(-3n+1)</option>
-					<option>(-3n+2)</option>
-					<option>(-3n+3)</option>
-				</select>
+			<div id="experience" class="section2">
 			</div>
-			<div>
-				<div class="value"></div>
+			<div id="creative" class="section3">
+			</div>
+			<div id="contact" class="section4">
 			</div>
 		</div>
-		<div class="example">
-			<label>Example:</label>
-			<div class="list">
-				<ul>
-					<li>
-						<p>1. This is example text</p>
-					</li>
-					<li>
-						<p>1. This is example text</p>
-						<p>2. This is example text</p>
-					</li>
-					<li>
-						<p>1. This is example text</p>
-						<p>2. This is example text</p>
-						<p>3. This is example text</p>
-					</li>
-					<li>
-						<p>1. This is example text</p>
-						<p>2. This is example text</p>
-						<p>3. This is example text</p>
-						<p>4. This is example text</p>
-					</li>
-					<li>
-						<p>1. This is example text</p>
-						<p>2. This is example text</p>
-						<p>3. This is example text</p>
-						<p>4. This is example text</p>
-						<p>5. This is example text</p>
-					</li>
-					<li>
-						<p>1. This is example text</p>
-						<p>2. This is example text</p>
-						<p>3. This is example text</p>
-						<p>4. This is example text</p>
-						<p>5. This is example text</p>
-						<p>6. This is example text</p>
-					</li>
-				</ul>
-			</div>
-			<div class="table" style="display: none;">
-				<table>
-					<tr>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-				</table>
-			</div>
-			<div class="misc" style="display: none;">
-				<div>
-					<label>This is a label no.1</label>
-					<div class="input">&lt;input<input type="text">&#47;&gt;</div>
-					<p>Example text no.1</p>
-					<label>This is a label no.2</label>
-					<div class="input">&lt;input<input type="text">&#47;&gt;</div>
-					<label>This is a label no.3</label>
-					<div class="input">&lt;input<input type="text">&#47;&gt;</div>
-					<p>Example text no.2</p>
-					<div>
-						<p>Example text no.3</p>
-						<p>Example text no.4</p>
-						<div>
-							<p>Example text no.5</p>
-						</div>
-					</div>
-					<div>
-						<label>This is a label no.3</label>
-						<div class="input">&lt;input<input type="text">&#47;&gt;</div>
-						<p>Example text no.2</p>
-						<label>This is a label no.3</label>
-						<div class="input">&lt;input<input type="text">&#47;&gt;</div>
-						<p>Example text no.2</p>
-					</div>
-				</div>
-			</div><!-- misc -->
-		</div><!-- example -->
-	</div>
-</div>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-	<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
-	<script src="js/index.js"></script>
-  </body>
+		<footer>
+
+		</footer>
+	</body>
 </html>

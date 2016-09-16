@@ -1,3 +1,6 @@
-A Pen created at CodePen.io. You can find this one at http://codepen.io/rachel_web/pen/RPOxxR.
+Created by Rachel Bull, 2016
 
- Select your HTML element and CSS selector from the drop down lists to see how CSS pseudo selectors can affect different elements and layouts. It will show you an example of the HTML and also the code that is being used.
+	Email:		rachel13bull@gmail.com
+	Twitter:	@rachel_web
+	Codepen:	http://codepen.io/rachel_web/
+	Linkedin:	https://uk.linkedin.com/in/rachel-bull-b3535536
