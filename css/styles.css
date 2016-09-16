@@ -46,6 +46,7 @@ body .fixed-header {
   box-sizing: border-box;
   box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0.5);
   opacity: 0.9;
+  z-index: 100;
 }
 body .fixed-header .fheader__container {
   max-width: 900px;
@@ -89,7 +90,7 @@ body .container__content {
   clear: both;
 }
 body .container__content > div {
-  height: 500px;
+  min-height: 500px;
   display: block;
 }
 body .container__content > div.section1 {
@@ -103,4 +104,79 @@ body .container__content > div.section3 {
 }
 body .container__content > div.section4 {
   background: #ddebfd;
+}
+body .container__content > div .gallery {
+  text-align: center;
+  padding: 30px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+@media (min-width: 670px) and (max-width: 944px) {
+  body .container__content > div .gallery {
+    width: 535px;
+  }
+}
+@media (min-width: 394px) and (max-width: 669px) {
+  body .container__content > div .gallery {
+    width: 260px;
+  }
+}
+body .container__content > div .gallery .gallery__element {
+  width: 244px;
+  height: 244px;
+  float: left;
+  border-radius: 50%;
+  background: white;
+  overflow: hidden;
+  margin-bottom: 15px;
+  border: 8px solid #CCCCCC;
+  position: relative;
+  z-index: 5;
+}
+body .container__content > div .gallery .gallery__element .overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: none;
+  color: #FFFFFF;
+  padding-bottom: 10px;
+}
+body .container__content > div .gallery .gallery__element:hover {
+  border-color: #AAAAAA;
+}
+body .container__content > div .gallery .gallery__element:hover .overlay {
+  display: block;
+}
+@media (min-width: 945px) {
+  body .container__content > div .gallery .gallery__element:not(:nth-of-type(3n)) {
+    margin-right: 15px;
+  }
+}
+@media (min-width: 670px) and (max-width: 944px) {
+  body .container__content > div .gallery .gallery__element:not(:nth-of-type(2n)) {
+    margin-right: 15px;
+  }
+}
+@media (max-width: 393px) {
+  body .container__content > div .gallery .gallery__element {
+    width: calc(100% - 16px);
+    height: 200px;
+  }
+}
+body .container__content > div .gallery .gallery__element.triangle img {
+	position: absolute;
+	top: -14%;
+	left: -18%;
+}
+body .container__content > div .gallery .gallery__element.pseudo img {
+  transform: rotate(-20deg);
+  position: absolute;
+  top: -8%;
+  left: 0%;
+}
+body .container__content > div .gallery .gallery__element.characters img {
+	position: absolute;
+	top: 0%;
+	left: -19%;
 }
