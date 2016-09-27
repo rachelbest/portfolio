@@ -170,14 +170,17 @@ body footer .footer__container ul li {
 	line-height: 36px;
 	text-align: center;
 }
-body footer .footer__container ul li img {
-	vertical-align: middle;
-}
 body footer .footer__container ul li:not(:last-of-type) {
 	margin-right: 20px;
 }
-img.svg path {
+body footer .footer__container ul li svg {
+	height: 30px;
+	width: 30px;
+	vertical-align: middle;
+}
+body footer .footer__container ul li svg path {
 	background: #ff9191;
+	fill: #ff9191;
 }
 
 /*# sourceMappingURL=styles.css.map */
