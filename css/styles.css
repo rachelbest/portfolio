@@ -173,14 +173,10 @@ body footer .footer__container ul li {
 body footer .footer__container ul li:not(:last-of-type) {
 	margin-right: 20px;
 }
-body footer .footer__container ul li svg {
+body footer .footer__container ul li img {
 	height: 30px;
 	width: 30px;
 	vertical-align: middle;
-}
-body footer .footer__container ul li svg path {
-	background: #ff9191;
-	fill: #ff9191;
 }
 
 /*# sourceMappingURL=styles.css.map */
