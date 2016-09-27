@@ -6,9 +6,15 @@
 		<title>CSS3 Pseudo Selector Generator</title>
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="css/london-eye.css">
 		<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 		<script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
 		<script src="js/navigation.js"></script>
+		<script> 
+			$(function(){
+				$("#LondonEye").load("london-eye.html"); 
+			});
+		</script> 
 	</head>
 	<body>
 		<header class="static-header">
@@ -74,6 +80,7 @@
 			</section>
 		</div>
 		<footer>
+			<div id="LondonEye"></div>
 
 		</footer>
 	</body>
