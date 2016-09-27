@@ -1,7 +1,9 @@
+#LondonEye {
+	position: absolute;
+	top: -308px;
+	right: 20%;
+}
 .london-eye-container {
-  position: absolute;
-  bottom: 50px;
-  left: calc(50% - 160px);
   height: 308px;
   width: 286px;
   overflow: hidden;
@@ -146,8 +148,8 @@
   height: 172px;
   width: 8px;
   background: #F8F8F8;
-  border-right: 2px solid #999999;
-  border-left: 2px solid #999999;
+  border-right: 1px solid #BBBBBB;
+  border-left: 1px solid #BBBBBB;
   -webkit-border-radius: 10px 10px 0 0;
   -moz-border-radius: 10px 10px 0 0;
   border-radius: 10px 10px 0 0;
