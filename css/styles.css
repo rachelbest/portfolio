@@ -71,8 +71,9 @@ body {
     padding: 0 15px;
     clear: both; }
     body .container__content p {
-      font-size: 13px;
-      line-height: 20px; }
+      font-size: 14px;
+      line-height: 22px;
+      font-weight: 300; }
     body .container__content .line-break {
       height: 1px;
       background: #CCCCCC;
@@ -162,7 +163,7 @@ body {
         body .container__content section .characters .side-text p {
           margin-bottom: 15px; }
         body .container__content section .characters .side-text a {
-          font-size: 13px;
+          font-size: 14px;
           text-decoration: none;
           color: #999999; }
       body .container__content section .characters ul {
