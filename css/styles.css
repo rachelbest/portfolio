@@ -205,7 +205,7 @@ body {
       margin: 0 auto;
       padding: 30px 15px 25px 15px;
       box-sizing: border-box;
-      overflow: hidden; }
+      height: 93px; }
       body footer .footer__container ul {
         margin: 0;
         padding: 0;
