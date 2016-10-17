@@ -291,14 +291,14 @@ body {
 	footer {
 		position: relative;
 		width: 100%;
-		height: 200px;
 		background: #ff9191;
 
 		.footer__container {
 			width: 900px;
 			margin: 0 auto;
-			padding: 30px 15px;
+			padding: 30px 15px 25px 15px;
 			box-sizing: border-box;
+			overflow: hidden;
 
 			ul {
 				margin: 0;
