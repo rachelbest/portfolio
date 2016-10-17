@@ -1,5 +1,11 @@
 /* Sass for Rachel's portfolio */
 
+@mixin linebreak {
+	height: 1px;
+	background: #CCCCCC;
+	background: -webkit-gradient(linear, 0 0, 100% 0, from(rgba(#FFFFFF, 0)), to(rgba(#FFFFFF, 0)), color-stop(50%, #CCCCCC));
+}
+
 body {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
@@ -97,17 +103,22 @@ body {
 		padding: 0 15px;
 		clear: both;
 
+		p {
+			font-size: 13px;
+			line-height: 20px;
+		}
+
 		.line-break {
-			height: 1px;
+			@include linebreak;
 			margin-bottom: 40px;
-			background: #CCCCCC;
-			background: -webkit-gradient(linear, 0 0, 100% 0, from(rgba(#FFFFFF, 0)), to(rgba(#FFFFFF, 0)), color-stop(50%, #CCCCCC));
 		}
 
 		section {
-			min-height: 500px;
+			min-height: 400px;
 			display: block;
 			margin-bottom: 40px;
+			overflow: hidden;
+			padding: 0 80px;
 
 			h2 {
 				font-family: 'Pacifico', cursive;
@@ -196,6 +207,81 @@ body {
 						top: 0%;
 						left: -19%;
 					}
+				}
+			}
+
+			.characters {
+
+				.side-text {
+					float: left;
+					width: calc(50% - 60px);
+
+					.section-line {
+						@include linebreak;
+					}
+
+					h3 {
+						font-family: "News Cycle", sans-serif;
+						font-size: 22px;
+						font-weight: bold;
+						margin: 30px 0 15px;
+					}
+
+					p {
+						margin-bottom: 15px;
+					}
+
+					a {
+						font-size: 13px;
+						text-decoration: none;
+						color: #999999;
+					}
+				}
+
+				ul {
+					width: 50%;
+					margin: 0;
+					padding: 0;
+					float: right;
+
+					li {
+						width: calc((100% - 10px) / 2);
+						overflow: hidden;
+						float: left;
+						border: 1px solid #DDDDDD;
+						box-sizing: border-box;
+						margin-bottom: 10px;
+						background: #FFFFFF;
+
+						&:nth-of-type(2n+1){
+							margin-right: 10px;
+						}
+
+						.frame {
+							margin: 4px;
+							overflow: hidden;
+							height: 100px;
+
+							img {
+								width: 100%;
+								height: auto;
+								opacity: 0.5;
+
+								&:hover {
+									opacity: 1;
+								}
+							}
+						}
+					}
+				}
+			}
+
+			.contact {
+				text-align: center;
+
+				a {
+					text-decoration: none;
+					color: #999999;
 				}
 			}
 		}

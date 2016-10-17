@@ -70,15 +70,20 @@ body {
     overflow: hidden;
     padding: 0 15px;
     clear: both; }
+    body .container__content p {
+      font-size: 13px;
+      line-height: 20px; }
     body .container__content .line-break {
       height: 1px;
-      margin-bottom: 40px;
       background: #CCCCCC;
-      background: -webkit-gradient(linear, 0 0, 100% 0, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0)), color-stop(50%, #CCCCCC)); }
-    body .container__content section {
-      min-height: 500px;
-      display: block;
+      background: -webkit-gradient(linear, 0 0, 100% 0, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0)), color-stop(50%, #CCCCCC));
       margin-bottom: 40px; }
+    body .container__content section {
+      min-height: 400px;
+      display: block;
+      margin-bottom: 40px;
+      overflow: hidden;
+      padding: 0 80px; }
       body .container__content section h2 {
         font-family: 'Pacifico', cursive;
         font-size: 38px;
@@ -142,41 +147,83 @@ body {
             position: absolute;
             top: 0%;
             left: -19%; }
-body footer {
-	position: relative;
-	width: 100%;
-	height: 200px;
-	background: #ff9191;
-}
-body footer .footer__container {
-	width: 900px;
-	margin: 0 auto;
-	padding: 30px 15px;
-	box-sizing: border-box;
-}
-body footer .footer__container ul {
-	margin: 0;
-	padding: 0;
-	float: right;
-}
-body footer .footer__container ul li {
-	float: left;
-	background: #FFFFFF;
-	height: 38px;
-	width: 38px;
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-	border-radius: 50%;
-	line-height: 36px;
-	text-align: center;
-}
-body footer .footer__container ul li:not(:last-of-type) {
-	margin-right: 20px;
-}
-body footer .footer__container ul li img {
-	height: 26px;
-	width: 26px;
-	vertical-align: middle;
-}
+      body .container__content section .characters .side-text {
+        float: left;
+        width: calc(50% - 60px); }
+        body .container__content section .characters .side-text .section-line {
+          height: 1px;
+          background: #CCCCCC;
+          background: -webkit-gradient(linear, 0 0, 100% 0, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0)), color-stop(50%, #CCCCCC)); }
+        body .container__content section .characters .side-text h3 {
+          font-family: "News Cycle", sans-serif;
+          font-size: 22px;
+          font-weight: bold;
+          margin: 30px 0 15px; }
+        body .container__content section .characters .side-text p {
+          margin-bottom: 15px; }
+        body .container__content section .characters .side-text a {
+          font-size: 13px;
+          text-decoration: none;
+          color: #999999; }
+      body .container__content section .characters ul {
+        width: 50%;
+        margin: 0;
+        padding: 0;
+        float: right; }
+        body .container__content section .characters ul li {
+          width: calc((100% - 10px) / 2);
+          overflow: hidden;
+          float: left;
+          border: 1px solid #DDDDDD;
+          box-sizing: border-box;
+          margin-bottom: 10px;
+          background: #FFFFFF; }
+          body .container__content section .characters ul li:nth-of-type(2n+1) {
+            margin-right: 10px; }
+          body .container__content section .characters ul li .frame {
+            margin: 4px;
+            overflow: hidden;
+            height: 100px; }
+            body .container__content section .characters ul li .frame img {
+              width: 100%;
+              height: auto;
+              opacity: 0.5; }
+              body .container__content section .characters ul li .frame img:hover {
+                opacity: 1; }
+      body .container__content section .contact {
+        text-align: center; }
+        body .container__content section .contact a {
+          text-decoration: none;
+          color: #999999; }
+  body footer {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background: #ff9191; }
+    body footer .footer__container {
+      width: 900px;
+      margin: 0 auto;
+      padding: 30px 15px;
+      box-sizing: border-box; }
+      body footer .footer__container ul {
+        margin: 0;
+        padding: 0;
+        float: right; }
+        body footer .footer__container ul li {
+          float: left;
+          background: #FFFFFF;
+          height: 38px;
+          width: 38px;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          border-radius: 50%;
+          line-height: 36px;
+          text-align: center; }
+          body footer .footer__container ul li:not(:last-of-type) {
+            margin-right: 20px; }
+          body footer .footer__container ul li img {
+            height: 26px;
+            width: 26px;
+            vertical-align: middle; }
 
 /*# sourceMappingURL=styles.css.map */
