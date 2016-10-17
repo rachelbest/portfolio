@@ -197,10 +197,10 @@ body {
           text-decoration: none;
           color: #999999; }
   body footer {
-    position: relative;
     width: 100%;
     background: #ff9191; }
     body footer .footer__container {
+      position: relative;
       width: 900px;
       margin: 0 auto;
       padding: 30px 15px 25px 15px;
