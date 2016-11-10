@@ -1,14 +1,14 @@
-#LondonEye {
+.london-eye {
   position: absolute;
   top: -328px;
   right: -50px;
   overflow: hidden; }
-  #LondonEye .london-eye-container {
+  .london-eye .london-eye-container {
     height: 308px;
     width: 286px;
     overflow: hidden;
     padding: 20px 20px 0 20px; }
-    #LondonEye .london-eye-container .wheel {
+    .london-eye .london-eye-container .wheel {
       position: absolute;
       height: 280px;
       width: 280px;
@@ -19,7 +19,7 @@
       -moz-border-radius: 50%;
       border-radius: 50%;
       box-shadow: inset 0 0 1px 1px #aaaaaa; }
-      #LondonEye .london-eye-container .wheel section {
+      .london-eye .london-eye-container .wheel section {
         position: absolute;
         top: -14px;
         left: calc(50% - 7px);
@@ -28,7 +28,7 @@
         -o-transform-origin: center bottom;
         -ms-transform-origin: center bottom;
         transform-origin: center bottom; }
-        #LondonEye .london-eye-container .wheel section:before, #LondonEye .london-eye-container .wheel section:after {
+        .london-eye .london-eye-container .wheel section:before, .london-eye .london-eye-container .wheel section:after {
           content: "";
           position: absolute;
           bottom: 5px;
@@ -39,7 +39,7 @@
           -o-transform-origin: center bottom;
           -ms-transform-origin: center bottom;
           transform-origin: center bottom; }
-        #LondonEye .london-eye-container .wheel section:after {
+        .london-eye .london-eye-container .wheel section:after {
           left: 50%;
           border-left: 1px solid #EEEEEE;
           -webkit-transform: rotate(-3deg);
@@ -47,7 +47,7 @@
           -o-transform: rotate(-3deg);
           -ms-transform: rotate(-3deg);
           transform: rotate(-3deg); }
-        #LondonEye .london-eye-container .wheel section:before {
+        .london-eye .london-eye-container .wheel section:before {
           right: 50%;
           border-right: 1px solid #EEEEEE;
           -webkit-transform: rotate(3deg);
@@ -55,7 +55,7 @@
           -o-transform: rotate(3deg);
           -ms-transform: rotate(3deg);
           transform: rotate(3deg); }
-        #LondonEye .london-eye-container .wheel section .carriage {
+        .london-eye .london-eye-container .wheel section .carriage {
           height: 12px;
           width: 12px;
           background: #cccccc;
@@ -73,32 +73,32 @@
           -moz-border-radius: 50%;
           border-radius: 50%;
           border: 1px solid #999999; }
-        #LondonEye .london-eye-container .wheel section span {
+        .london-eye .london-eye-container .wheel section span {
           height: 16px;
           width: 8px;
           position: absolute;
           top: 12px; }
-          #LondonEye .london-eye-container .wheel section span:before, #LondonEye .london-eye-container .wheel section span:after {
+          .london-eye .london-eye-container .wheel section span:before, .london-eye .london-eye-container .wheel section span:after {
             content: "";
             position: absolute;
             top: 0;
             height: 100%;
             width: 100%; }
-          #LondonEye .london-eye-container .wheel section span:before {
+          .london-eye .london-eye-container .wheel section span:before {
             border-left: 1px solid #CCCCCC;
             -webkit-transform: rotate(-20deg);
             -moz-transform: rotate(-20deg);
             -o-transform: rotate(-20deg);
             -ms-transform: rotate(-20deg);
             transform: rotate(-20deg); }
-          #LondonEye .london-eye-container .wheel section span:after {
+          .london-eye .london-eye-container .wheel section span:after {
             border-right: 1px solid #CCCCCC;
             -webkit-transform: rotate(20deg);
             -moz-transform: rotate(20deg);
             -o-transform: rotate(20deg);
             -ms-transform: rotate(20deg);
             transform: rotate(20deg); }
-          #LondonEye .london-eye-container .wheel section span span {
+          .london-eye .london-eye-container .wheel section span span {
             position: absolute;
             top: 0;
             left: 14px;
@@ -107,7 +107,7 @@
             -o-transform: rotate(5deg);
             -ms-transform: rotate(5deg);
             transform: rotate(5deg); }
-      #LondonEye .london-eye-container .wheel .inner-wheel {
+      .london-eye .london-eye-container .wheel .inner-wheel {
         position: absolute;
         top: calc(6% - 2px);
         left: calc(6% - 2px);
@@ -118,7 +118,7 @@
         -moz-border-radius: 50%;
         border-radius: 50%;
         box-shadow: inset 0 0 2px 1px #999999; }
-      #LondonEye .london-eye-container .wheel .center {
+      .london-eye .london-eye-container .wheel .center {
         position: absolute;
         top: calc(50% - 5px);
         left: calc(50% - 5px);
@@ -128,7 +128,7 @@
         -webkit-border-radius: 50%;
         -moz-border-radius: 50%;
         border-radius: 50%; }
-    #LondonEye .london-eye-container .leg {
+    .london-eye .london-eye-container .leg {
       position: absolute;
       top: 47%;
       height: 172px;
@@ -144,21 +144,21 @@
       -o-transform-origin: center top;
       -ms-transform-origin: center top;
       transform-origin: center top; }
-      #LondonEye .london-eye-container .leg.left {
+      .london-eye .london-eye-container .leg.left {
         left: calc(50% - 4px);
         -webkit-transform: rotate(10deg);
         -moz-transform: rotate(10deg);
         -o-transform: rotate(10deg);
         -ms-transform: rotate(10deg);
         transform: rotate(10deg); }
-      #LondonEye .london-eye-container .leg.right {
+      .london-eye .london-eye-container .leg.right {
         right: calc(50% - 4px);
         -webkit-transform: rotate(-10deg);
         -moz-transform: rotate(-10deg);
         -o-transform: rotate(-10deg);
         -ms-transform: rotate(-10deg);
         transform: rotate(-10deg); }
-    #LondonEye .london-eye-container .stand {
+    .london-eye .london-eye-container .stand {
       position: absolute;
       bottom: 0;
       left: calc(50% - 100px);
@@ -191,11 +191,11 @@
     -o-transform: rotate(360deg);
     -ms-transform: rotate(360deg);
     transform: rotate(360deg); } }
-  #LondonEye .wheel {
+  .london-eye .wheel {
     -webkit-animation: rotate linear 50s infinite;
     /* Chrome, Safari, Opera */
     animation: rotate linear 50s infinite; }
-    #LondonEye .wheel section:nth-of-type(1) {
+    .london-eye .wheel section:nth-of-type(1) {
       -webkit-transform: rotate(11.25deg);
       -moz-transform: rotate(11.25deg);
       -o-transform: rotate(11.25deg);
@@ -227,11 +227,11 @@
     -o-transform: rotate(-371.25deg);
     -ms-transform: rotate(-371.25deg);
     transform: rotate(-371.25deg); } }
-      #LondonEye .wheel section:nth-of-type(1) .carriage {
+      .london-eye .wheel section:nth-of-type(1) .carriage {
         -webkit-animation: carriage-rotation-1 linear 50s infinite;
         /* Chrome, Safari, Opera */
         animation: carriage-rotation-1 linear 50s infinite; }
-    #LondonEye .wheel section:nth-of-type(2) {
+    .london-eye .wheel section:nth-of-type(2) {
       -webkit-transform: rotate(22.5deg);
       -moz-transform: rotate(22.5deg);
       -o-transform: rotate(22.5deg);
@@ -263,11 +263,11 @@
     -o-transform: rotate(-382.5deg);
     -ms-transform: rotate(-382.5deg);
     transform: rotate(-382.5deg); } }
-      #LondonEye .wheel section:nth-of-type(2) .carriage {
+      .london-eye .wheel section:nth-of-type(2) .carriage {
         -webkit-animation: carriage-rotation-2 linear 50s infinite;
         /* Chrome, Safari, Opera */
         animation: carriage-rotation-2 linear 50s infinite; }
-    #LondonEye .wheel section:nth-of-type(3) {
+    .london-eye .wheel section:nth-of-type(3) {
       -webkit-transform: rotate(33.75deg);
       -moz-transform: rotate(33.75deg);
       -o-transform: rotate(33.75deg);
@@ -299,11 +299,11 @@
     -o-transform: rotate(-393.75deg);
     -ms-transform: rotate(-393.75deg);
     transform: rotate(-393.75deg); } }
-      #LondonEye .wheel section:nth-of-type(3) .carriage {
+      .london-eye .wheel section:nth-of-type(3) .carriage {
         -webkit-animation: carriage-rotation-3 linear 50s infinite;
         /* Chrome, Safari, Opera */
         animation: carriage-rotation-3 linear 50s infinite; }
-    #LondonEye .wheel section:nth-of-type(4) {
+    .london-eye .wheel section:nth-of-type(4) {
       -webkit-transform: rotate(45deg);
       -moz-transform: rotate(45deg);
       -o-transform: rotate(45deg);
@@ -335,11 +335,11 @@
     -o-transform: rotate(-405deg);
     -ms-transform: rotate(-405deg);
     transform: rotate(-405deg); } }
-      #LondonEye .wheel section:nth-of-type(4) .carriage {
+      .london-eye .wheel section:nth-of-type(4) .carriage {
         -webkit-animation: carriage-rotation-4 linear 50s infinite;
         /* Chrome, Safari, Opera */
         animation: carriage-rotation-4 linear 50s infinite; }
-    #LondonEye .wheel section:nth-of-type(5) {
+    .london-eye .wheel section:nth-of-type(5) {
       -webkit-transform: rotate(56.25deg);
       -moz-transform: rotate(56.25deg);
       -o-transform: rotate(56.25deg);
@@ -371,11 +371,11 @@
     -o-transform: rotate(-416.25deg);
     -ms-transform: rotate(-416.25deg);
     transform: rotate(-416.25deg); } }
-      #LondonEye .wheel section:nth-of-type(5) .carriage {
+      .london-eye .wheel section:nth-of-type(5) .carriage {
         -webkit-animation: carriage-rotation-5 linear 50s infinite;
         /* Chrome, Safari, Opera */
         animation: carriage-rotation-5 linear 50s infinite; }
-    #LondonEye .wheel section:nth-of-type(6) {
+    .london-eye .wheel section:nth-of-type(6) {
       -webkit-transform: rotate(67.5deg);
       -moz-transform: rotate(67.5deg);
       -o-transform: rotate(67.5deg);
@@ -407,11 +407,11 @@
     -o-transform: rotate(-427.5deg);
     -ms-transform: rotate(-427.5deg);
     transform: rotate(-427.5deg); } }
-      #LondonEye .wheel section:nth-of-type(6) .carriage {
+      .london-eye .wheel section:nth-of-type(6) .carriage {
         -webkit-animation: carriage-rotation-6 linear 50s infinite;
         /* Chrome, Safari, Opera */
         animation: carriage-rotation-6 linear 50s infinite; }
-    #LondonEye .wheel section:nth-of-type(7) {
+    .london-eye .wheel section:nth-of-type(7) {
       -webkit-transform: rotate(78.75deg);
       -moz-transform: rotate(78.75deg);
       -o-transform: rotate(78.75deg);
@@ -443,11 +443,11 @@
     -o-transform: rotate(-438.75deg);
     -ms-transform: rotate(-438.75deg);
     transform: rotate(-438.75deg); } }
-      #LondonEye .wheel section:nth-of-type(7) .carriage {
+      .london-eye .wheel section:nth-of-type(7) .carriage {
         -webkit-animation: carriage-rotation-7 linear 50s infinite;
         /* Chrome, Safari, Opera */
         animation: carriage-rotation-7 linear 50s infinite; }
-    #LondonEye .wheel section:nth-of-type(8) {
+    .london-eye .wheel section:nth-of-type(8) {
       -webkit-transform: rotate(90deg);
       -moz-transform: rotate(90deg);
       -o-transform: rotate(90deg);
@@ -479,11 +479,11 @@
     -o-transform: rotate(-450deg);
     -ms-transform: rotate(-450deg);
     transform: rotate(-450deg); } }
-      #LondonEye .wheel section:nth-of-type(8) .carriage {
+      .london-eye .wheel section:nth-of-type(8) .carriage {
         -webkit-animation: carriage-rotation-8 linear 50s infinite;
         /* Chrome, Safari, Opera */
         animation: carriage-rotation-8 linear 50s infinite; }
-    #LondonEye .wheel section:nth-of-type(9) {
+    .london-eye .wheel section:nth-of-type(9) {
       -webkit-transform: rotate(101.25deg);
       -moz-transform: rotate(101.25deg);
       -o-transform: rotate(101.25deg);
@@ -515,11 +515,11 @@
     -o-transform: rotate(-461.25deg);
     -ms-transform: rotate(-461.25deg);
     transform: rotate(-461.25deg); } }
-      #LondonEye .wheel section:nth-of-type(9) .carriage {
+      .london-eye .wheel section:nth-of-type(9) .carriage {
         -webkit-animation: carriage-rotation-9 linear 50s infinite;
         /* Chrome, Safari, Opera */
         animation: carriage-rotation-9 linear 50s infinite; }
-    #LondonEye .wheel section:nth-of-type(10) {
+    .london-eye .wheel section:nth-of-type(10) {
       -webkit-transform: rotate(112.5deg);
       -moz-transform: rotate(112.5deg);
       -o-transform: rotate(112.5deg);
@@ -551,11 +551,11 @@
     -o-transform: rotate(-472.5deg);
     -ms-transform: rotate(-472.5deg);
     transform: rotate(-472.5deg); } }
-      #LondonEye .wheel section:nth-of-type(10) .carriage {
+      .london-eye .wheel section:nth-of-type(10) .carriage {
         -webkit-animation: carriage-rotation-10 linear 50s infinite;
         /* Chrome, Safari, Opera */
         animation: carriage-rotation-10 linear 50s infinite; }
-    #LondonEye .wheel section:nth-of-type(11) {
+    .london-eye .wheel section:nth-of-type(11) {
       -webkit-transform: rotate(123.75deg);
       -moz-transform: rotate(123.75deg);
       -o-transform: rotate(123.75deg);
@@ -587,11 +587,11 @@
     -o-transform: rotate(-483.75deg);
     -ms-transform: rotate(-483.75deg);
     transform: rotate(-483.75deg); } }
-      #LondonEye .wheel section:nth-of-type(11) .carriage {
+      .london-eye .wheel section:nth-of-type(11) .carriage {
         -webkit-animation: carriage-rotation-11 linear 50s infinite;
         /* Chrome, Safari, Opera */
         animation: carriage-rotation-11 linear 50s infinite; }
-    #LondonEye .wheel section:nth-of-type(12) {
+    .london-eye .wheel section:nth-of-type(12) {
       -webkit-transform: rotate(135deg);
       -moz-transform: rotate(135deg);
       -o-transform: rotate(135deg);
@@ -623,11 +623,11 @@
     -o-transform: rotate(-495deg);
     -ms-transform: rotate(-495deg);
     transform: rotate(-495deg); } }
-      #LondonEye .wheel section:nth-of-type(12) .carriage {
+      .london-eye .wheel section:nth-of-type(12) .carriage {
         -webkit-animation: carriage-rotation-12 linear 50s infinite;
         /* Chrome, Safari, Opera */
         animation: carriage-rotation-12 linear 50s infinite; }
-    #LondonEye .wheel section:nth-of-type(13) {
+    .london-eye .wheel section:nth-of-type(13) {
       -webkit-transform: rotate(146.25deg);
       -moz-transform: rotate(146.25deg);
       -o-transform: rotate(146.25deg);
@@ -659,11 +659,11 @@
     -o-transform: rotate(-506.25deg);
     -ms-transform: rotate(-506.25deg);
     transform: rotate(-506.25deg); } }
-      #LondonEye .wheel section:nth-of-type(13) .carriage {
+      .london-eye .wheel section:nth-of-type(13) .carriage {
         -webkit-animation: carriage-rotation-13 linear 50s infinite;
         /* Chrome, Safari, Opera */
         animation: carriage-rotation-13 linear 50s infinite; }
-    #LondonEye .wheel section:nth-of-type(14) {
+    .london-eye .wheel section:nth-of-type(14) {
       -webkit-transform: rotate(157.5deg);
       -moz-transform: rotate(157.5deg);
       -o-transform: rotate(157.5deg);
@@ -695,11 +695,11 @@
     -o-transform: rotate(-517.5deg);
     -ms-transform: rotate(-517.5deg);
     transform: rotate(-517.5deg); } }
-      #LondonEye .wheel section:nth-of-type(14) .carriage {
+      .london-eye .wheel section:nth-of-type(14) .carriage {
         -webkit-animation: carriage-rotation-14 linear 50s infinite;
         /* Chrome, Safari, Opera */
         animation: carriage-rotation-14 linear 50s infinite; }
-    #LondonEye .wheel section:nth-of-type(15) {
+    .london-eye .wheel section:nth-of-type(15) {
       -webkit-transform: rotate(168.75deg);
       -moz-transform: rotate(168.75deg);
       -o-transform: rotate(168.75deg);
@@ -731,11 +731,11 @@
     -o-transform: rotate(-528.75deg);
     -ms-transform: rotate(-528.75deg);
     transform: rotate(-528.75deg); } }
-      #LondonEye .wheel section:nth-of-type(15) .carriage {
+      .london-eye .wheel section:nth-of-type(15) .carriage {
         -webkit-animation: carriage-rotation-15 linear 50s infinite;
         /* Chrome, Safari, Opera */
         animation: carriage-rotation-15 linear 50s infinite; }
-    #LondonEye .wheel section:nth-of-type(16) {
+    .london-eye .wheel section:nth-of-type(16) {
       -webkit-transform: rotate(180deg);
       -moz-transform: rotate(180deg);
       -o-transform: rotate(180deg);
@@ -767,11 +767,11 @@
     -o-transform: rotate(-540deg);
     -ms-transform: rotate(-540deg);
     transform: rotate(-540deg); } }
-      #LondonEye .wheel section:nth-of-type(16) .carriage {
+      .london-eye .wheel section:nth-of-type(16) .carriage {
         -webkit-animation: carriage-rotation-16 linear 50s infinite;
         /* Chrome, Safari, Opera */
         animation: carriage-rotation-16 linear 50s infinite; }
-    #LondonEye .wheel section:nth-of-type(17) {
+    .london-eye .wheel section:nth-of-type(17) {
       -webkit-transform: rotate(191.25deg);
       -moz-transform: rotate(191.25deg);
       -o-transform: rotate(191.25deg);
@@ -803,11 +803,11 @@
     -o-transform: rotate(-551.25deg);
     -ms-transform: rotate(-551.25deg);
     transform: rotate(-551.25deg); } }
-      #LondonEye .wheel section:nth-of-type(17) .carriage {
+      .london-eye .wheel section:nth-of-type(17) .carriage {
         -webkit-animation: carriage-rotation-17 linear 50s infinite;
         /* Chrome, Safari, Opera */
         animation: carriage-rotation-17 linear 50s infinite; }
-    #LondonEye .wheel section:nth-of-type(18) {
+    .london-eye .wheel section:nth-of-type(18) {
       -webkit-transform: rotate(202.5deg);
       -moz-transform: rotate(202.5deg);
       -o-transform: rotate(202.5deg);
@@ -839,11 +839,11 @@
     -o-transform: rotate(-562.5deg);
     -ms-transform: rotate(-562.5deg);
     transform: rotate(-562.5deg); } }
-      #LondonEye .wheel section:nth-of-type(18) .carriage {
+      .london-eye .wheel section:nth-of-type(18) .carriage {
         -webkit-animation: carriage-rotation-18 linear 50s infinite;
         /* Chrome, Safari, Opera */
         animation: carriage-rotation-18 linear 50s infinite; }
-    #LondonEye .wheel section:nth-of-type(19) {
+    .london-eye .wheel section:nth-of-type(19) {
       -webkit-transform: rotate(213.75deg);
       -moz-transform: rotate(213.75deg);
       -o-transform: rotate(213.75deg);
@@ -875,11 +875,11 @@
     -o-transform: rotate(-573.75deg);
     -ms-transform: rotate(-573.75deg);
     transform: rotate(-573.75deg); } }
-      #LondonEye .wheel section:nth-of-type(19) .carriage {
+      .london-eye .wheel section:nth-of-type(19) .carriage {
         -webkit-animation: carriage-rotation-19 linear 50s infinite;
         /* Chrome, Safari, Opera */
         animation: carriage-rotation-19 linear 50s infinite; }
-    #LondonEye .wheel section:nth-of-type(20) {
+    .london-eye .wheel section:nth-of-type(20) {
       -webkit-transform: rotate(225deg);
       -moz-transform: rotate(225deg);
       -o-transform: rotate(225deg);
@@ -911,11 +911,11 @@
     -o-transform: rotate(-585deg);
     -ms-transform: rotate(-585deg);
     transform: rotate(-585deg); } }
-      #LondonEye .wheel section:nth-of-type(20) .carriage {
+      .london-eye .wheel section:nth-of-type(20) .carriage {
         -webkit-animation: carriage-rotation-20 linear 50s infinite;
         /* Chrome, Safari, Opera */
         animation: carriage-rotation-20 linear 50s infinite; }
-    #LondonEye .wheel section:nth-of-type(21) {
+    .london-eye .wheel section:nth-of-type(21) {
       -webkit-transform: rotate(236.25deg);
       -moz-transform: rotate(236.25deg);
       -o-transform: rotate(236.25deg);
@@ -947,11 +947,11 @@
     -o-transform: rotate(-596.25deg);
     -ms-transform: rotate(-596.25deg);
     transform: rotate(-596.25deg); } }
-      #LondonEye .wheel section:nth-of-type(21) .carriage {
+      .london-eye .wheel section:nth-of-type(21) .carriage {
         -webkit-animation: carriage-rotation-21 linear 50s infinite;
         /* Chrome, Safari, Opera */
         animation: carriage-rotation-21 linear 50s infinite; }
-    #LondonEye .wheel section:nth-of-type(22) {
+    .london-eye .wheel section:nth-of-type(22) {
       -webkit-transform: rotate(247.5deg);
       -moz-transform: rotate(247.5deg);
       -o-transform: rotate(247.5deg);
@@ -983,11 +983,11 @@
     -o-transform: rotate(-607.5deg);
     -ms-transform: rotate(-607.5deg);
     transform: rotate(-607.5deg); } }
-      #LondonEye .wheel section:nth-of-type(22) .carriage {
+      .london-eye .wheel section:nth-of-type(22) .carriage {
         -webkit-animation: carriage-rotation-22 linear 50s infinite;
         /* Chrome, Safari, Opera */
         animation: carriage-rotation-22 linear 50s infinite; }
-    #LondonEye .wheel section:nth-of-type(23) {
+    .london-eye .wheel section:nth-of-type(23) {
       -webkit-transform: rotate(258.75deg);
       -moz-transform: rotate(258.75deg);
       -o-transform: rotate(258.75deg);
@@ -1019,11 +1019,11 @@
     -o-transform: rotate(-618.75deg);
     -ms-transform: rotate(-618.75deg);
     transform: rotate(-618.75deg); } }
-      #LondonEye .wheel section:nth-of-type(23) .carriage {
+      .london-eye .wheel section:nth-of-type(23) .carriage {
         -webkit-animation: carriage-rotation-23 linear 50s infinite;
         /* Chrome, Safari, Opera */
         animation: carriage-rotation-23 linear 50s infinite; }
-    #LondonEye .wheel section:nth-of-type(24) {
+    .london-eye .wheel section:nth-of-type(24) {
       -webkit-transform: rotate(270deg);
       -moz-transform: rotate(270deg);
       -o-transform: rotate(270deg);
@@ -1055,11 +1055,11 @@
     -o-transform: rotate(-630deg);
     -ms-transform: rotate(-630deg);
     transform: rotate(-630deg); } }
-      #LondonEye .wheel section:nth-of-type(24) .carriage {
+      .london-eye .wheel section:nth-of-type(24) .carriage {
         -webkit-animation: carriage-rotation-24 linear 50s infinite;
         /* Chrome, Safari, Opera */
         animation: carriage-rotation-24 linear 50s infinite; }
-    #LondonEye .wheel section:nth-of-type(25) {
+    .london-eye .wheel section:nth-of-type(25) {
       -webkit-transform: rotate(281.25deg);
       -moz-transform: rotate(281.25deg);
       -o-transform: rotate(281.25deg);
@@ -1091,11 +1091,11 @@
     -o-transform: rotate(-641.25deg);
     -ms-transform: rotate(-641.25deg);
     transform: rotate(-641.25deg); } }
-      #LondonEye .wheel section:nth-of-type(25) .carriage {
+      .london-eye .wheel section:nth-of-type(25) .carriage {
         -webkit-animation: carriage-rotation-25 linear 50s infinite;
         /* Chrome, Safari, Opera */
         animation: carriage-rotation-25 linear 50s infinite; }
-    #LondonEye .wheel section:nth-of-type(26) {
+    .london-eye .wheel section:nth-of-type(26) {
       -webkit-transform: rotate(292.5deg);
       -moz-transform: rotate(292.5deg);
       -o-transform: rotate(292.5deg);
@@ -1127,11 +1127,11 @@
     -o-transform: rotate(-652.5deg);
     -ms-transform: rotate(-652.5deg);
     transform: rotate(-652.5deg); } }
-      #LondonEye .wheel section:nth-of-type(26) .carriage {
+      .london-eye .wheel section:nth-of-type(26) .carriage {
         -webkit-animation: carriage-rotation-26 linear 50s infinite;
         /* Chrome, Safari, Opera */
         animation: carriage-rotation-26 linear 50s infinite; }
-    #LondonEye .wheel section:nth-of-type(27) {
+    .london-eye .wheel section:nth-of-type(27) {
       -webkit-transform: rotate(303.75deg);
       -moz-transform: rotate(303.75deg);
       -o-transform: rotate(303.75deg);
@@ -1163,11 +1163,11 @@
     -o-transform: rotate(-663.75deg);
     -ms-transform: rotate(-663.75deg);
     transform: rotate(-663.75deg); } }
-      #LondonEye .wheel section:nth-of-type(27) .carriage {
+      .london-eye .wheel section:nth-of-type(27) .carriage {
         -webkit-animation: carriage-rotation-27 linear 50s infinite;
         /* Chrome, Safari, Opera */
         animation: carriage-rotation-27 linear 50s infinite; }
-    #LondonEye .wheel section:nth-of-type(28) {
+    .london-eye .wheel section:nth-of-type(28) {
       -webkit-transform: rotate(315deg);
       -moz-transform: rotate(315deg);
       -o-transform: rotate(315deg);
@@ -1199,11 +1199,11 @@
     -o-transform: rotate(-675deg);
     -ms-transform: rotate(-675deg);
     transform: rotate(-675deg); } }
-      #LondonEye .wheel section:nth-of-type(28) .carriage {
+      .london-eye .wheel section:nth-of-type(28) .carriage {
         -webkit-animation: carriage-rotation-28 linear 50s infinite;
         /* Chrome, Safari, Opera */
         animation: carriage-rotation-28 linear 50s infinite; }
-    #LondonEye .wheel section:nth-of-type(29) {
+    .london-eye .wheel section:nth-of-type(29) {
       -webkit-transform: rotate(326.25deg);
       -moz-transform: rotate(326.25deg);
       -o-transform: rotate(326.25deg);
@@ -1235,11 +1235,11 @@
     -o-transform: rotate(-686.25deg);
     -ms-transform: rotate(-686.25deg);
     transform: rotate(-686.25deg); } }
-      #LondonEye .wheel section:nth-of-type(29) .carriage {
+      .london-eye .wheel section:nth-of-type(29) .carriage {
         -webkit-animation: carriage-rotation-29 linear 50s infinite;
         /* Chrome, Safari, Opera */
         animation: carriage-rotation-29 linear 50s infinite; }
-    #LondonEye .wheel section:nth-of-type(30) {
+    .london-eye .wheel section:nth-of-type(30) {
       -webkit-transform: rotate(337.5deg);
       -moz-transform: rotate(337.5deg);
       -o-transform: rotate(337.5deg);
@@ -1271,11 +1271,11 @@
     -o-transform: rotate(-697.5deg);
     -ms-transform: rotate(-697.5deg);
     transform: rotate(-697.5deg); } }
-      #LondonEye .wheel section:nth-of-type(30) .carriage {
+      .london-eye .wheel section:nth-of-type(30) .carriage {
         -webkit-animation: carriage-rotation-30 linear 50s infinite;
         /* Chrome, Safari, Opera */
         animation: carriage-rotation-30 linear 50s infinite; }
-    #LondonEye .wheel section:nth-of-type(31) {
+    .london-eye .wheel section:nth-of-type(31) {
       -webkit-transform: rotate(348.75deg);
       -moz-transform: rotate(348.75deg);
       -o-transform: rotate(348.75deg);
@@ -1307,11 +1307,11 @@
     -o-transform: rotate(-708.75deg);
     -ms-transform: rotate(-708.75deg);
     transform: rotate(-708.75deg); } }
-      #LondonEye .wheel section:nth-of-type(31) .carriage {
+      .london-eye .wheel section:nth-of-type(31) .carriage {
         -webkit-animation: carriage-rotation-31 linear 50s infinite;
         /* Chrome, Safari, Opera */
         animation: carriage-rotation-31 linear 50s infinite; }
-    #LondonEye .wheel section:nth-of-type(32) {
+    .london-eye .wheel section:nth-of-type(32) {
       -webkit-transform: rotate(360deg);
       -moz-transform: rotate(360deg);
       -o-transform: rotate(360deg);
@@ -1343,7 +1343,7 @@
     -o-transform: rotate(-720deg);
     -ms-transform: rotate(-720deg);
     transform: rotate(-720deg); } }
-      #LondonEye .wheel section:nth-of-type(32) .carriage {
+      .london-eye .wheel section:nth-of-type(32) .carriage {
         -webkit-animation: carriage-rotation-32 linear 50s infinite;
         /* Chrome, Safari, Opera */
         animation: carriage-rotation-32 linear 50s infinite; }
