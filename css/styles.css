@@ -63,10 +63,11 @@ body {
           body .fixed-header .fheader__container nav a:hover {
             color: #333333; }
   body .container__content {
+    position: relative;
     margin: 0 auto;
     max-width: 900px;
+    min-height: 500px;
     box-sizing: border-box;
-    min-height: 600px;
     overflow: hidden;
     padding: 0 15px;
     clear: both; }
@@ -80,9 +81,9 @@ body {
       background: -webkit-gradient(linear, 0 0, 100% 0, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0)), color-stop(50%, #CCCCCC));
       margin-bottom: 40px; }
     body .container__content .page {
-      min-height: 400px;
+      min-height: 470px;
       display: block;
-      margin-bottom: 40px;
+      margin-bottom: 30px;
       overflow: hidden;
       padding: 0 80px; }
       body .container__content .page h2 {

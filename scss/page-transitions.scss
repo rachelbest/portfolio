@@ -7,6 +7,12 @@
 		-moz-transition: opacity 0.5s ease-in-out;
 		-webkit-transition: opacity 0.5s ease-in-out;
 		opacity: 0;
+		position: absolute;
+		top: 0;
+		left: 15px;
+		-webkit-width: calc(100% - 190px);
+		-moz-width: calc(100% - 190px);
+		width: calc(100% - 190px);
 	}
 
 	&.ng-enter-active {
@@ -21,6 +27,12 @@
 		-moz-transition: opacity 0.5s ease-in-out;
 		-webkit-transition: opacity 0.5s ease-in-out;
 		opacity: 1;
+		position: absolute;
+		top: 0;
+		left: 15px;
+		-webkit-width: calc(100% - 190px);
+		-moz-width: calc(100% - 190px);
+		width: calc(100% - 190px);
 	}
 
 	&.ng-leave-active {

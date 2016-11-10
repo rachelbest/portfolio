@@ -95,10 +95,11 @@ body {
 	}
 
 	.container__content {
+		position: relative;
 		margin: 0 auto;
 		max-width: 900px;
+		min-height: 500px;
 		box-sizing: border-box;
-		min-height: 600px;
 		overflow: hidden;
 		padding: 0 15px;
 		clear: both;
@@ -115,9 +116,9 @@ body {
 		}
 
 		.page {
-			min-height: 400px;
+			min-height: 470px;
 			display: block;
-			margin-bottom: 40px;
+			margin-bottom: 30px;
 			overflow: hidden;
 			padding: 0 80px;
 
