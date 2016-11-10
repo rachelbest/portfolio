@@ -1,6 +1,3 @@
-$padding: 15px;
-$padding-total: $padding * 2;
-
 .at-view-fade-in {
 
 	&.ng-enter {
@@ -12,13 +9,7 @@ $padding-total: $padding * 2;
 		-moz-transition-duration: 1s;
 		-o-transition-duration: 1s;
 		transition-duration: 1s;
-		position: absolute;
-		top: $padding;
-		left: $padding;
 		opacity: 0;
-		width: -moz-calc(100% - #{$padding-total});
-		width: -o-calc(100% - #{$padding-total});
-		width: calc(100% - #{$padding-total});
 	}
 
 	&.ng-enter-active {
@@ -37,13 +28,7 @@ $padding-total: $padding * 2;
 		-moz-transition-duration: 1s;
 		-o-transition-duration: 1s;
 		transition-duration: 1s;
-		position: absolute;
-		top: $padding;
-		left: $padding;
 		opacity: 1;
-		width: -moz-calc(100% - #{$padding-total});
-		width: -o-calc(100% - #{$padding-total});
-		width: calc(100% - #{$padding-total});
 	}
 
 	&.ng-leave-active {

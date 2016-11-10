@@ -7,13 +7,7 @@
   -moz-transition-duration: 1s;
   -o-transition-duration: 1s;
   transition-duration: 1s;
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  opacity: 0;
-  width: -moz-calc(100% - 30px);
-  width: -o-calc(100% - 30px);
-  width: calc(100% - 30px); }
+  opacity: 0; }
 .at-view-fade-in.ng-enter-active {
   opacity: 1; }
 
@@ -26,13 +20,7 @@
   -moz-transition-duration: 1s;
   -o-transition-duration: 1s;
   transition-duration: 1s;
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  opacity: 1;
-  width: -moz-calc(100% - 30px);
-  width: -o-calc(100% - 30px);
-  width: calc(100% - 30px); }
+  opacity: 1; }
 .at-view-fade-out.ng-leave-active {
   opacity: 0; }
 
