@@ -1,0 +1,39 @@
+.at-view-fade-in.ng-enter {
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  opacity: 0;
+  width: -moz-calc(100% - 30px);
+  width: -o-calc(100% - 30px);
+  width: calc(100% - 30px); }
+.at-view-fade-in.ng-enter-active {
+  opacity: 1; }
+
+.at-view-fade-out.ng-leave {
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  opacity: 1;
+  width: -moz-calc(100% - 30px);
+  width: -o-calc(100% - 30px);
+  width: calc(100% - 30px); }
+.at-view-fade-out.ng-leave-active {
+  opacity: 0; }
+
+/*# sourceMappingURL=page-transitions.css.map */
