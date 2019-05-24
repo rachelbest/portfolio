@@ -1,0 +1,5 @@
+@mixin linebreak {
+	height: 1px;
+	background: #CCCCCC;
+	background: -webkit-gradient(linear, 0 0, 100% 0, from(rgba(#FFFFFF, 0)), to(rgba(#FFFFFF, 0)), color-stop(50%, #CCCCCC));
+}
