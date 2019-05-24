@@ -1,0 +1,62 @@
+.static-header {
+  overflow: hidden;
+  box-sizing: border-box;
+  text-align: center;
+  background: #F9F9F9; }
+  .static-header__container {
+    max-width: 900px;
+    padding: 20px 0 25px;
+    margin: 0 auto; }
+  .static-header img {
+    margin: 0 auto; }
+  .static-header nav {
+    padding: 20px 0 0; }
+    .static-header nav a {
+      display: inline-block;
+      color: #666666;
+      text-decoration: none;
+      font-size: 14px;
+      cursor: pointer;
+      padding: 0 20px; }
+      .static-header nav a:hover {
+        color: #333333; }
+
+.fixed-header {
+  display: none;
+  position: fixed;
+  top: 0;
+  background: #FAFAFA;
+  margin: 0;
+  width: 100%;
+  border-bottom: 1px solid #CCCCCC;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0.5);
+  opacity: 0.9;
+  z-index: 100; }
+  .fixed-header__container {
+    max-width: 900px;
+    padding: 10px 15px;
+    margin: 0 auto;
+    overflow: hidden;
+    box-sizing: border-box; }
+    .fixed-header__container img {
+      float: left;
+      height: 34px;
+      width: auto; }
+    .fixed-header__container nav {
+      padding: 9px 0;
+      max-width: 400px;
+      float: right;
+      text-align: right; }
+      .fixed-header__container nav a {
+        display: inline-block;
+        color: #666666;
+        text-decoration: none;
+        font-size: 14px;
+        cursor: pointer; }
+        .fixed-header__container nav a:not(:last-of-type) {
+          padding-right: 25px; }
+        .fixed-header__container nav a:hover {
+          color: #333333; }
+
+/*# sourceMappingURL=Header.css.map */

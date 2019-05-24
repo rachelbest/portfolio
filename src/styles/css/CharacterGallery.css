@@ -1,0 +1,103 @@
+.gallery {
+  text-align: center;
+  padding: 0 30px;
+  margin: 0 auto;
+  overflow: hidden; }
+  @media (min-width: 670px) and (max-width: 944px) {
+    .gallery {
+      width: 535px; } }
+  @media (min-width: 394px) and (max-width: 669px) {
+    .gallery {
+      width: 260px; } }
+  .gallery .gallery__element {
+    width: 244px;
+    height: 244px;
+    float: left;
+    border-radius: 50%;
+    background: white;
+    overflow: hidden;
+    margin-bottom: 15px;
+    border: 8px solid #CCCCCC;
+    position: relative;
+    z-index: 5; }
+    .gallery .gallery__element .overlay {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.4);
+      display: none;
+      color: #FFFFFF;
+      padding-bottom: 10px; }
+    .gallery .gallery__element:hover {
+      border-color: #AAAAAA; }
+      .gallery .gallery__element:hover .overlay {
+        display: block; }
+    @media (min-width: 945px) {
+      .gallery .gallery__element:not(:nth-of-type(3n)) {
+        margin-right: 15px; } }
+    @media (min-width: 670px) and (max-width: 944px) {
+      .gallery .gallery__element:not(:nth-of-type(2n)) {
+        margin-right: 15px; } }
+    @media (max-width: 393px) {
+      .gallery .gallery__element {
+        width: calc(100% - 16px);
+        height: 200px; } }
+    .gallery .gallery__element.triangle img {
+      position: absolute;
+      top: -14%;
+      left: -18%; }
+    .gallery .gallery__element.pseudo img {
+      transform: rotate(-20deg);
+      position: absolute;
+      top: -8%;
+      left: 0%; }
+    .gallery .gallery__element.characters img {
+      position: absolute;
+      top: 0%;
+      left: -19%; }
+
+.characters .side-text {
+  float: left;
+  width: calc(50% - 60px); }
+  .characters .side-text .section-line {
+    height: 1px;
+    background: #CCCCCC;
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0)), color-stop(50%, #CCCCCC)); }
+  .characters .side-text h3 {
+    font-family: "News Cycle", sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 30px 0 15px; }
+  .characters .side-text p {
+    margin-bottom: 15px; }
+  .characters .side-text a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #999999; }
+.characters ul {
+  width: 50%;
+  margin: 0;
+  padding: 0;
+  float: right; }
+  .characters ul li {
+    width: calc((100% - 10px) / 2);
+    overflow: hidden;
+    float: left;
+    border: 1px solid #DDDDDD;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    background: #FFFFFF; }
+    .characters ul li:nth-of-type(2n+1) {
+      margin-right: 10px; }
+    .characters ul li .frame {
+      margin: 4px;
+      overflow: hidden;
+      height: 100px; }
+      .characters ul li .frame img {
+        width: 100%;
+        height: auto;
+        opacity: 0.5; }
+        .characters ul li .frame img:hover {
+          opacity: 1; }
+
+/*# sourceMappingURL=CharacterGallery.css.map */

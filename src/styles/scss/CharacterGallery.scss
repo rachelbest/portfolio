@@ -1,0 +1,149 @@
+@import "mixins";
+
+.gallery {
+	text-align: center;
+	padding: 0 30px;
+	margin: 0 auto;
+	overflow: hidden;
+	
+	@media (min-width: 670px) and (max-width: 944px) {
+		width: 535px;
+	}
+	
+	@media (min-width: 394px) and (max-width: 669px) {
+		width: 260px;
+	}
+
+	.gallery__element {
+		width: 244px;
+		height: 244px;
+		float: left;
+		border-radius: 50%;
+		background: white;
+		overflow: hidden;
+		margin-bottom: 15px;
+		border: 8px solid #CCCCCC;
+		position: relative;
+		z-index: 5;
+		
+		.overlay {
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			background: rgba(#000000, 0.4);
+			display: none;
+			color: #FFFFFF;
+			padding-bottom: 10px;
+		}
+		
+		&:hover {
+			border-color: #AAAAAA;
+			
+			.overlay {
+				display: block;
+			}
+		}
+		
+		@media (min-width: 945px) {
+			&:not(:nth-of-type(3n)) {
+				margin-right: 15px;
+			}
+		}
+		
+		@media (min-width: 670px) and (max-width: 944px) {
+			&:not(:nth-of-type(2n)) {
+				margin-right: 15px;
+			}
+		}
+		
+		@media (max-width: 393px) {
+			width: calc(100% - 16px);
+			height: 200px;
+		}
+
+		&.triangle img {
+			position: absolute;
+			top: -14%;
+			left: -18%;
+		}
+
+		&.pseudo img {
+			transform: rotate(-20deg);
+			position: absolute;
+			top: -8%;
+			left: 0%;
+		}
+
+		&.characters img {
+			position: absolute;
+			top: 0%;
+			left: -19%;
+		}
+	}
+}
+
+.characters {
+
+	.side-text {
+		float: left;
+		width: calc(50% - 60px);
+
+		.section-line {
+			@include linebreak;
+		}
+
+		h3 {
+			font-family: "News Cycle", sans-serif;
+			font-size: 22px;
+			font-weight: bold;
+			margin: 30px 0 15px;
+		}
+
+		p {
+			margin-bottom: 15px;
+		}
+
+		a {
+			font-size: 14px;
+			text-decoration: none;
+			color: #999999;
+		}
+	}
+
+	ul {
+		width: 50%;
+		margin: 0;
+		padding: 0;
+		float: right;
+
+		li {
+			width: calc((100% - 10px) / 2);
+			overflow: hidden;
+			float: left;
+			border: 1px solid #DDDDDD;
+			box-sizing: border-box;
+			margin-bottom: 10px;
+			background: #FFFFFF;
+
+			&:nth-of-type(2n+1){
+				margin-right: 10px;
+			}
+
+			.frame {
+				margin: 4px;
+				overflow: hidden;
+				height: 100px;
+
+				img {
+					width: 100%;
+					height: auto;
+					opacity: 0.5;
+
+					&:hover {
+						opacity: 1;
+					}
+				}
+			}
+		}
+	}
+}
