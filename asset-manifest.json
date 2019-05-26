@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.0887eee1.chunk.css",
+    "main.js": "/portfolio/static/js/main.224f49b3.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.224f49b3.chunk.js.map",
+    "runtime~main.js": "/portfolio/static/js/runtime~main.f308c8e6.js",
+    "runtime~main.js.map": "/portfolio/static/js/runtime~main.f308c8e6.js.map",
+    "static/js/2.0f307307.chunk.js": "/portfolio/static/js/2.0f307307.chunk.js",
+    "static/js/2.0f307307.chunk.js.map": "/portfolio/static/js/2.0f307307.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "precache-manifest.360e9281923349f12b05d8679e36a9da.js": "/portfolio/precache-manifest.360e9281923349f12b05d8679e36a9da.js",
+    "service-worker.js": "/portfolio/service-worker.js",
+    "static/css/main.0887eee1.chunk.css.map": "/portfolio/static/css/main.0887eee1.chunk.css.map",
+    "static/media/brian.png": "/portfolio/static/media/brian.e561a248.png",
+    "static/media/lego.png": "/portfolio/static/media/lego.492b8d3b.png",
+    "static/media/mike.png": "/portfolio/static/media/mike.7e8c36ea.png",
+    "static/media/minion.png": "/portfolio/static/media/minion.175d281f.png",
+    "static/media/rb-logo-circled.png": "/portfolio/static/media/rb-logo-circled.7ae54d14.png",
+    "static/media/spongebob.png": "/portfolio/static/media/spongebob.0fa8f0c0.png",
+    "static/media/stewie.png": "/portfolio/static/media/stewie.e0769aff.png"
+  }
+}
