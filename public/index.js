@@ -17,7 +17,6 @@
 		<link rel="stylesheet" href="css/styles.css">
 		<link rel="stylesheet" href="css/london-eye.css">
 		<link rel="stylesheet" href="css/page-transitions.css">
-		<link href="https://fonts.googleapis.com/css?family=News+Cycle:400,700|Open+Sans:300,400,700|Pacifico" rel="stylesheet">
 	</head>
 	<body ng-app="myApp">
 		<div ng-controller="landingController">
