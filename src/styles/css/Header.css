@@ -1,62 +1,39 @@
-.static-header {
+.header {
   overflow: hidden;
   box-sizing: border-box;
   text-align: center;
-  background: #F9F9F9; }
-  .static-header__container {
-    max-width: 900px;
-    padding: 20px 0 25px;
+  background: #F9F9F9;
+  margin-bottom: 50px; }
+  .header__container {
+    max-width: 930px;
+    padding: 20px 0 5px;
     margin: 0 auto; }
-  .static-header img {
+  .header img {
     margin: 0 auto; }
-  .static-header nav {
-    padding: 20px 0 0; }
-    .static-header nav a {
+  .header nav {
+    padding: 16px 0; }
+    .header nav a {
+      font-family: 'Amatic SC', cursive;
       display: inline-block;
-      color: #666666;
+      color: #888888;
       text-decoration: none;
-      font-size: 14px;
+      font-size: 38px;
       cursor: pointer;
-      padding: 0 20px; }
-      .static-header nav a:hover {
-        color: #333333; }
-
-.fixed-header {
-  display: none;
-  position: fixed;
-  top: 0;
-  background: #FAFAFA;
-  margin: 0;
-  width: 100%;
-  border-bottom: 1px solid #CCCCCC;
-  box-sizing: border-box;
-  box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0.5);
-  opacity: 0.9;
-  z-index: 100; }
-  .fixed-header__container {
-    max-width: 900px;
-    padding: 10px 15px;
-    margin: 0 auto;
-    overflow: hidden;
-    box-sizing: border-box; }
-    .fixed-header__container img {
-      float: left;
-      height: 34px;
-      width: auto; }
-    .fixed-header__container nav {
-      padding: 9px 0;
-      max-width: 400px;
-      float: right;
-      text-align: right; }
-      .fixed-header__container nav a {
-        display: inline-block;
-        color: #666666;
-        text-decoration: none;
-        font-size: 14px;
-        cursor: pointer; }
-        .fixed-header__container nav a:not(:last-of-type) {
-          padding-right: 25px; }
-        .fixed-header__container nav a:hover {
-          color: #333333; }
+      padding: 8px 0;
+      margin: 0 20px; }
+      .header nav a:hover {
+        color: #111111;
+        border-bottom: 2px solid #CCCCCC;
+        margin-bottom: -2px; }
+      .header nav a.active {
+        position: relative; }
+        .header nav a.active:before {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: -3px;
+          width: 100%;
+          height: 2px;
+          background: #ff9191; }
 
 /*# sourceMappingURL=Header.css.map */

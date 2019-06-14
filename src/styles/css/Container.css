@@ -4,8 +4,8 @@ body {
   height: 100%; }
 
 body {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
+  font-family: 'Lora', serif;
+  font-size: 16px;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -13,27 +13,27 @@ body {
   body .container {
     position: relative;
     margin: 0 auto 150px auto;
-    max-width: 900px;
-    min-height: 500px;
+    max-width: 930px;
+    min-height: 800px;
     box-sizing: border-box;
     overflow: hidden;
-    padding: 0 15px;
+    padding: 0;
     clear: both; }
     body .container h2 {
-      font-family: 'Helvetica', cursive;
-      font-size: 38px;
+      font-family: 'Amatic SC', cursive;
+      font-size: 50px;
       color: #777777;
       text-align: center;
-      margin: 70px 0 50px 0; }
+      margin: 70px 0 50px 0;
+      font-weight: normal; }
     body .container .section {
       min-height: 470px;
       display: block;
-      margin-bottom: 30px;
+      margin: 50px 0 30px;
       overflow: hidden;
-      padding: 0 80px; }
+      padding: 0; }
     body .container p {
-      font-size: 14px;
-      line-height: 22px;
-      font-weight: 300; }
+      line-height: 26px;
+      color: #666666; }
 
 /*# sourceMappingURL=Container.css.map */

@@ -13,11 +13,9 @@ export default class ExtraCurricular extends Component {
 	render() {
 		return (
 			<div className="extra-curricular">
-				<h2>Extra Curricular</h2>
 				<div className="section">
 					<div className="characters">
 						<div className="side-text">
-							<div className="section-line"></div>
 							<h3>Pure CSS Characters</h3>
 							<p>In my spare time I enjoy recreating popular cartoon characters using only CSS(SASS) and HTML. It's a great challenge and enables me to further my coding skills. I enjoy showing people what can be achieved using only CSS and by doing so I've gained advanced SASS knowledge.
 							<br /><br />With collective viewing figures of over 250,000, I hope that these characters will inspire people to learn to code.</p>
