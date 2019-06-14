@@ -14,7 +14,7 @@ export default class Header extends Component {
 				<header className="static-header">
 					<div className="static-header__container">
 						<NavLink to="/" activeClassName="active">
-							<img src={logo} height="100"/>
+							<img src={logo} alt="logo" height="100"/>
 						</NavLink>
 						<nav>
 							<NavLink to="/about" activeClassName="active">
@@ -34,7 +34,7 @@ export default class Header extends Component {
 				</header>
 				<header className="fixed-header">
 					<div className="fixed-header__container">
-						<img src={logo} width="30px" height="auto"/>
+						<img src={logo} alt="logo" width="30px" height="auto"/>
 						<nav>
 							<a href="#/about-me">About me</a>
 							<a href="#/experience">Experience</a>
