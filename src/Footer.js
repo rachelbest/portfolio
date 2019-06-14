@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Eye from './components/Eye';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import twitter from './images/twitter.png';
 import linkedin from './images/linkedin.png';

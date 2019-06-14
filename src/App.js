@@ -6,7 +6,7 @@ import About from './About';
 import ExtraCurricular from './ExtraCurricular';
 import Experience from './Experience';
 import Contact from './Contact';
-import { NavLink, BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import './styles/css/Container.css';
 
