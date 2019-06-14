@@ -21,7 +21,7 @@ export default class ExtraCurricular extends Component {
 							<h3>Pure CSS Characters</h3>
 							<p>In my spare time I enjoy recreating popular cartoon characters using only CSS(SASS) and HTML. It's a great challenge and enables me to further my coding skills. I enjoy showing people what can be achieved using only CSS and by doing so I've gained advanced SASS knowledge.
 							<br /><br />With collective viewing figures of over 250,000, I hope that these characters will inspire people to learn to code.</p>
-							<a href="http://codepen.io/collection/APYQyd/" target="_blank">View all pure CSS characters</a>
+							<a href="http://codepen.io/collection/APYQyd/" rel="noopener noreferrer" target="_blank">View all pure CSS characters</a>
 						</div>
 						<ul>
 							<li>
