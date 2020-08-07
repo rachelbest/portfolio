@@ -14,16 +14,16 @@ export default class Header extends Component {
 						<img src={logo} alt="logo" height="70"/>
 					</NavLink>
 					<nav>
-						<NavLink to="/about" activeClassName="active">
+						<NavLink to="/portfolio/about" activeClassName="active">
 							About
 						</NavLink>
-						<NavLink to="/experience">
+						<NavLink to="/portfolio/experience">
 							Experience
 						</NavLink>
-						<NavLink to="/extra-curricular">
+						<NavLink to="/portfolio/extra-curricular">
 							Extra Curricular
 						</NavLink>
-						<NavLink to="/contact">
+						<NavLink to="/portfolio/contact">
 							Contact
 						</NavLink>
 					</nav>
