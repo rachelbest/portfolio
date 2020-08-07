@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import '../styles/css/Eye.css';
+import './../../assets/css/Eye.css';
 
 export default class Eye extends Component {
 

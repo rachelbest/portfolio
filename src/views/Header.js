@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 
-import logo from './images/rb-logo-circled.png';
-import './styles/css/Header.css';
+import logo from './../assets/images/rb-logo-circled.png';
+import './../assets/css/Header.css';
 
 export default class Header extends Component {
 

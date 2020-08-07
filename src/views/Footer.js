@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import Eye from './components/Eye';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
-import twitter from './images/twitter.png';
-import linkedin from './images/linkedin.png';
-import email from './images/email.png';
-import './styles/css/Footer.css';
+import twitter from './../assets/images/twitter.png';
+import linkedin from './../assets/images/linkedin.png';
+import email from './../assets/images/email.png';
+import './../assets/css/Footer.css';
 
 export default class Footer extends Component {
 

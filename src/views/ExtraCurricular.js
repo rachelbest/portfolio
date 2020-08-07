@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 
-import minion from './images/examples/minion.png';
-import brian from './images/examples/brian.png';
-import stewie from './images/examples/stewie.png';
-import lego from './images/examples/lego.png';
-import spongebob from './images/examples/spongebob.png';
-import mike from './images/examples/mike.png';
-import './styles/css/CharacterGallery.css';
+import minion from './../assets/images/examples/minion.png';
+import brian from './../assets/images/examples/brian.png';
+import stewie from './../assets/images/examples/stewie.png';
+import lego from './../assets/images/examples/lego.png';
+import spongebob from './../assets/images/examples/spongebob.png';
+import mike from './../assets/images/examples/mike.png';
+import './../assets/css/CharacterGallery.css';
 
 export default class ExtraCurricular extends Component {
 
