@@ -1,4 +1,5 @@
-@import "../partials/breakpoints";
+@import "../partials/breakpoints",
+		"../partials/variables";
 
 $eye-size: 150px;
 $full-rotate-time: 100s;
@@ -6,7 +7,7 @@ $carriage-size: $eye-size*0.04;
 
 .london-eye {
 	position: absolute;
-	bottom: 65px;
+	bottom: $footer-height;
 	left: calc(50% - 540px);
 
 	.london-eye-container {

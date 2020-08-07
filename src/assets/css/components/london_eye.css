@@ -1,6 +1,6 @@
 .london-eye {
   position: absolute;
-  bottom: 65px;
+  bottom: 50px;
   left: calc(50% - 540px); }
   .london-eye .london-eye-container {
     position: relative;

@@ -1,3 +1,5 @@
+@import 'partials/variables';
+
 footer {
 	width: 100%;
 	background: #ff9191;
@@ -8,18 +10,17 @@ footer {
 		position: relative;
 		width: 930px;
 		margin: 0 auto;
-		padding: 15px 0 10px;
+		padding: 10px 0 10px;
 		box-sizing: border-box;
-		height: 65px;
+		height: $footer-height;
 
 		p {
 			float: left;
 			font-style: italic;
-			font-family: helvetica;
 			color: #FFFFFF;
 			margin: 0;
 			font-size: 12px;
-			line-height: 38px;
+			line-height: 2.5;
 			font-family: 'Lora', serif;
 		}
 
@@ -33,15 +34,13 @@ footer {
 				float: left;
 
 				&:not(:last-of-type) {
-					margin-right: 20px;
+					margin-right: 10px;
 				}
 
 				a {
 					background: #FFFFFF;
-					height: 38px;
-					width: 38px;
-					-webkit-border-radius: 50%;
-					-moz-border-radius: 50%;
+					height: 28px;
+					width: 28px;
 					border-radius: 50%;
 					line-height: 36px;
 					text-align: center;
@@ -53,9 +52,8 @@ footer {
 				}
 
 				img {
-					height: 26px;
-					width: 26px;
-					vertical-align: middle;
+					height: 20px;
+					width: 20px;
 				}
 			}
 		}
