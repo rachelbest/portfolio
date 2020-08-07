@@ -1,97 +1,99 @@
-$eye-size: 200px; /*280*/
+$eye-size: 180px;
 $full-rotate-time: 100s;
+$carriage-size: $eye-size*0.045;
 
 .london-eye {
 	position: absolute;
-	top: -328px;
-	right: -170px;
-	overflow: hidden;
+	bottom: 80px;
+	left: calc(50% - 450px);
 
 	.london-eye-container {
-		height: 308px;
-		width: $eye-size + 4px; /* plus border */
-		overflow: hidden;
-		padding: 20px 20px 0 20px;
+		position: relative;
 		
 		.wheel {
-			position: absolute;
+			position: relative;
 			height: $eye-size;
 			width: $eye-size;
-			top: 20px;
-			left: 20px;
-			border: 2px solid #DDDDDD;
+			border: 1px solid #DDDDDD;
 			border-radius: 50%;
 			box-shadow: inset 0 0 1px 1px rgba(#AAAAAA, 1);
 
 			section {
 				position: absolute;
-				top: -14px; /* plus border */
-				left: calc(50% - 7px);
+				top: 0; /* border */
+				left: 50% - 3%;
 				transform-origin: center bottom;
+				height: 50%;
+				width: 6%;
 
 				&:before, &:after {
 					content: "";
 					position: absolute;
-					bottom: 5px;
-					height: 78%;
+					top: 12%;
+					height: 88%;
 					width: 100%;
 					transform-origin: center bottom;
 				}
 
 				&:after {
 					left: 50%;
-					border-left: 1px solid #EEEEEE;
-					transform: rotate(-3deg);
+					border-left: 1px solid #DDDDDD;
+					transform: rotate(3deg);
 				}
 
 				&:before {
 					right: 50%;
-					border-right: 1px solid #EEEEEE;
-					transform: rotate(3deg);
+					border-right: 1px solid #DDDDDD;
+					transform: rotate(-3deg);
 				}
 
 				.carriage {
-					height: 12px;
-					width: 12px;
-					background: #CCCCCC; /* Old browsers */
-					background: -moz-linear-gradient(top,  #CCCCCC 0%, #CCCCCC 40%, #666666 80%, #666666 100%); /* FF3.6-15 */
-					background: -webkit-linear-gradient(top,  #CCCCCC 0%,#CCCCCC 40%,#666666 80%,#666666 100%); /* Chrome10-25,Safari5.1-6 */
-					background: linear-gradient(to bottom,  #CCCCCC 0%,#CCCCCC 40%,#666666 80%,#666666 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-					filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#CCCCCC', endColorstr='#666666',GradientType=0 ); /* IE6-9 */
-					margin-bottom: 140px;
+					height: $carriage-size;
+					width: $carriage-size;
+					background: #CCCCCC;
 					border-radius: 50%;
 					border: 1px solid #999999;
+					position: absolute;
+					top: -11%;
+					left: calc(50% - (#{$carriage-size} / 2));
 				}
 				
 				span {
-					height: 16px;
-					width: 8px;
+					height: 12%;
+					width: 1%;
 					position: absolute;
-					top: 12px;
+					top: -1%;
+					left: 12%;
 					
 					&:before, &:after {
 						content: "";
 						position: absolute;
 						top: 0;
-						height: 100%;
+						height: 102%;
 						width: 100%;
+						background: #CCCCCC;
+						transform-origin: center bottom;
 					}
 					
 					&:before {
-						border-left: 1px solid #CCCCCC;
-						transform: rotate(-20deg);
+						transform: rotate(-25deg);
 					}
 					
 					&:after {
-						border-right: 1px solid #CCCCCC;
 						transform: rotate(20deg);
 					}
+
+					&:nth-of-type(2) {
+						right: 12%;
+						left: unset;
 					
-					span {
-						position: absolute;
-						top: 0;
-						left: 14px;
-						transform: rotate(5deg);
+						&:before {
+							transform: rotate(-20deg);
+						}
+						
+						&:after {
+							transform: rotate(25deg);
+						}
 					}
 				}
 			}
@@ -120,10 +122,10 @@ $full-rotate-time: 100s;
 		
 		.leg {
 			position: absolute;
-			top: 47%;
-			height: 172px;
-			width: 8px;
-			background: #F8F8F8;
+			top: 49%;
+			height: 60%;
+			width: 2%;
+			background: #CCCCCC;
 			border-right: 1px solid #BBBBBB;
 			border-left: 1px solid #BBBBBB;
 			border-radius: 10px 10px 0 0;
@@ -131,21 +133,21 @@ $full-rotate-time: 100s;
 			
 			&.left {
 				left: calc(50% - 4px);
-				transform: rotate(10deg);
+				transform: rotate(15deg);
 			}
 			
 			&.right {
 				right: calc(50% - 4px);
-				transform: rotate(-10deg);
+				transform: rotate(-15deg);
 			}
 		}
 		
 		.stand {
 			position: absolute;
-			bottom: 0;
-			left: calc(50% - 100px);
-			width: 200px;
-			height: 6px;
+			bottom: -8%;
+			left: 25%;
+			width: 50%;
+			height: 2%;
 			background: #666666;
 		}
 	}
@@ -172,7 +174,6 @@ $full-rotate-time: 100s;
 		animation: rotate linear $full-rotate-time infinite;
 		
 		section {
-			
 			$number-of-carriages: 32;
 			$rotate-amount: 360 / $number-of-carriages;
 
@@ -180,32 +181,6 @@ $full-rotate-time: 100s;
 				&:nth-of-type(#{$i}) {
 					$section-rotate: ($rotate-amount * $i) + deg;
 					transform: rotate($section-rotate);
-					
-					$carriage-rotate: $rotate-amount * $i;
-					$firstposition: -$section-rotate;
-					$lastposition: ((-$carriage-rotate) - 360) + deg;
-
-					@-webkit-keyframes carriage-rotation-#{$i} {
-						0% {
-							transform: rotate($firstposition);
-						}
-						100% {
-							transform: rotate($lastposition);
-						}
-					}
-					
-					@keyframes carriage-rotation-#{$i} {
-						0% {
-							transform: rotate($firstposition);
-						}
-						100% {
-							transform: rotate($lastposition);
-						}
-					}
-
-					.carriage {
-						animation: carriage-rotation-#{$i} linear $full-rotate-time infinite;
-					}
 				}
 			}
 		}

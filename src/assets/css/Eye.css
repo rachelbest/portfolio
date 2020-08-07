@@ -1,83 +1,73 @@
-/*280*/
 .london-eye {
   position: absolute;
-  top: -328px;
-  right: -170px;
-  overflow: hidden; }
+  bottom: 80px;
+  left: calc(50% - 450px); }
   .london-eye .london-eye-container {
-    height: 308px;
-    width: 204px;
-    /* plus border */
-    overflow: hidden;
-    padding: 20px 20px 0 20px; }
+    position: relative; }
     .london-eye .london-eye-container .wheel {
-      position: absolute;
-      height: 200px;
-      width: 200px;
-      top: 20px;
-      left: 20px;
-      border: 2px solid #DDDDDD;
+      position: relative;
+      height: 180px;
+      width: 180px;
+      border: 1px solid #DDDDDD;
       border-radius: 50%;
       box-shadow: inset 0 0 1px 1px #aaaaaa; }
       .london-eye .london-eye-container .wheel section {
         position: absolute;
-        top: -14px;
-        /* plus border */
-        left: calc(50% - 7px);
-        transform-origin: center bottom; }
+        top: 0;
+        /* border */
+        left: 47%;
+        transform-origin: center bottom;
+        height: 50%;
+        width: 6%; }
         .london-eye .london-eye-container .wheel section:before, .london-eye .london-eye-container .wheel section:after {
           content: "";
           position: absolute;
-          bottom: 5px;
-          height: 78%;
+          top: 12%;
+          height: 88%;
           width: 100%;
           transform-origin: center bottom; }
         .london-eye .london-eye-container .wheel section:after {
           left: 50%;
-          border-left: 1px solid #EEEEEE;
-          transform: rotate(-3deg); }
+          border-left: 1px solid #DDDDDD;
+          transform: rotate(3deg); }
         .london-eye .london-eye-container .wheel section:before {
           right: 50%;
-          border-right: 1px solid #EEEEEE;
-          transform: rotate(3deg); }
+          border-right: 1px solid #DDDDDD;
+          transform: rotate(-3deg); }
         .london-eye .london-eye-container .wheel section .carriage {
-          height: 12px;
-          width: 12px;
+          height: 8.1px;
+          width: 8.1px;
           background: #CCCCCC;
-          /* Old browsers */
-          background: -moz-linear-gradient(top, #CCCCCC 0%, #CCCCCC 40%, #666666 80%, #666666 100%);
-          /* FF3.6-15 */
-          background: -webkit-linear-gradient(top, #CCCCCC 0%, #CCCCCC 40%, #666666 80%, #666666 100%);
-          /* Chrome10-25,Safari5.1-6 */
-          background: linear-gradient(to bottom, #CCCCCC 0%, #CCCCCC 40%, #666666 80%, #666666 100%);
-          /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#CCCCCC', endColorstr='#666666',GradientType=0 );
-          /* IE6-9 */
-          margin-bottom: 140px;
           border-radius: 50%;
-          border: 1px solid #999999; }
-        .london-eye .london-eye-container .wheel section span {
-          height: 16px;
-          width: 8px;
+          border: 1px solid #999999;
           position: absolute;
-          top: 12px; }
+          top: -11%;
+          left: calc(50% - (8.1px / 2)); }
+        .london-eye .london-eye-container .wheel section span {
+          height: 12%;
+          width: 1%;
+          position: absolute;
+          top: -1%;
+          left: 12%; }
           .london-eye .london-eye-container .wheel section span:before, .london-eye .london-eye-container .wheel section span:after {
             content: "";
             position: absolute;
             top: 0;
-            height: 100%;
-            width: 100%; }
+            height: 102%;
+            width: 100%;
+            background: #CCCCCC;
+            transform-origin: center bottom; }
           .london-eye .london-eye-container .wheel section span:before {
-            border-left: 1px solid #CCCCCC;
-            transform: rotate(-20deg); }
+            transform: rotate(-25deg); }
           .london-eye .london-eye-container .wheel section span:after {
-            border-right: 1px solid #CCCCCC;
             transform: rotate(20deg); }
-          .london-eye .london-eye-container .wheel section span span {
-            position: absolute;
-            top: 0;
-            left: 14px;
-            transform: rotate(5deg); }
+          .london-eye .london-eye-container .wheel section span:nth-of-type(2) {
+            right: 12%;
+            left: unset; }
+            .london-eye .london-eye-container .wheel section span:nth-of-type(2):before {
+              transform: rotate(-20deg); }
+            .london-eye .london-eye-container .wheel section span:nth-of-type(2):after {
+              transform: rotate(25deg); }
       .london-eye .london-eye-container .wheel .inner-wheel {
         position: absolute;
         top: calc(6% - 2px);
@@ -97,26 +87,26 @@
         border-radius: 50%; }
     .london-eye .london-eye-container .leg {
       position: absolute;
-      top: 47%;
-      height: 172px;
-      width: 8px;
-      background: #F8F8F8;
+      top: 49%;
+      height: 60%;
+      width: 2%;
+      background: #CCCCCC;
       border-right: 1px solid #BBBBBB;
       border-left: 1px solid #BBBBBB;
       border-radius: 10px 10px 0 0;
       transform-origin: center top; }
       .london-eye .london-eye-container .leg.left {
         left: calc(50% - 4px);
-        transform: rotate(10deg); }
+        transform: rotate(15deg); }
       .london-eye .london-eye-container .leg.right {
         right: calc(50% - 4px);
-        transform: rotate(-10deg); }
+        transform: rotate(-15deg); }
     .london-eye .london-eye-container .stand {
       position: absolute;
-      bottom: 0;
-      left: calc(50% - 100px);
-      width: 200px;
-      height: 6px;
+      bottom: -8%;
+      left: 25%;
+      width: 50%;
+      height: 2%;
       background: #666666; }
 
 @-webkit-keyframes rotate {
@@ -134,513 +124,65 @@
     animation: rotate linear 100s infinite; }
     .london-eye .wheel section:nth-of-type(1) {
       transform: rotate(11.25deg); }
-
-@-webkit-keyframes carriage-rotation-1 {
-  0% {
-    transform: rotate(-11.25deg); }
-  100% {
-    transform: rotate(-371.25deg); } }
-
-@keyframes carriage-rotation-1 {
-  0% {
-    transform: rotate(-11.25deg); }
-  100% {
-    transform: rotate(-371.25deg); } }
-      .london-eye .wheel section:nth-of-type(1) .carriage {
-        animation: carriage-rotation-1 linear 100s infinite; }
     .london-eye .wheel section:nth-of-type(2) {
       transform: rotate(22.5deg); }
-
-@-webkit-keyframes carriage-rotation-2 {
-  0% {
-    transform: rotate(-11.25deg); }
-  100% {
-    transform: rotate(-382.5deg); } }
-
-@keyframes carriage-rotation-2 {
-  0% {
-    transform: rotate(-11.25deg); }
-  100% {
-    transform: rotate(-382.5deg); } }
-      .london-eye .wheel section:nth-of-type(2) .carriage {
-        animation: carriage-rotation-2 linear 100s infinite; }
     .london-eye .wheel section:nth-of-type(3) {
       transform: rotate(33.75deg); }
-
-@-webkit-keyframes carriage-rotation-3 {
-  0% {
-    transform: rotate(-11.25deg); }
-  100% {
-    transform: rotate(-393.75deg); } }
-
-@keyframes carriage-rotation-3 {
-  0% {
-    transform: rotate(-11.25deg); }
-  100% {
-    transform: rotate(-393.75deg); } }
-      .london-eye .wheel section:nth-of-type(3) .carriage {
-        animation: carriage-rotation-3 linear 100s infinite; }
     .london-eye .wheel section:nth-of-type(4) {
       transform: rotate(45deg); }
-
-@-webkit-keyframes carriage-rotation-4 {
-  0% {
-    transform: rotate(-11.25deg); }
-  100% {
-    transform: rotate(-405deg); } }
-
-@keyframes carriage-rotation-4 {
-  0% {
-    transform: rotate(-11.25deg); }
-  100% {
-    transform: rotate(-405deg); } }
-      .london-eye .wheel section:nth-of-type(4) .carriage {
-        animation: carriage-rotation-4 linear 100s infinite; }
     .london-eye .wheel section:nth-of-type(5) {
       transform: rotate(56.25deg); }
-
-@-webkit-keyframes carriage-rotation-5 {
-  0% {
-    transform: rotate(-11.25deg); }
-  100% {
-    transform: rotate(-416.25deg); } }
-
-@keyframes carriage-rotation-5 {
-  0% {
-    transform: rotate(-11.25deg); }
-  100% {
-    transform: rotate(-416.25deg); } }
-      .london-eye .wheel section:nth-of-type(5) .carriage {
-        animation: carriage-rotation-5 linear 100s infinite; }
     .london-eye .wheel section:nth-of-type(6) {
       transform: rotate(67.5deg); }
-
-@-webkit-keyframes carriage-rotation-6 {
-  0% {
-    transform: rotate(-11.25deg); }
-  100% {
-    transform: rotate(-427.5deg); } }
-
-@keyframes carriage-rotation-6 {
-  0% {
-    transform: rotate(-11.25deg); }
-  100% {
-    transform: rotate(-427.5deg); } }
-      .london-eye .wheel section:nth-of-type(6) .carriage {
-        animation: carriage-rotation-6 linear 100s infinite; }
     .london-eye .wheel section:nth-of-type(7) {
       transform: rotate(78.75deg); }
-
-@-webkit-keyframes carriage-rotation-7 {
-  0% {
-    transform: rotate(-11.25deg); }
-  100% {
-    transform: rotate(-438.75deg); } }
-
-@keyframes carriage-rotation-7 {
-  0% {
-    transform: rotate(-11.25deg); }
-  100% {
-    transform: rotate(-438.75deg); } }
-      .london-eye .wheel section:nth-of-type(7) .carriage {
-        animation: carriage-rotation-7 linear 100s infinite; }
     .london-eye .wheel section:nth-of-type(8) {
       transform: rotate(90deg); }
-
-@-webkit-keyframes carriage-rotation-8 {
-  0% {
-    transform: rotate(-11.25deg); }
-  100% {
-    transform: rotate(-450deg); } }
-
-@keyframes carriage-rotation-8 {
-  0% {
-    transform: rotate(-11.25deg); }
-  100% {
-    transform: rotate(-450deg); } }
-      .london-eye .wheel section:nth-of-type(8) .carriage {
-        animation: carriage-rotation-8 linear 100s infinite; }
     .london-eye .wheel section:nth-of-type(9) {
       transform: rotate(101.25deg); }
-
-@-webkit-keyframes carriage-rotation-9 {
-  0% {
-    transform: rotate(-11.25deg); }
-  100% {
-    transform: rotate(-461.25deg); } }
-
-@keyframes carriage-rotation-9 {
-  0% {
-    transform: rotate(-11.25deg); }
-  100% {
-    transform: rotate(-461.25deg); } }
-      .london-eye .wheel section:nth-of-type(9) .carriage {
-        animation: carriage-rotation-9 linear 100s infinite; }
     .london-eye .wheel section:nth-of-type(10) {
       transform: rotate(112.5deg); }
-
-@-webkit-keyframes carriage-rotation-10 {
-  0% {
-    transform: rotate(-11.25deg); }
-  100% {
-    transform: rotate(-472.5deg); } }
-
-@keyframes carriage-rotation-10 {
-  0% {
-    transform: rotate(-11.25deg); }
-  100% {
-    transform: rotate(-472.5deg); } }
-      .london-eye .wheel section:nth-of-type(10) .carriage {
-        animation: carriage-rotation-10 linear 100s infinite; }
     .london-eye .wheel section:nth-of-type(11) {
       transform: rotate(123.75deg); }
-
-@-webkit-keyframes carriage-rotation-11 {
-  0% {
-    transform: rotate(-11.25deg); }
-  100% {
-    transform: rotate(-483.75deg); } }
-
-@keyframes carriage-rotation-11 {
-  0% {
-    transform: rotate(-11.25deg); }
-  100% {
-    transform: rotate(-483.75deg); } }
-      .london-eye .wheel section:nth-of-type(11) .carriage {
-        animation: carriage-rotation-11 linear 100s infinite; }
     .london-eye .wheel section:nth-of-type(12) {
       transform: rotate(135deg); }
-
-@-webkit-keyframes carriage-rotation-12 {
-  0% {
-    transform: rotate(-11.25deg); }
-  100% {
-    transform: rotate(-495deg); } }
-
-@keyframes carriage-rotation-12 {
-  0% {
-    transform: rotate(-11.25deg); }
-  100% {
-    transform: rotate(-495deg); } }
-      .london-eye .wheel section:nth-of-type(12) .carriage {
-        animation: carriage-rotation-12 linear 100s infinite; }
     .london-eye .wheel section:nth-of-type(13) {
       transform: rotate(146.25deg); }
-
-@-webkit-keyframes carriage-rotation-13 {
-  0% {
-    transform: rotate(-11.25deg); }
-  100% {
-    transform: rotate(-506.25deg); } }
-
-@keyframes carriage-rotation-13 {
-  0% {
-    transform: rotate(-11.25deg); }
-  100% {
-    transform: rotate(-506.25deg); } }
-      .london-eye .wheel section:nth-of-type(13) .carriage {
-        animation: carriage-rotation-13 linear 100s infinite; }
     .london-eye .wheel section:nth-of-type(14) {
       transform: rotate(157.5deg); }
-
-@-webkit-keyframes carriage-rotation-14 {
-  0% {
-    transform: rotate(-11.25deg); }
-  100% {
-    transform: rotate(-517.5deg); } }
-
-@keyframes carriage-rotation-14 {
-  0% {
-    transform: rotate(-11.25deg); }
-  100% {
-    transform: rotate(-517.5deg); } }
-      .london-eye .wheel section:nth-of-type(14) .carriage {
-        animation: carriage-rotation-14 linear 100s infinite; }
     .london-eye .wheel section:nth-of-type(15) {
       transform: rotate(168.75deg); }
-
-@-webkit-keyframes carriage-rotation-15 {
-  0% {
-    transform: rotate(-11.25deg); }
-  100% {
-    transform: rotate(-528.75deg); } }
-
-@keyframes carriage-rotation-15 {
-  0% {
-    transform: rotate(-11.25deg); }
-  100% {
-    transform: rotate(-528.75deg); } }
-      .london-eye .wheel section:nth-of-type(15) .carriage {
-        animation: carriage-rotation-15 linear 100s infinite; }
     .london-eye .wheel section:nth-of-type(16) {
       transform: rotate(180deg); }
-
-@-webkit-keyframes carriage-rotation-16 {
-  0% {
-    transform: rotate(-11.25deg); }
-  100% {
-    transform: rotate(-540deg); } }
-
-@keyframes carriage-rotation-16 {
-  0% {
-    transform: rotate(-11.25deg); }
-  100% {
-    transform: rotate(-540deg); } }
-      .london-eye .wheel section:nth-of-type(16) .carriage {
-        animation: carriage-rotation-16 linear 100s infinite; }
     .london-eye .wheel section:nth-of-type(17) {
       transform: rotate(191.25deg); }
-
-@-webkit-keyframes carriage-rotation-17 {
-  0% {
-    transform: rotate(-11.25deg); }
-  100% {
-    transform: rotate(-551.25deg); } }
-
-@keyframes carriage-rotation-17 {
-  0% {
-    transform: rotate(-11.25deg); }
-  100% {
-    transform: rotate(-551.25deg); } }
-      .london-eye .wheel section:nth-of-type(17) .carriage {
-        animation: carriage-rotation-17 linear 100s infinite; }
     .london-eye .wheel section:nth-of-type(18) {
       transform: rotate(202.5deg); }
-
-@-webkit-keyframes carriage-rotation-18 {
-  0% {
-    transform: rotate(-11.25deg); }
-  100% {
-    transform: rotate(-562.5deg); } }
-
-@keyframes carriage-rotation-18 {
-  0% {
-    transform: rotate(-11.25deg); }
-  100% {
-    transform: rotate(-562.5deg); } }
-      .london-eye .wheel section:nth-of-type(18) .carriage {
-        animation: carriage-rotation-18 linear 100s infinite; }
     .london-eye .wheel section:nth-of-type(19) {
       transform: rotate(213.75deg); }
-
-@-webkit-keyframes carriage-rotation-19 {
-  0% {
-    transform: rotate(-11.25deg); }
-  100% {
-    transform: rotate(-573.75deg); } }
-
-@keyframes carriage-rotation-19 {
-  0% {
-    transform: rotate(-11.25deg); }
-  100% {
-    transform: rotate(-573.75deg); } }
-      .london-eye .wheel section:nth-of-type(19) .carriage {
-        animation: carriage-rotation-19 linear 100s infinite; }
     .london-eye .wheel section:nth-of-type(20) {
       transform: rotate(225deg); }
-
-@-webkit-keyframes carriage-rotation-20 {
-  0% {
-    transform: rotate(-11.25deg); }
-  100% {
-    transform: rotate(-585deg); } }
-
-@keyframes carriage-rotation-20 {
-  0% {
-    transform: rotate(-11.25deg); }
-  100% {
-    transform: rotate(-585deg); } }
-      .london-eye .wheel section:nth-of-type(20) .carriage {
-        animation: carriage-rotation-20 linear 100s infinite; }
     .london-eye .wheel section:nth-of-type(21) {
       transform: rotate(236.25deg); }
-
-@-webkit-keyframes carriage-rotation-21 {
-  0% {
-    transform: rotate(-11.25deg); }
-  100% {
-    transform: rotate(-596.25deg); } }
-
-@keyframes carriage-rotation-21 {
-  0% {
-    transform: rotate(-11.25deg); }
-  100% {
-    transform: rotate(-596.25deg); } }
-      .london-eye .wheel section:nth-of-type(21) .carriage {
-        animation: carriage-rotation-21 linear 100s infinite; }
     .london-eye .wheel section:nth-of-type(22) {
       transform: rotate(247.5deg); }
-
-@-webkit-keyframes carriage-rotation-22 {
-  0% {
-    transform: rotate(-11.25deg); }
-  100% {
-    transform: rotate(-607.5deg); } }
-
-@keyframes carriage-rotation-22 {
-  0% {
-    transform: rotate(-11.25deg); }
-  100% {
-    transform: rotate(-607.5deg); } }
-      .london-eye .wheel section:nth-of-type(22) .carriage {
-        animation: carriage-rotation-22 linear 100s infinite; }
     .london-eye .wheel section:nth-of-type(23) {
       transform: rotate(258.75deg); }
-
-@-webkit-keyframes carriage-rotation-23 {
-  0% {
-    transform: rotate(-11.25deg); }
-  100% {
-    transform: rotate(-618.75deg); } }
-
-@keyframes carriage-rotation-23 {
-  0% {
-    transform: rotate(-11.25deg); }
-  100% {
-    transform: rotate(-618.75deg); } }
-      .london-eye .wheel section:nth-of-type(23) .carriage {
-        animation: carriage-rotation-23 linear 100s infinite; }
     .london-eye .wheel section:nth-of-type(24) {
       transform: rotate(270deg); }
-
-@-webkit-keyframes carriage-rotation-24 {
-  0% {
-    transform: rotate(-11.25deg); }
-  100% {
-    transform: rotate(-630deg); } }
-
-@keyframes carriage-rotation-24 {
-  0% {
-    transform: rotate(-11.25deg); }
-  100% {
-    transform: rotate(-630deg); } }
-      .london-eye .wheel section:nth-of-type(24) .carriage {
-        animation: carriage-rotation-24 linear 100s infinite; }
     .london-eye .wheel section:nth-of-type(25) {
       transform: rotate(281.25deg); }
-
-@-webkit-keyframes carriage-rotation-25 {
-  0% {
-    transform: rotate(-11.25deg); }
-  100% {
-    transform: rotate(-641.25deg); } }
-
-@keyframes carriage-rotation-25 {
-  0% {
-    transform: rotate(-11.25deg); }
-  100% {
-    transform: rotate(-641.25deg); } }
-      .london-eye .wheel section:nth-of-type(25) .carriage {
-        animation: carriage-rotation-25 linear 100s infinite; }
     .london-eye .wheel section:nth-of-type(26) {
       transform: rotate(292.5deg); }
-
-@-webkit-keyframes carriage-rotation-26 {
-  0% {
-    transform: rotate(-11.25deg); }
-  100% {
-    transform: rotate(-652.5deg); } }
-
-@keyframes carriage-rotation-26 {
-  0% {
-    transform: rotate(-11.25deg); }
-  100% {
-    transform: rotate(-652.5deg); } }
-      .london-eye .wheel section:nth-of-type(26) .carriage {
-        animation: carriage-rotation-26 linear 100s infinite; }
     .london-eye .wheel section:nth-of-type(27) {
       transform: rotate(303.75deg); }
-
-@-webkit-keyframes carriage-rotation-27 {
-  0% {
-    transform: rotate(-11.25deg); }
-  100% {
-    transform: rotate(-663.75deg); } }
-
-@keyframes carriage-rotation-27 {
-  0% {
-    transform: rotate(-11.25deg); }
-  100% {
-    transform: rotate(-663.75deg); } }
-      .london-eye .wheel section:nth-of-type(27) .carriage {
-        animation: carriage-rotation-27 linear 100s infinite; }
     .london-eye .wheel section:nth-of-type(28) {
       transform: rotate(315deg); }
-
-@-webkit-keyframes carriage-rotation-28 {
-  0% {
-    transform: rotate(-11.25deg); }
-  100% {
-    transform: rotate(-675deg); } }
-
-@keyframes carriage-rotation-28 {
-  0% {
-    transform: rotate(-11.25deg); }
-  100% {
-    transform: rotate(-675deg); } }
-      .london-eye .wheel section:nth-of-type(28) .carriage {
-        animation: carriage-rotation-28 linear 100s infinite; }
     .london-eye .wheel section:nth-of-type(29) {
       transform: rotate(326.25deg); }
-
-@-webkit-keyframes carriage-rotation-29 {
-  0% {
-    transform: rotate(-11.25deg); }
-  100% {
-    transform: rotate(-686.25deg); } }
-
-@keyframes carriage-rotation-29 {
-  0% {
-    transform: rotate(-11.25deg); }
-  100% {
-    transform: rotate(-686.25deg); } }
-      .london-eye .wheel section:nth-of-type(29) .carriage {
-        animation: carriage-rotation-29 linear 100s infinite; }
     .london-eye .wheel section:nth-of-type(30) {
       transform: rotate(337.5deg); }
-
-@-webkit-keyframes carriage-rotation-30 {
-  0% {
-    transform: rotate(-11.25deg); }
-  100% {
-    transform: rotate(-697.5deg); } }
-
-@keyframes carriage-rotation-30 {
-  0% {
-    transform: rotate(-11.25deg); }
-  100% {
-    transform: rotate(-697.5deg); } }
-      .london-eye .wheel section:nth-of-type(30) .carriage {
-        animation: carriage-rotation-30 linear 100s infinite; }
     .london-eye .wheel section:nth-of-type(31) {
       transform: rotate(348.75deg); }
-
-@-webkit-keyframes carriage-rotation-31 {
-  0% {
-    transform: rotate(-11.25deg); }
-  100% {
-    transform: rotate(-708.75deg); } }
-
-@keyframes carriage-rotation-31 {
-  0% {
-    transform: rotate(-11.25deg); }
-  100% {
-    transform: rotate(-708.75deg); } }
-      .london-eye .wheel section:nth-of-type(31) .carriage {
-        animation: carriage-rotation-31 linear 100s infinite; }
     .london-eye .wheel section:nth-of-type(32) {
       transform: rotate(360deg); }
-
-@-webkit-keyframes carriage-rotation-32 {
-  0% {
-    transform: rotate(-11.25deg); }
-  100% {
-    transform: rotate(-720deg); } }
-
-@keyframes carriage-rotation-32 {
-  0% {
-    transform: rotate(-11.25deg); }
-  100% {
-    transform: rotate(-720deg); } }
-      .london-eye .wheel section:nth-of-type(32) .carriage {
-        animation: carriage-rotation-32 linear 100s infinite; }
