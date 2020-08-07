@@ -10,20 +10,20 @@ export default class Header extends Component {
 		return (
 			<header className="header">
 				<div className="header__container">
-					<NavLink to="/Portfolio">
+					<NavLink to="/">
 						<img src={logo} alt="logo" height="70"/>
 					</NavLink>
 					<nav>
-						<NavLink to="/portfolio/about" activeClassName="active">
+						<NavLink to="/about" activeClassName="active">
 							About
 						</NavLink>
-						<NavLink to="/portfolio/experience">
+						<NavLink to="/experience">
 							Experience
 						</NavLink>
-						<NavLink to="/portfolio/extra-curricular">
+						<NavLink to="/extra-curricular">
 							Extra Curricular
 						</NavLink>
-						<NavLink to="/portfolio/contact">
+						<NavLink to="/contact">
 							Contact
 						</NavLink>
 					</nav>
