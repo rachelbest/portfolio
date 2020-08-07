@@ -80,6 +80,7 @@
   .characters .side-text a {
     text-decoration: none;
     color: #999999; }
+
 .characters ul {
   width: 50%;
   margin: 0;
@@ -105,5 +106,3 @@
         opacity: 0.5; }
         .characters ul li .frame img:hover {
           opacity: 1; }
-
-/*# sourceMappingURL=CharacterGallery.css.map */

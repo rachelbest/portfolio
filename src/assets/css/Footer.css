@@ -13,10 +13,12 @@ footer {
     footer .footer__container p {
       float: left;
       font-style: italic;
+      font-family: helvetica;
       color: #FFFFFF;
       margin: 0;
-      font-size: 14px;
-      line-height: 38px; }
+      font-size: 12px;
+      line-height: 38px;
+      font-family: 'Lora', serif; }
     footer .footer__container ul {
       margin: 0;
       padding: 0;
@@ -42,5 +44,3 @@ footer {
           height: 26px;
           width: 26px;
           vertical-align: middle; }
-
-/*# sourceMappingURL=Footer.css.map */

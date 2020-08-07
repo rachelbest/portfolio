@@ -1,0 +1,11 @@
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+@mixin breakpoint-up($point) {
+
+  @media only screen and (max-width: $breakpoint-#{$point}) {
+  	@content;
+  }
+}

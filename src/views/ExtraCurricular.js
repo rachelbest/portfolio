@@ -6,7 +6,7 @@ import stewie from './../assets/images/examples/stewie.png';
 import lego from './../assets/images/examples/lego.png';
 import spongebob from './../assets/images/examples/spongebob.png';
 import mike from './../assets/images/examples/mike.png';
-import './../assets/css/CharacterGallery.css';
+import './../assets/css/components/character_gallery.css';
 
 export default class ExtraCurricular extends Component {
 

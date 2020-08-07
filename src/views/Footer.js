@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import twitter from './../assets/images/twitter.png';
 import linkedin from './../assets/images/linkedin.png';
 import email from './../assets/images/email.png';
-import './../assets/css/Footer.css';
+import './../assets/css/footer.css';
 
 export default class Footer extends Component {
 
