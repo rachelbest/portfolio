@@ -1,22 +1,24 @@
-@import url("https://fonts.googleapis.com/css?family=Amatic+SC|Fredericka+the+Great|Lora&display=swap");
+a {
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
+
 html,
 body {
   height: 100%; }
 
 body {
   font-family: 'Lora', serif;
-  font-size: 16px;
+  font-size: 14px;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   background: #FFFFFF; }
   body .container {
     position: relative;
-    margin: 0 auto 150px auto;
-    max-width: 930px;
-    min-height: 800px;
-    box-sizing: border-box;
-    overflow: hidden;
+    margin: 50px auto 150px;
+    max-width: 700px;
+    min-height: 700px;
     padding: 0;
     clear: both; }
     body .container h2 {
@@ -26,12 +28,6 @@ body {
       text-align: center;
       margin: 70px 0 50px 0;
       font-weight: normal; }
-    body .container .section {
-      min-height: 470px;
-      display: block;
-      margin: 50px 0 30px;
-      overflow: hidden;
-      padding: 0; }
     body .container p {
       line-height: 26px;
       color: #666666; }

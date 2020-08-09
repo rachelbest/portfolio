@@ -8,7 +8,7 @@ import Experience from './Experience';
 import Contact from './Contact';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-import './../assets/css/container.css';
+import './../assets/css/app.css';
 
 class App extends Component {
 	render() {

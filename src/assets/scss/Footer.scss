@@ -1,4 +1,4 @@
-@import 'partials/variables';
+@import "shared";
 
 footer {
 	width: 100%;
@@ -8,7 +8,7 @@ footer {
 
 	.footer__container {
 		position: relative;
-		width: 930px;
+		width: $container-width;
 		margin: 0 auto;
 		padding: 10px 0 10px;
 		box-sizing: border-box;
@@ -38,6 +38,7 @@ footer {
 				}
 
 				a {
+					@include animation-grow;
 					background: #FFFFFF;
 					height: 28px;
 					width: 28px;
@@ -52,8 +53,8 @@ footer {
 				}
 
 				img {
-					height: 20px;
-					width: 20px;
+					height: 16px;
+					width: 16px;
 				}
 			}
 		}
