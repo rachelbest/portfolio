@@ -21,6 +21,7 @@
 		padding: 16px 0;
 
 		a {
+			@include animation-grow;
 			font-family: 'Amatic SC', cursive;
 			display: inline-block;
 			color: #888888;
@@ -32,8 +33,6 @@
 
 			&:hover {
 				color: #111111;
-				border-bottom: 2px solid #CCCCCC;
-				margin-bottom: -2px;
 			}
 
 			&.active {
