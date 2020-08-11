@@ -8,9 +8,9 @@ export default class Eye extends Component {
 		return (
 			<div className="london-eye">
 				<div className="london-eye-container">
-					<div className="leg left"></div>
-					<div className="leg right"></div>
-					<div className="wheel">
+					<div className="london-eye__leg london-eye__leg--left"></div>
+					<div className="london-eye__leg london-eye__leg--right"></div>
+					<div className="london-eye__wheel">
 						<section><span></span><span></span><div className="carriage"></div></section>
 						<section><span></span><span></span><div className="carriage"></div></section>
 						<section><span></span><span></span><div className="carriage"></div></section>
@@ -43,10 +43,10 @@ export default class Eye extends Component {
 						<section><span></span><span></span><div className="carriage"></div></section>
 						<section><span></span><span></span><div className="carriage"></div></section>
 						<section><span></span><span></span><div className="carriage"></div></section>
-						<div className="inner-wheel"></div>
-						<div className="center"></div>
+						<div className="london-eye__wheel--inner"></div>
+						<div className="london-eye__wheel--center"></div>
 					</div>
-					<div className="stand"></div>
+					<div className="london-eye__stand"></div>
 				</div>
 			</div>
 		)
