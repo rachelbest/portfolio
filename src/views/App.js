@@ -16,7 +16,7 @@ class App extends Component {
 			<Router>
 				<div className="App">
 					<Route component={Header} />
-					<nav class="container">
+					<nav className="container">
 						<Switch>
 							<Route path="/about" component={About} />
 							<Route path="/extra-curricular" component={ExtraCurricular} />

@@ -20,7 +20,7 @@ export default class ExtraCurricular extends Component {
 						<br /><br />With collective viewing figures of over 250,000, I hope that these characters will inspire people to learn to code.</p>
 						<a href="http://codepen.io/collection/APYQyd/" rel="noopener noreferrer" target="_blank">View all pure CSS characters</a>
 					</div>
-					<ul class="css-characters__gallery">
+					<ul className="css-characters__gallery">
 						<li>
 							<div className="frame">
 								<a href="http://codepen.io/rachel_web/pen/pjzowB"><img src={minion} alt="minion in pure CSS" width="300" height="auto"/></a>
