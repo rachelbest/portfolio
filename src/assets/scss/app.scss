@@ -8,18 +8,19 @@ body {
 body {
 	font-family: 'Lora', serif;
 	font-size: 14px;
-	margin: 0;
+	margin: 220px 0 0; //Space for header
 	padding: 0;
 	box-sizing: border-box;
 	background: #FFFFFF;
 
 	.container {
 		position: relative;
-		margin: 50px auto 150px;
+		margin: 100px auto 150px;
 		max-width: $container-width;
 		min-height: 700px;
 		padding: 0;
 		clear: both;
+		z-index: 5;
 
 		h2 {
 			font-family: 'Amatic SC', cursive;

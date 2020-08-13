@@ -6,17 +6,67 @@ a {
 .header {
   overflow: hidden;
   box-sizing: border-box;
-  text-align: center;
   background: #F9F9F9;
-  margin-bottom: 50px; }
+  width: 100%;
+  top: 0;
+  z-index: 10; }
+  .header__absolute {
+    position: absolute; }
+    .header__absolute .header__container {
+      transition: all 500ms ease;
+      height: 160px; }
+    .header__absolute .header__logo {
+      transition: all 500ms ease;
+      transform: translateX(-50%);
+      left: 50%;
+      top: 20px; }
+      .header__absolute .header__logo img {
+        transition: all 500ms ease;
+        height: 70px; }
+    .header__absolute nav {
+      transition: all 500ms ease;
+      transform: translateX(-50%);
+      right: unset;
+      left: 50%;
+      bottom: 20px;
+      width: 50%; }
+      .header__absolute nav a {
+        font-size: 30px; }
+  .header__sticky {
+    position: fixed; }
+    .header__sticky .header__container {
+      transition: all 500ms ease;
+      height: 55px; }
+    .header__sticky .header__logo {
+      transition: all 500ms ease;
+      transform: translate(0, 0);
+      left: 0;
+      top: 10px; }
+      .header__sticky .header__logo img {
+        transition: all 500ms ease;
+        height: 32px; }
+    .header__sticky nav {
+      transition: all 500ms ease;
+      transform: translateX(0%);
+      right: 0%;
+      left: unset;
+      bottom: 10px;
+      width: 42%; }
+      .header__sticky nav a {
+        font-size: 28px; }
   .header__container {
     max-width: 930px;
-    padding: 20px 0 5px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    position: relative; }
+  .header .header__logo {
+    position: absolute; }
   .header img {
-    margin: 0 auto; }
+    vertical-align: bottom;
+    display: block; }
   .header nav {
-    padding: 16px 0; }
+    position: absolute;
+    display: flex;
+    justify-content: space-between; }
     .header nav a {
       -webkit-transition-duration: 0.3s;
       transition-duration: 0.3s;
@@ -24,14 +74,12 @@ a {
       transition-property: transform;
       -webkit-transform: perspective(1px) translateZ(0);
       transform: perspective(1px) translateZ(0);
-      font-family: 'Amatic SC', cursive;
+      font-family: 'Amatic SC', sans-serif;
       display: inline-block;
       color: #888888;
       text-decoration: none;
-      font-size: 30px;
       cursor: pointer;
-      padding: 0;
-      margin: 0 20px; }
+      padding: 0; }
       .header nav a:hover {
         -webkit-transform: scale(1.1);
         transform: scale(1.1); }

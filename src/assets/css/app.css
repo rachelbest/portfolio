@@ -10,17 +10,18 @@ body {
 body {
   font-family: 'Lora', serif;
   font-size: 14px;
-  margin: 0;
+  margin: 220px 0 0;
   padding: 0;
   box-sizing: border-box;
   background: #FFFFFF; }
   body .container {
     position: relative;
-    margin: 50px auto 150px;
+    margin: 100px auto 150px;
     max-width: 700px;
     min-height: 700px;
     padding: 0;
-    clear: both; }
+    clear: both;
+    z-index: 5; }
     body .container h2 {
       font-family: 'Amatic SC', cursive;
       font-size: 40px;
