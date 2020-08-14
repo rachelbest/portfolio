@@ -8,29 +8,29 @@ export default class TowerBridge extends Component {
 		return (
 
 			<div>
-				<div class="tube"></div>
-				<div class="tube__container">
-					<div class="tube__train">
-						<div class="driver driver--front"></div>
-						<div class="driver driver--back"></div>
-						<div class="window"></div>
-						<span class="door">
-							<div class="window"></div>
+				<div className="tube__container">
+					<div className="tube__train">
+						<div className="driver driver--front"></div>
+						<div className="driver driver--back"></div>
+						<div className="window"></div>
+						<span className="door">
+							<div className="window"></div>
 						</span>
-						<span class="door">
-							<div class="window"></div>
+						<span className="door">
+							<div className="window"></div>
 						</span>
-						<span class="door">
-							<div class="window"></div>
+						<span className="door">
+							<div className="window"></div>
 						</span>
-						<span class="door">
-							<div class="window"></div>
+						<span className="door">
+							<div className="window"></div>
 						</span>
-						<span class="door">
-							<div class="window"></div>
+						<span className="door">
+							<div className="window"></div>
 						</span>
 					</div>
 				</div>
+				<div className="tube"></div>
 			</div>
 		)
 	}

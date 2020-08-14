@@ -14,10 +14,11 @@ $red-color: desaturate(lighten(#C73534, 1%), 1%);
 		width: 100%;
 		position: absolute;
 		height: 100%;
+		filter: opacity(0.8);
 	}
 	
 	&__train {
-		background: #E1E1E1;
+		background: #FFFFFF;
 		height: 50%;
 		width: 400px;
 		position: absolute;
