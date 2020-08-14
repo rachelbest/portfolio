@@ -55,7 +55,7 @@ a {
       .header__sticky nav a {
         font-size: 28px; }
   .header__container {
-    max-width: 680px;
+    max-width: 660px;
     margin: 0 auto;
     position: relative; }
   .header .header__logo {

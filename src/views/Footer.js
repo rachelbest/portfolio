@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Eye from './components/Eye';
 import TowerBridge from './components/TowerBridge';
+import Tube from './components/Tube';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import twitter from './../assets/images/twitter.png';
@@ -13,6 +14,9 @@ export default class Footer extends Component {
 	render() {
 		return (
 			<footer>
+				<Router>
+					<Route component={Tube} />
+				</Router>
 				<div className="footer__container">
 					<p>Rachel Bull 2020</p>
 					<Router>

@@ -17,7 +17,7 @@ body {
   body .container {
     position: relative;
     margin: 100px auto 150px;
-    max-width: 680px;
+    max-width: 660px;
     min-height: 700px;
     padding: 0;
     clear: both;

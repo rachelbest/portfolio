@@ -6,7 +6,7 @@ a {
 .london-eye {
   position: absolute;
   bottom: 50px;
-  left: calc(50% - (180px + 40px) - (680px / 2));
+  left: calc(50% - (180px + 50px) - (660px / 2));
   /* Animation */ }
   .london-eye .london-eye-container {
     position: relative;

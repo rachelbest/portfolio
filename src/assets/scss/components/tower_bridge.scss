@@ -16,7 +16,7 @@ $mask-height-multiplier: 1.5;
 	overflow: hidden;
 	position: absolute;
 	bottom: $footer-height;
-	left: calc(50% + 30px + (#{$container-width} / 2));
+	left: calc(50% + 40px + (#{$container-width} / 2));
 }
 
 .tower-bridge {

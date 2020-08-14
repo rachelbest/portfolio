@@ -7,7 +7,7 @@ $carriage-size: $eye-size*0.04;
 .london-eye {
 	position: absolute;
 	bottom: $footer-height;
-	left: calc(50% - (#{$eye-size} + 40px) - (#{$container-width} / 2));
+	left: calc(50% - (#{$eye-size} + 50px) - (#{$container-width} / 2));
 
 	.london-eye-container {
 		position: relative;
