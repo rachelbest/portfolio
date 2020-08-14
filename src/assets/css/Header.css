@@ -29,7 +29,7 @@ a {
       right: unset;
       left: 50%;
       bottom: 20px;
-      width: 50%; }
+      width: 65%; }
       .header__absolute nav a {
         font-size: 30px; }
   .header__sticky {
@@ -51,11 +51,11 @@ a {
       right: 0%;
       left: unset;
       bottom: 10px;
-      width: 42%; }
+      width: 55%; }
       .header__sticky nav a {
         font-size: 28px; }
   .header__container {
-    max-width: 930px;
+    max-width: 680px;
     margin: 0 auto;
     position: relative; }
   .header .header__logo {

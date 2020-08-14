@@ -1,13 +1,13 @@
 @import "../shared";
 
-$eye-size: 150px;
+$eye-size: 180px;
 $full-rotate-time: 100s;
 $carriage-size: $eye-size*0.04;
 
 .london-eye {
 	position: absolute;
 	bottom: $footer-height;
-	left: calc(50% - 540px);
+	left: calc(50% - (#{$eye-size} + 40px) - (#{$container-width} / 2));
 
 	.london-eye-container {
 		position: relative;
@@ -58,7 +58,7 @@ $carriage-size: $eye-size*0.04;
 				border-radius: 50%;
 				border: 1px solid #BBBBBB;
 				position: absolute;
-				top: -12%;
+				top: -11%;
 				left: calc(50% - (#{$carriage-size} / 2));
 			}
 			

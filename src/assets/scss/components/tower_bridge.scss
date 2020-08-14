@@ -1,0 +1,489 @@
+@import "../shared";
+
+$stone-color: #E3DAD5; //Beige
+$metal-color: desaturate(lighten(#61BFD4, 5%), 5%); //Turqoise
+$rails-color: desaturate(lighten(#1D65AC, 15%), 30%); //Royal Blue
+$white-color: #E1E1E1;
+$total-width: 180px;
+$total-height: 126px;
+
+$mask-width-multiplier: 1.5;
+$mask-height-multiplier: 1.5;
+
+.mask {
+	width: $total-width * $mask-width-multiplier;
+	height: $total-height * $mask-height-multiplier;
+	overflow: hidden;
+	position: absolute;
+	bottom: $footer-height;
+	left: calc(50% + 30px + (#{$container-width} / 2));
+}
+
+.tower-bridge {
+	position: absolute;
+	left: calc(50% - (#{$total-width} / 2));
+	bottom: 0;
+	width: $total-width;
+	height: $total-height;
+	
+	$tower-foot-height: 20%;
+	$tower-foot-width: 26%;
+	$tower-width: 16%;
+	$tower-height: 80%;
+	
+	&__tower {
+		height: $tower-height;
+		width: $tower-width;
+		background: $stone-color;
+		position: absolute;
+		bottom: $tower-foot-height;
+		
+		&:before {
+			content: "";
+			position: absolute;
+			top: -28%;
+			left: 6%;
+			height: 28%;
+			width: 88%;
+			background: $stone-color;
+			clip-path: polygon(0 100%, 50% 0, 100% 100%);
+		}
+		
+		$tower-top-width: 25%;
+		
+		.column {
+			height: 105%;
+			width: $tower-top-width;
+			position: absolute;
+			background: $stone-color;
+			bottom: 0;
+			box-shadow: inset -3px 0 2px 0 rgba(0,0,0,0.05);
+		
+			&:before {
+				content: "";
+				position: absolute;
+				top: -15%;
+				right: 0;
+				height: 16%;
+				width: 100%;
+				background: $stone-color;
+				clip-path: polygon(0 100%, 50% 0, 100% 100%);
+				box-shadow: inherit;
+			}
+			
+			&--left {
+				left: 0;
+			}
+			
+			&--right {
+				right: 0;
+			}
+		}
+		
+		.section {
+			position: absolute;
+			left: 0;
+			width: 100%;
+			border-bottom: 1px solid #BBBBBB;
+			height: 22%;
+			
+			&:nth-of-type(-n+3) {
+				border-top: 1px solid #BBBBBB;
+			}
+			
+			$number-of-sections: 4;
+			@for $i from 1 through $number-of-sections {
+				&:nth-of-type(#{$i}) {
+					bottom: calc(23% * (#{$i} - 1) + (#{$i} * 5%));
+				}
+			}
+			
+			.window {
+				position: absolute;
+				bottom: 0;
+				width: 10%;
+				height: 50%;
+				background: #BBBBBB;
+				border-radius: 2px 2px 0 0;
+				
+				$number-of-windows: 3;
+				@for $i from 1 through $number-of-windows {
+					&:nth-of-type(#{$i}) {
+						left: calc((#{$i} * 18%) + 12%);
+					}
+				}
+			}
+		}
+		
+		&--left {
+			left: 0;
+		}
+		
+		&--right {
+			right: 0;
+		}
+	}
+	
+	&__foot {
+		width: $tower-foot-width;
+		height: $tower-foot-height;
+		background: $stone-color;
+		border-radius: 20% 20% 0 0;
+		position: absolute;
+		bottom: 0;
+		box-shadow: inset -5px 0 5px 0 rgba(0,0,0,0.05);
+		
+		&:before {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			background: darken($stone-color, 5%);
+			clip-path: polygon(50% 0, 80% 30%, 96% 70%, 100% 100%, 0 100%, 4% 70%, 20% 30%);
+			width: 100%;
+			height: 70%;
+			box-shadow: inset -30px 0 5px -5px rgba(0,0,0,0.1);
+		}
+		
+		&--left {
+			left: (-($tower-foot-width - $tower-width) / 2);
+		}
+		
+		&--right {
+			right: (-($tower-foot-width - $tower-width) / 2);
+		}
+		
+		&--far-left {
+			left: -(100% + ($tower-foot-width - $tower-width));
+		}
+		
+		&--far-right {
+			right: -(100% + ($tower-foot-width - $tower-width));
+		}
+	}
+	
+	&__top-ledge {
+		position: absolute;
+		bottom: 80%;
+		left: $tower-width;
+		height: 5%;
+		width: 100% - ($tower-width * 2);
+		background: #F6F6F6;
+		box-shadow: 0 1px 1px rgba($white-color,0.8),
+					0 2px 1px rgba($metal-color,1),
+					0 4px 1px rgba(0,0,0,0.3),
+					0 6px 1px rgba($white-color,1),
+					0 -1px 1px rgba($white-color,0.8),
+					0 -2px 1px rgba(0,0,0,0.1),
+					0 -3px 1px rgba($metal-color,1);
+		
+		.emblem {
+			height: 130%;
+			width: 8%;
+			background: $white-color;
+			border: 1px solid $metal-color;
+			position: absolute;
+			left: 50%;
+			bottom: -34%;
+			transform: translate(-50%);
+			z-index: 10;
+		}
+		
+		span {
+			position: absolute;
+			bottom: -1px;
+			height: 130%;
+			
+			&:before, &:after {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				content: "";
+				width: 3px;
+				height: 100%;
+				background: $white-color;
+			}
+			
+			&:before {
+				transform: rotate(50deg);
+			}
+			
+			&:after {
+				transform: rotate(-50deg);
+			}
+		
+			$number-of-rails: 20;
+			@for $i from 1 through $number-of-rails {
+				$width: 110% / $number-of-rails;
+				&:nth-of-type(#{$i}) {
+					left: ($i - 0.6) * $width;
+				}
+			}
+		}
+	}
+	
+	&__ramp {
+		position: absolute;
+		bottom: 18%;
+		height: 6px;
+		width: (100% - ($tower-width * 2)) / 2;
+		background: $rails-color;
+		box-shadow: 0 1px 1px rgba(#999999,1);
+		
+		&:before {
+			content: "";
+			position: absolute;
+			height: 1px;
+			width: 100%;
+			left: 1px;
+			bottom: 2px;
+			border-bottom: 2px dashed #EFEFEF;
+		}
+		
+		.ramp-bottom {
+			position: absolute;
+			bottom: -8px;
+			left: 0;
+			width: 100%;
+			height: 170%;
+			background: #EFEFEF;
+			border-bottom: 2px solid $metal-color;
+			overflow: hidden;
+		}
+		
+		span {
+			position: absolute;
+			bottom: -1px;
+			height: 140%;
+			
+			&:before, &:after {
+				position: absolute;
+				bottom: -1px;
+				left: 0;
+				content: "";
+				width: 1px;
+				height: 100%;
+				background: $metal-color;
+			}
+		
+			$number-of-rails: 7;
+			@for $i from 1 through $number-of-rails {
+				$width: 100% / $number-of-rails ;
+				&:nth-of-type(#{$i}) {
+					left: $i * $width;
+				}
+			}
+		}
+		
+		&--left {
+			left: $tower-width;
+			
+			span:after {
+				transform: rotate(-50deg);
+			}
+			
+			span:before {
+				margin-left: 6px;
+			}
+			
+			.ramp-bottom {
+				clip-path: polygon(0 0, 100% 100%, 0 100%);
+				transform: rotate(-13deg);
+			}
+		}
+		
+		&--right {
+			right: $tower-width;
+			
+			span:after {
+				transform: rotate(50deg);
+			}
+			
+			span:before {
+				margin-left: -6px;
+			}
+			
+			.ramp-bottom {
+				clip-path: polygon(0 100%, 100% 0, 100% 100%);
+				transform: rotate(13deg);
+			}
+		}
+	}
+	
+	&__road {
+		position: absolute;
+		bottom: $tower-foot-height - 2%;
+		height: 7px;
+		width: 100%;
+		background: $rails-color;
+		box-shadow: 0 1px 1px rgba(#777777,1),
+					0 1px 1px rgba(#333333,1);
+		
+		&:before {
+			content: "";
+			position: absolute;
+			height: 1px;
+			width: 100%;
+			left: 1px;
+			bottom: 2px;
+			border-bottom: 3px dashed #EFEFEF;
+		}
+		
+		&--left {
+			left: -100%;
+		}
+		
+		&--right {
+			right: -100%;
+		}
+	}
+	
+	&__curve {
+		position: absolute;
+		bottom: 23%;
+		width: 130%;
+		height: 180%;  
+		border: solid 2px $metal-color;
+		border-color: transparent transparent $metal-color transparent;
+		border-radius: 0 0 50% 50%;
+		
+		&--left {
+			left: -124%;
+			transform: rotate(-18deg);
+			
+			&.top {
+				left: -120%;
+				transform: rotate(-21deg);
+			}
+		}
+		
+		&--right {
+			right: -124%;
+			transform: rotate(18deg);
+			
+			&.top {
+				right: -120%;
+				transform: rotate(21deg);
+			}
+		}
+		
+		&.top {
+			height: 140%;
+			bottom: 31%;
+		}
+	}
+
+	&__lines {
+		position: absolute;
+		bottom: $tower-foot-height - 2%;
+		width: 100%;
+		height: 100% - $tower-foot-height;
+	
+		&--left {
+			left: -100%;
+			
+			span {
+				border-radius: 10px 0 0 0;
+			
+				$number-of-lines: 6;
+				@for $i from 1 through $number-of-lines {
+					&:nth-of-type(#{$i}) {
+						right: (($i - 0.5) * 12%);
+					}
+				}
+			}
+		}
+	
+		&--right {
+			right: -100%;
+			
+			span {
+				border-radius: 0 10px 0 0;
+			
+				$number-of-lines: 6;
+				@for $i from 1 through $number-of-lines {
+					&:nth-of-type(#{$i}) {
+						left: (($i - 0.5) * 12%);
+					}
+				}
+			}
+		}
+		
+		span {
+			position: absolute;
+			bottom: 0;
+			width: 2%;
+			background: $white-color;
+			
+			&:nth-of-type(1) {
+				height: 58%;
+			}
+			
+			&:nth-of-type(2) {
+				height: 40%;
+			}
+			
+			&:nth-of-type(3) {
+				height: 28%;
+			}
+			
+			&:nth-of-type(4) {
+				height: 20%;
+			}
+			
+			&:nth-of-type(5) {
+				height: 15%;
+			}
+			
+			&:nth-of-type(6) {
+				height: 14%;
+			}
+		}
+	}
+}
+
+@-webkit-keyframes lift-left {
+	0%, 10%, 90%, 100% {
+		transform: rotate(0deg);
+	}
+	45%, 55% {
+		transform: rotate(-45deg);
+	}
+}
+
+@keyframes lift-left {
+	0%, 10%, 90%, 100% {
+		transform: rotate(0deg);
+	}
+	45%, 55% {
+		transform: rotate(-45deg);
+	}
+}
+
+.animation-lift-left {
+	transform-origin: left bottom;
+	animation: lift-left linear 20s infinite;
+}
+
+@-webkit-keyframes lift-right {
+	0%, 10%, 90%, 100% {
+		transform: rotate(0deg);
+	}
+	45%, 55% {
+		transform: rotate(45deg);
+	}
+}
+
+@keyframes lift-right {
+	0%, 10%, 90%, 100% {
+		transform: rotate(0deg);
+	}
+	45%, 55% {
+		transform: rotate(45deg);
+	}
+}
+
+.animation-lift-right {
+	transform-origin: right bottom;
+	animation: lift-right linear 20s infinite;
+}
