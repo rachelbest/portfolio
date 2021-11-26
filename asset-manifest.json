@@ -1,22 +1,27 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.8216ebe6.chunk.css",
-    "main.js": "/portfolio/static/js/main.6bf304d8.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.6bf304d8.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.177ce4be.chunk.css",
+    "main.js": "/portfolio/static/js/main.a626a0e4.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.a626a0e4.chunk.js.map",
     "runtime~main.js": "/portfolio/static/js/runtime~main.f308c8e6.js",
     "runtime~main.js.map": "/portfolio/static/js/runtime~main.f308c8e6.js.map",
-    "static/js/2.978bfa6b.chunk.js": "/portfolio/static/js/2.978bfa6b.chunk.js",
-    "static/js/2.978bfa6b.chunk.js.map": "/portfolio/static/js/2.978bfa6b.chunk.js.map",
+    "static/js/2.e66144c3.chunk.js": "/portfolio/static/js/2.e66144c3.chunk.js",
+    "static/js/2.e66144c3.chunk.js.map": "/portfolio/static/js/2.e66144c3.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.b65eea9287d0b7fd6c6b24848183d9d1.js": "/portfolio/precache-manifest.b65eea9287d0b7fd6c6b24848183d9d1.js",
+    "precache-manifest.5b264cf4b6156932bc35caf291ebc704.js": "/portfolio/precache-manifest.5b264cf4b6156932bc35caf291ebc704.js",
     "service-worker.js": "/portfolio/service-worker.js",
-    "static/css/main.8216ebe6.chunk.css.map": "/portfolio/static/css/main.8216ebe6.chunk.css.map",
+    "static/css/main.177ce4be.chunk.css.map": "/portfolio/static/css/main.177ce4be.chunk.css.map",
     "static/media/brian.png": "/portfolio/static/media/brian.e561a248.png",
+    "static/media/cloud.svg": "/portfolio/static/media/cloud.2fe19f68.svg",
+    "static/media/email.svg": "/portfolio/static/media/email.7c646283.svg",
     "static/media/lego.png": "/portfolio/static/media/lego.492b8d3b.png",
+    "static/media/linkedin.svg": "/portfolio/static/media/linkedin.7328fcbf.svg",
+    "static/media/menu.svg": "/portfolio/static/media/menu.40db9379.svg",
     "static/media/mike.png": "/portfolio/static/media/mike.7e8c36ea.png",
     "static/media/minion.png": "/portfolio/static/media/minion.175d281f.png",
-    "static/media/rb-logo-circled.png": "/portfolio/static/media/rb-logo-circled.7ae54d14.png",
+    "static/media/rachel.png": "/portfolio/static/media/rachel.ffd25767.png",
     "static/media/spongebob.png": "/portfolio/static/media/spongebob.0fa8f0c0.png",
-    "static/media/stewie.png": "/portfolio/static/media/stewie.e0769aff.png"
+    "static/media/stewie.png": "/portfolio/static/media/stewie.e0769aff.png",
+    "static/media/twitter.svg": "/portfolio/static/media/twitter.fc31682e.svg"
   }
 }
