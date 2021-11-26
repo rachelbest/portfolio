@@ -1,26 +1,39 @@
-@import "../shared";
-
-$eye-size: 180px;
+$eye-size-desktop: 250px;
+$eye-size-mobile: 180px;
 $full-rotate-time: 100s;
-$carriage-size: $eye-size*0.04;
+$carriage-size-mobile: $eye-size-mobile*0.04;
+$carriage-size-desktop: $eye-size-desktop*0.04;
 
 .london-eye {
 	position: absolute;
-	bottom: $footer-height;
-	left: calc(50% - (#{$eye-size} + 50px) - (#{$container-width} / 2));
+	left: -20%;
+	bottom: 0;
+	opacity: 0.5;
+	padding: 15px 15px 0 15px;
+	overflow: hidden;
+
+	@include breakpoint-up($lg) {
+		left: unset;
+		right: $components-width + 20px;
+	}
 
 	.london-eye-container {
 		position: relative;
-		padding-bottom: 7%;
+		padding-bottom: 8%;
 	}
-		
+
 	&__wheel {
 		position: relative;
-		height: $eye-size;
-		width: $eye-size;
-		border: 1px solid #DDDDDD;
+		height: $eye-size-mobile;
+		width: $eye-size-mobile;
+		border: 1px solid #BBBBBB;
 		border-radius: 50%;
-		box-shadow: inset 0 0 1px 1px rgba(#AAAAAA, 1);
+		box-shadow: inset 0 0 1px 1px rgba(#888888, 1);
+
+		@include breakpoint-up($lg) {
+			height: $eye-size-desktop;
+			width: $eye-size-desktop;
+		}
 
 		section {
 			position: absolute;
@@ -41,48 +54,54 @@ $carriage-size: $eye-size*0.04;
 
 			&:after {
 				left: 50%;
-				border-left: 1px solid #DDDDDD;
+				border-left: 1px solid #BBBBBB;
 				transform: rotate(3deg);
 			}
 
 			&:before {
 				right: 50%;
-				border-right: 1px solid #DDDDDD;
+				border-right: 1px solid #BBBBBB;
 				transform: rotate(-3deg);
 			}
 
 			.carriage {
-				height: $carriage-size;
-				width: $carriage-size;
-				background: rgba(#DDDDDD, 0.6);
+				height: $carriage-size-mobile;
+				width: $carriage-size-mobile;
+				background: rgba(#BBBBBB, 0.6);
 				border-radius: 50%;
-				border: 1px solid #BBBBBB;
+				border: 1px solid #999999;
 				position: absolute;
 				top: -11%;
-				left: calc(50% - (#{$carriage-size} / 2));
+				left: calc(50% - (#{$carriage-size-mobile} / 2));
+
+				@include breakpoint-up($lg) {
+					height: $carriage-size-desktop;
+					width: $carriage-size-desktop;
+					left: calc(50% - (#{$carriage-size-desktop} / 2));
+				}
 			}
-			
+
 			span {
 				height: 12%;
 				width: 1%;
 				position: absolute;
 				top: 0%;
 				left: 12%;
-				
+
 				&:before, &:after {
 					content: "";
 					position: absolute;
 					top: 0;
 					height: 102%;
 					width: 100%;
-					background: #CCCCCC;
+					background: #AAAAAA;
 					transform-origin: center bottom;
 				}
-				
+
 				&:before {
 					transform: rotate(-25deg);
 				}
-				
+
 				&:after {
 					transform: rotate(20deg);
 				}
@@ -90,69 +109,69 @@ $carriage-size: $eye-size*0.04;
 				&:nth-of-type(2) {
 					right: 12%;
 					left: unset;
-				
+
 					&:before {
 						transform: rotate(-20deg);
 					}
-					
+
 					&:after {
 						transform: rotate(25deg);
 					}
 				}
 			}
 		}
-		
+
 		&--inner {
 			position: absolute;
 			top: calc(6% - 2px);
 			left: calc(6% - 2px);
 			height: 88%;
 			width: 88%;
-			border: 2px solid #DDDDDD;
+			border: 2px solid #BBBBBB;
 			border-radius: 50%;
-			box-shadow: inset 0 0 1px 1px rgba(#888888, 1),
+			box-shadow: inset 0 0 1px 1px rgba(#666666, 1),
 		}
-		
+
 		&--center {
 			position: absolute;
 			top: calc(50% - 5px);
 			left: calc(50% - 5px);
 			height: 10px;
 			width: 10px;
-			background: #888888;
+			background: #666666;
 			border-radius: 50%;
 		}
 	}
-	
+
 	&__leg {
 		position: absolute;
 		top: 49%;
 		height: 53%;
 		width: 2%;
-		background: #BBBBBB;
-		border-right: 1px solid #BBBBBB;
-		border-left: 1px solid #BBBBBB;
+		background: #999999;
+		border-right: 1px solid #999999;
+		border-left: 1px solid #999999;
 		border-radius: 10px 10px 0 0;
 		transform-origin: center top;
-		
+
 		&--left {
 			left: calc(50% - 4px);
 			transform: rotate(15deg);
 		}
-		
+
 		&--right {
 			right: calc(50% - 4px);
 			transform: rotate(-15deg);
 		}
 	}
-	
+
 	&__stand {
 		position: absolute;
 		bottom: 0;
 		left: 25%;
 		width: 50%;
 		height: 2%;
-		background: #666666;
+		background: #444444;
 	}
 
 	/* Animation */
@@ -174,10 +193,10 @@ $carriage-size: $eye-size*0.04;
 			transform: rotate(360deg);
 		}
 	}
-		
+
 	&__wheel {
 		animation: rotate linear $full-rotate-time infinite;
-		
+
 		section {
 			$number-of-carriages: 32;
 			$rotate-amount: 360 / $number-of-carriages;

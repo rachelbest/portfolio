@@ -1,17 +1,22 @@
 import React, { Component } from 'react';
+import Gallery from './components/CharacterGallery';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+
+import rachel from './../assets/images/rachel.png';
 
 export default class Landing extends Component {
 
 	render() {
 		return (
-			<div className="about-me">
-				<h2>About Me</h2>
-				<h3>Rachel Bull</h3>
-				<div className="cartoon-rachel">
-					
-				</div>
-				<p>I am a Web Developer from London with 9 years experience in coding responsive web solutions for multiple platforms. I enjoy being creative and using code to inspire myself and others to explore new coding languages.</p>
-			</div>
+			<section className="about-me">
+				<article>
+					<img className="profile" src={rachel} alt="Rachel Best Digital Art" width="200" height="auto"/>
+					<h1>Rachel Best</h1>
+					<p className="subheading">Frontend Web Developer</p>
+					<p>I am a Frontend Web Developer from London with 10+ years experience in coding responsive web solutions for multiple platforms. I have a First-Class degree in Multimedia Computing (BSc) from Anglia Ruskin University where I discovered my passion for creative web development.</p>
+				</article>
+				<Route component={Gallery} />
+			</section>
 		)
 	}
 }

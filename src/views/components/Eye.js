@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 
-import './../../assets/css/components/london_eye.css';
-
 export default class Eye extends Component {
 
 	render() {

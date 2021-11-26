@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 
-import './../../assets/css/components/tower_bridge.css';
-
 export default class TowerBridge extends Component {
 
 	render() {
@@ -92,17 +90,17 @@ export default class TowerBridge extends Component {
 						<span className="section">
 							<span className="window"></span>
 							<span className="window"></span>
-							<span className="window"></span>		
+							<span className="window"></span>
 						</span>
 						<span className="section">
 							<span className="window"></span>
 							<span className="window"></span>
-							<span className="window"></span>		
+							<span className="window"></span>
 						</span>
 						<span className="section">
 							<span className="window"></span>
 							<span className="window"></span>
-							<span className="window"></span>		
+							<span className="window"></span>
 						</span>
 					</div>
 					<div className="tower-bridge__tower tower-bridge__tower--right">
@@ -111,22 +109,22 @@ export default class TowerBridge extends Component {
 						<span className="section">
 							<span className="window"></span>
 							<span className="window"></span>
-							<span className="window"></span>		
+							<span className="window"></span>
 						</span>
 						<span className="section">
 							<span className="window"></span>
 							<span className="window"></span>
-							<span className="window"></span>		
+							<span className="window"></span>
 						</span>
 						<span className="section">
 							<span className="window"></span>
 							<span className="window"></span>
-							<span className="window"></span>		
+							<span className="window"></span>
 						</span>
 						<span className="section">
 							<span className="window"></span>
 							<span className="window"></span>
-							<span className="window"></span>		
+							<span className="window"></span>
 						</span>
 					</div>
 				</div>

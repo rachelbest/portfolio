@@ -1,11 +1,18 @@
-$breakpoint-sm: 576px;
-$breakpoint-md: 768px;
-$breakpoint-lg: 992px;
-$breakpoint-xl: 1200px;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
 
-@mixin breakpoint-up($point) {
+@mixin breakpoint-up($min-breakpoint) {
 
-  @media only screen and (max-width: $breakpoint-#{$point}) {
+  @media (min-width: #{$min-breakpoint}) {
+  	@content;
+  }
+}
+
+@mixin breakpoint-down($max-breakpoint) {
+
+  @media (max-width: #{$max-breakpoint}) {
   	@content;
   }
 }

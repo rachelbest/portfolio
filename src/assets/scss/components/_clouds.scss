@@ -1,0 +1,143 @@
+$animation-timing: 30s;
+
+:root {
+	--opacity: 0.4;
+}
+
+.clouds {
+	z-index: -2;
+	height: 100%;
+	width: 150%;
+}
+
+.clouds img {
+	position: absolute;
+	z-index: -1;
+	width: 50px;
+
+	&:nth-of-type(10) {
+		width: 290px;
+		top: 55%;
+		right: 47%;
+		--opacity: 0.1;
+		animation: movingClouds linear infinite;
+		animation-duration: $animation-timing + 5s;
+	}
+
+	&:nth-of-type(9) {
+		width: 110px;
+		top: 15%;
+		right: 70%;
+		--opacity: 0.1;
+		filter: brightness(90%);
+		animation: movingClouds linear infinite;
+		animation-duration: $animation-timing + 8s;
+	}
+
+	&:nth-of-type(8) {
+		width: 160px;
+		top: 25%;
+		right: 10%;
+		--opacity: 0.1;
+		filter: brightness(90%);
+		animation: movingClouds linear infinite;
+		animation-duration: $animation-timing + 18s;
+	}
+
+	&:nth-of-type(7) {
+		width: 200px;
+		top: 17%;
+		right: 70%;
+		--opacity: 0.3;
+		animation: movingClouds linear infinite;
+		animation-duration: $animation-timing + 10s;
+	}
+
+	&:nth-of-type(6) {
+		width: 230px;
+		top: 23%;
+		right: 72%;
+		--opacity: 0.6;
+		animation: movingClouds linear infinite;
+		animation-duration: $animation-timing;
+	}
+
+	&:nth-of-type(5) {
+		width: 170px;
+		top: 15%;
+		right: 80%;
+		--opacity: 0.5;
+		animation: movingClouds linear infinite;
+		animation-duration: $animation-timing + 3s;
+	}
+
+	&:nth-of-type(5) {
+		width: 190px;
+		top: 52%;
+		right: 2%;
+		--opacity: 0.4;
+		animation: movingClouds linear infinite;
+		animation-duration: $animation-timing + 15s;
+		animation-delay: 5s;
+	}
+
+	&:nth-of-type(5) {
+		width: 250px;
+		top: 34%;
+		right: 95%;
+		--opacity: 0.3;
+		animation: movingClouds linear infinite;
+		animation-duration: $animation-timing;
+	}
+
+	&:nth-of-type(4) {
+		width: 260px;
+		top: 45%;
+		right: 50%;
+		--opacity: 0.2;
+		animation: movingClouds linear infinite;
+		animation-duration: $animation-timing - 3s;
+	}
+
+	&:nth-of-type(3) {
+		width: 240px;
+		top: 34%;
+		right: 44%;
+		--opacity: 0.4;
+		animation: movingClouds linear infinite;
+		animation-duration: $animation-timing;
+	}
+
+	&:nth-of-type(2) {
+		width: 190px;
+		top: 15%;
+		right: 0%;
+		--opacity: 0.3;
+		animation: movingClouds linear infinite;
+		animation-duration: $animation-timing + 5s;
+		animation-delay: 15s;
+	}
+
+	&:nth-of-type(1) {
+		width: 200px;
+		top: 5%;
+		right: 22%;
+		--opacity: 0.6;
+		animation: movingClouds linear infinite;
+		animation-duration: $animation-timing + 12s;
+	}
+}
+
+@keyframes movingClouds {
+	0% {
+		transform: translateX(500px);
+		opacity: 0;
+	}
+	10% {
+		transition: visibility 0s;
+		opacity: var(--opacity);
+	}
+	100% {
+		transform: translateX(-1200px);
+	}
+}

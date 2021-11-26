@@ -1,0 +1,17 @@
+footer {
+	background: #DFDFDF;
+	position: relative;
+	height: $footer-height;
+}
+
+.components {
+	position: sticky;
+	bottom: 0;
+	width: 100%;
+	margin: 0 auto;
+	z-index: -1;
+
+	@include breakpoint-up($lg) {
+		width: $components-width;
+	}
+}

@@ -1,0 +1,136 @@
+$header-timing: 200ms;
+
+@mixin transitions($timing) {
+	transition: all $timing ease;
+}
+
+.header {
+	overflow: hidden;
+	box-sizing: border-box;
+	background: #FFFFFF;
+	border-top: $primary 2px solid;
+	padding: 12px 15px 10px;
+	width: 100%;
+	top: 0;
+	box-shadow: 0 0px 4px 0px rgba(100,100,100,0.3);
+
+	@include breakpoint-up($lg) {
+		padding: 12px 0 10px;
+
+	}
+
+	&__container {
+		max-width: $container-width - ($container-padding-x * 2);
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+	}
+
+	&__initial {
+		display: flex;
+		grid-gap: 20px;
+		align-items: center;
+	}
+
+	&__logo {
+		height: 42px;
+		width: 42px;
+		border-radius: 50%;
+		background: $primary;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		img {
+			height: 26px;
+			width: auto;
+		}
+	}
+
+	&__menu-button {
+		display: block;
+
+		@include breakpoint-up($md) {
+			display: none;
+		}
+	}
+
+	&__menu-container {
+		width: 34%;
+	}
+
+	&__menu-container.slide-out ~ .nav-overlay {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		background: rgba(0,0,0,0.3);
+		position: fixed;
+		left: 0;
+		top: 0;
+		margin: 0;
+		z-index: 1;
+		display: block;
+	}
+
+	nav {
+		height: 100%;
+		background: white;
+		position: fixed;
+		left: 0;
+		top: 0;
+		margin: 0;
+		z-index: 2;
+		padding: 20px 5px;
+
+		@include breakpoint-up($md) {
+			display: flex;
+			grid-gap: 20px;
+			margin: 0 auto 0 25px;
+			position: static;
+			padding: 0;
+		}
+
+		a {
+			font-family: $font-header;
+			display: block;
+			color: $text-color-primary;
+			text-decoration: none;
+			cursor: pointer;
+			padding: 18px 35px 14px 25px;
+			font-size: 20px;
+			font-weight: 200;
+
+			@include breakpoint-up($md) {
+				display: inline-block;
+				padding: 0;
+			}
+
+			&:hover {
+				color: $primary;
+			}
+
+			&.active {
+				color: $primary;
+			}
+		}
+	}
+
+	// Transitions & Animtations
+	&__menu-container {
+
+		@include breakpoint-down($md) {
+			nav {
+				transition: transform 200ms;
+				transform: translate(-100%,0);
+			}
+
+			&.slide-out {
+
+				nav {
+					transition: transform 200ms;
+					transform: translate(0,0);
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,71 @@
+$font-header: 'Roboto', sans-serif;
+$font-primary: 'Lato', sans-serif;
+
+body,
+p {
+    font-family: $font-primary;
+    font-size: 16px;
+    color: $text-color-primary;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3 {
+    font-family: $font-header;
+    font-weight: 100;
+    color: $text-color-primary;
+    margin: 15px 0 30px -2px;
+}
+
+h1, .h1 {
+    text-transform: uppercase;
+    color: $primary;
+    font-size: 32px;
+
+    @include breakpoint-up($sm) {
+        font-size: 44px;
+    }
+}
+
+h2, .h2 {
+    font-size: 30px;
+    color: $primary;
+}
+
+h3, .h3 {
+    font-size: 26px;
+}
+
+h1 + .subheading,
+h2 + .subheading,
+h3 + .subheading {
+    margin-top: -20px;
+    margin-bottom: 15px;
+}
+
+p {
+    margin: 0 0 15px;
+    line-height: 26px;
+}
+
+.subheading {
+    font-family: $font-header;
+    font-size: 18px;
+    line-height: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0;
+}
+
+.subheading + .small {
+    margin-top: -15px;
+}
+
+.small {
+    float: right;
+    font-size: 15px;
+    font-family: $font-header;
+}
+
+a {
+    color: $primary;
+}
