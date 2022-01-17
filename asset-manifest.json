@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.fc705474.css",
-    "main.js": "/static/js/main.aa58d2c6.js",
-    "static/media/rachel.png": "/static/media/rachel.1d76fec0a52a9311c166.png",
-    "static/media/mike.png": "/static/media/mike.2919b1e3191775b01629.png",
-    "static/media/stewie.png": "/static/media/stewie.95b58464c1b3fea8f0f8.png",
-    "static/media/brian.png": "/static/media/brian.1a30c616e4ecf045f5b3.png",
-    "static/media/spongebob.png": "/static/media/spongebob.9f6babee9ab44d77927a.png",
-    "static/media/minion.png": "/static/media/minion.e649ec4af6feab6cbecb.png",
-    "static/media/lego.png": "/static/media/lego.ebf02fca0b3194839f2f.png",
-    "static/media/mumsnet_logo.svg": "/static/media/mumsnet_logo.9ef87d4225157ee3438583c6848fa02a.svg",
-    "static/media/havillands_logo.jpg": "/static/media/havillands_logo.95ec8982044ba84e9523.jpg",
-    "static/media/email.svg": "/static/media/email.cb987df247a751f5f1c4d71ef789a7d7.svg",
-    "static/media/twitter.svg": "/static/media/twitter.6219f292a4cec04d1a77cfc2caf689a3.svg",
-    "index.html": "/index.html",
-    "static/media/linkedin.svg": "/static/media/linkedin.ccc67c89b2011a6e7b975d53f1301c0a.svg",
-    "static/media/menu.svg": "/static/media/menu.0a23080af9bbcd4f85d050b4a93e6a39.svg",
-    "static/media/cloud.svg": "/static/media/cloud.13ea414a5bc4caed31230d7901d13d3a.svg",
-    "main.fc705474.css.map": "/static/css/main.fc705474.css.map",
-    "main.aa58d2c6.js.map": "/static/js/main.aa58d2c6.js.map"
+    "main.css": "/portfolio/static/css/main.fc705474.css",
+    "main.js": "/portfolio/static/js/main.4515e5d4.js",
+    "static/media/rachel.png": "/portfolio/static/media/rachel.1d76fec0a52a9311c166.png",
+    "static/media/mike.png": "/portfolio/static/media/mike.2919b1e3191775b01629.png",
+    "static/media/stewie.png": "/portfolio/static/media/stewie.95b58464c1b3fea8f0f8.png",
+    "static/media/brian.png": "/portfolio/static/media/brian.1a30c616e4ecf045f5b3.png",
+    "static/media/spongebob.png": "/portfolio/static/media/spongebob.9f6babee9ab44d77927a.png",
+    "static/media/minion.png": "/portfolio/static/media/minion.e649ec4af6feab6cbecb.png",
+    "static/media/lego.png": "/portfolio/static/media/lego.ebf02fca0b3194839f2f.png",
+    "static/media/mumsnet_logo.svg": "/portfolio/static/media/mumsnet_logo.9ef87d4225157ee3438583c6848fa02a.svg",
+    "static/media/havillands_logo.jpg": "/portfolio/static/media/havillands_logo.95ec8982044ba84e9523.jpg",
+    "static/media/email.svg": "/portfolio/static/media/email.cb987df247a751f5f1c4d71ef789a7d7.svg",
+    "static/media/twitter.svg": "/portfolio/static/media/twitter.6219f292a4cec04d1a77cfc2caf689a3.svg",
+    "index.html": "/portfolio/index.html",
+    "static/media/linkedin.svg": "/portfolio/static/media/linkedin.ccc67c89b2011a6e7b975d53f1301c0a.svg",
+    "static/media/menu.svg": "/portfolio/static/media/menu.0a23080af9bbcd4f85d050b4a93e6a39.svg",
+    "static/media/cloud.svg": "/portfolio/static/media/cloud.13ea414a5bc4caed31230d7901d13d3a.svg",
+    "main.fc705474.css.map": "/portfolio/static/css/main.fc705474.css.map",
+    "main.4515e5d4.js.map": "/portfolio/static/js/main.4515e5d4.js.map"
   },
   "entrypoints": [
     "static/css/main.fc705474.css",
-    "static/js/main.aa58d2c6.js"
+    "static/js/main.4515e5d4.js"
   ]
 }
