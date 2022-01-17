@@ -68,23 +68,19 @@ a {
   color: #F0A092; }
 
 /* line 1, src/assets/scss/_app.scss */
-html,
-body {
-  height: 100%; }
+html {
+  height: 100%;
+  box-sizing: border-box; }
 
 /* line 6, src/assets/scss/_app.scss */
-.App {
-  overflow-x: clip;
-  position: relative; }
-
-/* line 11, src/assets/scss/_app.scss */
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   background: #FDF5F5;
-  position: relative; }
-  /* line 18, src/assets/scss/_app.scss */
+  position: relative;
+  min-height: 100%; }
+  /* line 14, src/assets/scss/_app.scss */
   body .container {
     width: 95%;
     margin: 20px auto 150px auto;
@@ -94,24 +90,24 @@ body {
     box-sizing: border-box;
     overflow: hidden; }
     @media (min-width: 768px) {
-      /* line 18, src/assets/scss/_app.scss */
+      /* line 14, src/assets/scss/_app.scss */
       body .container {
         margin: 25px auto -30px auto;
         max-width: 850px;
         padding: 45px 60px 150px;
         min-height: 500px; } }
-  /* line 35, src/assets/scss/_app.scss */
+  /* line 31, src/assets/scss/_app.scss */
   body article + article {
     margin-top: 70px; }
     @media (min-width: 576px) {
-      /* line 35, src/assets/scss/_app.scss */
+      /* line 31, src/assets/scss/_app.scss */
       body article + article {
         margin-top: 100px; } }
-  /* line 45, src/assets/scss/_app.scss */
+  /* line 41, src/assets/scss/_app.scss */
   body .aboutme .subheading {
     margin-top: -20px;
     margin-bottom: 15px; }
-  /* line 50, src/assets/scss/_app.scss */
+  /* line 46, src/assets/scss/_app.scss */
   body .aboutme__image {
     margin: -20px 0 0 10px;
     float: right;
@@ -119,40 +115,40 @@ body {
     width: 130px;
     clip-path: ellipse(45% 47% at 50% 50%); }
     @media (min-width: 576px) {
-      /* line 50, src/assets/scss/_app.scss */
+      /* line 46, src/assets/scss/_app.scss */
       body .aboutme__image {
         width: 200px; } }
-  /* line 63, src/assets/scss/_app.scss */
+  /* line 59, src/assets/scss/_app.scss */
   body .experience {
     margin-top: 50px; }
-    /* line 66, src/assets/scss/_app.scss */
+    /* line 62, src/assets/scss/_app.scss */
     body .experience__title {
       margin-bottom: 5px; }
-    /* line 70, src/assets/scss/_app.scss */
+    /* line 66, src/assets/scss/_app.scss */
     body .experience__subheading {
       color: #999999;
       margin-bottom: 10px; }
-      /* line 77, src/assets/scss/_app.scss */
+      /* line 73, src/assets/scss/_app.scss */
       body .experience__subheading span:before {
         content: " | ";
         margin: 0 5px; }
-    /* line 84, src/assets/scss/_app.scss */
+    /* line 80, src/assets/scss/_app.scss */
     body .experience__logo {
       float: right; }
-    /* line 88, src/assets/scss/_app.scss */
+    /* line 84, src/assets/scss/_app.scss */
     body .experience__intro {
       margin-bottom: 10px; }
-    /* line 92, src/assets/scss/_app.scss */
+    /* line 88, src/assets/scss/_app.scss */
     body .experience ul {
       list-style: none;
       padding: 0;
       margin: 0 0 10px 25px; }
-      /* line 97, src/assets/scss/_app.scss */
+      /* line 93, src/assets/scss/_app.scss */
       body .experience ul li {
         position: relative;
         margin-bottom: 2px;
         line-height: 26px; }
-        /* line 102, src/assets/scss/_app.scss */
+        /* line 98, src/assets/scss/_app.scss */
         body .experience ul li:before {
           content: "·";
           font-size: 30px;
@@ -161,36 +157,36 @@ body {
           position: absolute;
           left: -15px;
           top: 1px; }
-  /* line 115, src/assets/scss/_app.scss */
+  /* line 111, src/assets/scss/_app.scss */
   body .contact__container {
     margin-top: 50px; }
-  /* line 119, src/assets/scss/_app.scss */
+  /* line 115, src/assets/scss/_app.scss */
   body .social-media {
     margin: 0;
     padding: 0;
     margin-left: auto;
     list-style: none; }
-    /* line 125, src/assets/scss/_app.scss */
+    /* line 121, src/assets/scss/_app.scss */
     body .social-media.contact {
       float: none; }
-      /* line 128, src/assets/scss/_app.scss */
+      /* line 124, src/assets/scss/_app.scss */
       body .social-media.contact li:not(:last-of-type) {
         margin-right: 20px; }
-      /* line 132, src/assets/scss/_app.scss */
+      /* line 128, src/assets/scss/_app.scss */
       body .social-media.contact a {
         height: 36px;
         width: 36px; }
-        /* line 136, src/assets/scss/_app.scss */
+        /* line 132, src/assets/scss/_app.scss */
         body .social-media.contact a img {
           width: 26px;
           height: 26px; }
-    /* line 143, src/assets/scss/_app.scss */
+    /* line 139, src/assets/scss/_app.scss */
     body .social-media li {
       float: left; }
-      /* line 146, src/assets/scss/_app.scss */
+      /* line 142, src/assets/scss/_app.scss */
       body .social-media li:not(:last-of-type) {
         margin-right: 10px; }
-      /* line 150, src/assets/scss/_app.scss */
+      /* line 146, src/assets/scss/_app.scss */
       body .social-media li a {
         background: #F5CAC2;
         height: 28px;
@@ -199,14 +195,14 @@ body {
         display: flex;
         justify-content: center;
         align-items: center; }
-        /* line 159, src/assets/scss/_app.scss */
+        /* line 155, src/assets/scss/_app.scss */
         body .social-media li a:hover {
           background: #F0A092; }
-      /* line 164, src/assets/scss/_app.scss */
+      /* line 160, src/assets/scss/_app.scss */
       body .social-media li img {
         height: 20px;
         width: 20px; }
-  /* line 171, src/assets/scss/_app.scss */
+  /* line 167, src/assets/scss/_app.scss */
   body .sidenav-overlay {
     opacity: 0;
     position: fixed;
@@ -216,17 +212,21 @@ body {
     height: 120vh;
     background-color: rgba(0, 0, 0, 0.5); }
 
-/* line 182, src/assets/scss/_app.scss */
+/* line 178, src/assets/scss/_app.scss */
 .sr-only {
   display: none; }
 
 /* line 1, src/assets/scss/_footer.scss */
 footer {
   background: #DFDFDF;
-  position: relative;
-  height: 30px; }
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 30px;
+  overflow-x: clip; }
 
-/* line 7, src/assets/scss/_footer.scss */
+/* line 11, src/assets/scss/_footer.scss */
 .components {
   position: sticky;
   bottom: 0;
@@ -234,7 +234,7 @@ footer {
   margin: 0 auto;
   z-index: -1; }
   @media (min-width: 992px) {
-    /* line 7, src/assets/scss/_footer.scss */
+    /* line 11, src/assets/scss/_footer.scss */
     .components {
       width: 750px; } }
 

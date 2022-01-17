@@ -1,7 +1,11 @@
 footer {
 	background: #DFDFDF;
-	position: relative;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 0;
 	height: $footer-height;
+	overflow-x: clip;
 }
 
 .components {

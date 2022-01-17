@@ -1,11 +1,6 @@
-html,
-body {
+html {
 	height: 100%;
-}
-
-.App {
-	overflow-x: clip;
-	position: relative;
+	box-sizing: border-box;
 }
 
 body {
@@ -14,6 +9,7 @@ body {
 	box-sizing: border-box;
 	background: $background;
 	position: relative;
+	min-height: 100%;
 
 	.container {
 		width: 95%;
