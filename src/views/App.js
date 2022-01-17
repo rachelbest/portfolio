@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Header from './Header';
 import Footer from './Footer';
-import About from './About';
+import Home from './About';
 import Experience from './Experience';
 import Skills from './Skills';
 import Contact from './Contact';
@@ -17,11 +17,11 @@ class App extends Component {
 					<Route component={Header} />
 					<nav className="container">
 						<Switch>
-							<Route path="/about" component={About} />
+							<Route exact path="/" component={Home} />
 							<Route path="/experience" component={Experience} />
 							<Route path="/skills" component={Skills} />
 							<Route path="/contact" component={Contact} />
-							<Route component={About} />
+							<Route component={Home} />
 						</Switch>
 					</nav>
 					<Route component={Footer} />

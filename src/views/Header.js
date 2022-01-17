@@ -29,15 +29,17 @@ export default class Header extends Component {
 			<header className="header">
 				<div className="header__container">
 					<div className="header__initial">
-						<a href="#" className="header__menu-button" onClick={() => openMenu()} rel="nofollow"><img src={Menu} alt="Menu" height="30px" width="auto" /></a>
+						<a href="#" className="header__menu-button" onClick={() => openMenu()} rel="nofollow">
+							<img src={Menu} alt="Menu" height="30px" width="auto" />
+						</a>
 						<NavLink to="/" className="header__logo">
 							<img src={logo} alt="logo" height="30"/>
 						</NavLink>
 					</div>
 					<div className="header__menu-container" id="nav-container">
 						<nav>
-							<NavLink to="/about" activeClassName="active" onClick={() => closeMenu()}>
-								About
+							<NavLink to="/" activeClassName="active" exact={true} onClick={() => closeMenu()}>
+								Home
 							</NavLink>
 							<NavLink to="/experience" onClick={() => closeMenu()}>
 								Experience
