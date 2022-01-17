@@ -40,27 +40,75 @@ body {
 		}
 	}
 
-	.profile {
-		margin: -20px 0 0 10px;
-		float: right;
-		opacity: 0.8;
-		width: 130px;
-		clip-path: ellipse(45% 47% at 50% 50%);
+	.aboutme {
 
-		@include breakpoint-up($sm) {
-			width: 200px;
+		.subheading {
+			margin-top: -20px;
+			margin-bottom: 15px;
+		}
+
+		&__image {
+			margin: -20px 0 0 10px;
+			float: right;
+			opacity: 0.8;
+			width: 130px;
+			clip-path: ellipse(45% 47% at 50% 50%);
+
+			@include breakpoint-up($sm) {
+				width: 200px;
+			}
 		}
 	}
 
 	.experience {
-		margin-bottom: 40px;
+		margin-top: 50px;
 
-		&.first {
-			margin-top: 50px;
+		&__title {
+			margin-bottom: 5px;
 		}
 
-		.subheading {
+		&__subheading {
+			color: $text-color-secondary;
 			margin-bottom: 10px;
+
+			span {
+
+
+				&:before {
+					content: " | ";
+					margin: 0 5px;
+				}
+			}
+		}
+
+		&__logo {
+			float: right;
+		}
+
+		&__intro {
+			margin-bottom: 10px;
+		}
+
+		ul {
+			list-style: none;
+			padding: 0;
+			margin: 0 0 10px 25px;
+
+			li {
+				position: relative;
+				margin-bottom: 2px;
+				line-height: 26px;
+
+				&:before {
+					content: "·";
+					font-size: 30px;
+					vertical-align: middle;
+					line-height: 20px;
+					position: absolute;
+					left: -15px;
+					top: 1px;
+				}
+			}
 		}
 	}
 

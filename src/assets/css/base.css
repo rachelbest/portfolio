@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* line 1, src/assets/scss/partials/_reset.scss */
 a {
   text-decoration: none; }
@@ -24,7 +25,7 @@ h3, .h3 {
 /* line 20, src/assets/scss/partials/_fonts.scss */
 h1, .h1 {
   text-transform: uppercase;
-  color: #f0a092;
+  color: #F0A092;
   font-size: 32px; }
   @media (min-width: 576px) {
     /* line 20, src/assets/scss/partials/_fonts.scss */
@@ -33,26 +34,23 @@ h1, .h1 {
 
 /* line 30, src/assets/scss/partials/_fonts.scss */
 h2, .h2 {
-  font-size: 30px;
-  color: #f0a092; }
+  font-size: 32px;
+  color: #F0A092; }
 
 /* line 35, src/assets/scss/partials/_fonts.scss */
 h3, .h3 {
-  font-size: 26px; }
+  font-size: 24px; }
 
 /* line 39, src/assets/scss/partials/_fonts.scss */
-h1 + .subheading,
-h2 + .subheading,
-h3 + .subheading {
-  margin-top: -20px;
-  margin-bottom: 15px; }
-
-/* line 46, src/assets/scss/partials/_fonts.scss */
 p {
   margin: 0 0 15px;
   line-height: 26px; }
 
-/* line 51, src/assets/scss/partials/_fonts.scss */
+/* line 44, src/assets/scss/partials/_fonts.scss */
+li {
+  line-height: 26px; }
+
+/* line 48, src/assets/scss/partials/_fonts.scss */
 .subheading {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
@@ -60,19 +58,14 @@ p {
   text-transform: uppercase;
   letter-spacing: 0; }
 
-/* line 59, src/assets/scss/partials/_fonts.scss */
-.subheading + .small {
-  margin-top: -15px; }
-
-/* line 63, src/assets/scss/partials/_fonts.scss */
+/* line 56, src/assets/scss/partials/_fonts.scss */
 .small {
-  float: right;
   font-size: 15px;
   font-family: "Roboto", sans-serif; }
 
-/* line 69, src/assets/scss/partials/_fonts.scss */
+/* line 61, src/assets/scss/partials/_fonts.scss */
 a {
-  color: #f0a092; }
+  color: #F0A092; }
 
 /* line 1, src/assets/scss/_app.scss */
 html,
@@ -89,7 +82,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: #F7F0EF;
+  background: #FDF5F5;
   position: relative; }
   /* line 18, src/assets/scss/_app.scss */
   body .container {
@@ -114,56 +107,90 @@ body {
       /* line 35, src/assets/scss/_app.scss */
       body article + article {
         margin-top: 100px; } }
-  /* line 43, src/assets/scss/_app.scss */
-  body .profile {
+  /* line 45, src/assets/scss/_app.scss */
+  body .aboutme .subheading {
+    margin-top: -20px;
+    margin-bottom: 15px; }
+  /* line 50, src/assets/scss/_app.scss */
+  body .aboutme__image {
     margin: -20px 0 0 10px;
     float: right;
     opacity: 0.8;
     width: 130px;
     clip-path: ellipse(45% 47% at 50% 50%); }
     @media (min-width: 576px) {
-      /* line 43, src/assets/scss/_app.scss */
-      body .profile {
+      /* line 50, src/assets/scss/_app.scss */
+      body .aboutme__image {
         width: 200px; } }
-  /* line 55, src/assets/scss/_app.scss */
+  /* line 63, src/assets/scss/_app.scss */
   body .experience {
-    margin-bottom: 40px; }
-    /* line 58, src/assets/scss/_app.scss */
-    body .experience.first {
-      margin-top: 50px; }
-    /* line 62, src/assets/scss/_app.scss */
-    body .experience .subheading {
+    margin-top: 50px; }
+    /* line 66, src/assets/scss/_app.scss */
+    body .experience__title {
+      margin-bottom: 5px; }
+    /* line 70, src/assets/scss/_app.scss */
+    body .experience__subheading {
+      color: #999999;
       margin-bottom: 10px; }
-  /* line 67, src/assets/scss/_app.scss */
+      /* line 77, src/assets/scss/_app.scss */
+      body .experience__subheading span:before {
+        content: " | ";
+        margin: 0 5px; }
+    /* line 84, src/assets/scss/_app.scss */
+    body .experience__logo {
+      float: right; }
+    /* line 88, src/assets/scss/_app.scss */
+    body .experience__intro {
+      margin-bottom: 10px; }
+    /* line 92, src/assets/scss/_app.scss */
+    body .experience ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 10px 25px; }
+      /* line 97, src/assets/scss/_app.scss */
+      body .experience ul li {
+        position: relative;
+        margin-bottom: 2px;
+        line-height: 26px; }
+        /* line 102, src/assets/scss/_app.scss */
+        body .experience ul li:before {
+          content: "·";
+          font-size: 30px;
+          vertical-align: middle;
+          line-height: 20px;
+          position: absolute;
+          left: -15px;
+          top: 1px; }
+  /* line 115, src/assets/scss/_app.scss */
   body .contact__container {
     margin-top: 50px; }
-  /* line 71, src/assets/scss/_app.scss */
+  /* line 119, src/assets/scss/_app.scss */
   body .social-media {
     margin: 0;
     padding: 0;
     margin-left: auto;
     list-style: none; }
-    /* line 77, src/assets/scss/_app.scss */
+    /* line 125, src/assets/scss/_app.scss */
     body .social-media.contact {
       float: none; }
-      /* line 80, src/assets/scss/_app.scss */
+      /* line 128, src/assets/scss/_app.scss */
       body .social-media.contact li:not(:last-of-type) {
         margin-right: 20px; }
-      /* line 84, src/assets/scss/_app.scss */
+      /* line 132, src/assets/scss/_app.scss */
       body .social-media.contact a {
         height: 36px;
         width: 36px; }
-        /* line 88, src/assets/scss/_app.scss */
+        /* line 136, src/assets/scss/_app.scss */
         body .social-media.contact a img {
           width: 26px;
           height: 26px; }
-    /* line 95, src/assets/scss/_app.scss */
+    /* line 143, src/assets/scss/_app.scss */
     body .social-media li {
       float: left; }
-      /* line 98, src/assets/scss/_app.scss */
+      /* line 146, src/assets/scss/_app.scss */
       body .social-media li:not(:last-of-type) {
         margin-right: 10px; }
-      /* line 102, src/assets/scss/_app.scss */
+      /* line 150, src/assets/scss/_app.scss */
       body .social-media li a {
         background: #F5CAC2;
         height: 28px;
@@ -172,14 +199,14 @@ body {
         display: flex;
         justify-content: center;
         align-items: center; }
-        /* line 111, src/assets/scss/_app.scss */
+        /* line 159, src/assets/scss/_app.scss */
         body .social-media li a:hover {
-          background: #f0a092; }
-      /* line 116, src/assets/scss/_app.scss */
+          background: #F0A092; }
+      /* line 164, src/assets/scss/_app.scss */
       body .social-media li img {
         height: 20px;
         width: 20px; }
-  /* line 123, src/assets/scss/_app.scss */
+  /* line 171, src/assets/scss/_app.scss */
   body .sidenav-overlay {
     opacity: 0;
     position: fixed;
@@ -189,7 +216,7 @@ body {
     height: 120vh;
     background-color: rgba(0, 0, 0, 0.5); }
 
-/* line 134, src/assets/scss/_app.scss */
+/* line 182, src/assets/scss/_app.scss */
 .sr-only {
   display: none; }
 
@@ -216,7 +243,7 @@ footer {
   overflow: hidden;
   box-sizing: border-box;
   background: #FFFFFF;
-  border-top: #f0a092 2px solid;
+  border-top: #F0A092 2px solid;
   padding: 12px 15px 10px;
   width: 100%;
   top: 0;
@@ -241,7 +268,7 @@ footer {
     height: 42px;
     width: 42px;
     border-radius: 50%;
-    background: #f0a092;
+    background: #F0A092;
     display: flex;
     align-items: center;
     justify-content: center; }
@@ -306,10 +333,10 @@ footer {
           padding: 0; } }
       /* line 108, src/assets/scss/_header.scss */
       .header nav a:hover {
-        color: #f0a092; }
+        color: #F0A092; }
       /* line 112, src/assets/scss/_header.scss */
       .header nav a.active {
-        color: #f0a092; }
+        color: #F0A092; }
   @media (max-width: 768px) {
     /* line 122, src/assets/scss/_header.scss */
     .header__menu-container nav {

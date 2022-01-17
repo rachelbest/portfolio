@@ -28,23 +28,20 @@ h1, .h1 {
 }
 
 h2, .h2 {
-    font-size: 30px;
+    font-size: 32px;
     color: $primary;
 }
 
 h3, .h3 {
-    font-size: 26px;
-}
-
-h1 + .subheading,
-h2 + .subheading,
-h3 + .subheading {
-    margin-top: -20px;
-    margin-bottom: 15px;
+    font-size: 24px;
 }
 
 p {
     margin: 0 0 15px;
+    line-height: 26px;
+}
+
+li {
     line-height: 26px;
 }
 
@@ -56,12 +53,7 @@ p {
     letter-spacing: 0;
 }
 
-.subheading + .small {
-    margin-top: -15px;
-}
-
 .small {
-    float: right;
     font-size: 15px;
     font-family: $font-header;
 }
