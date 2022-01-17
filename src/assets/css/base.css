@@ -73,6 +73,11 @@ html {
   box-sizing: border-box; }
 
 /* line 6, src/assets/scss/_app.scss */
+.App {
+  overflow-x: clip;
+  position: relative; }
+
+/* line 11, src/assets/scss/_app.scss */
 body {
   margin: 0;
   padding: 0;
@@ -80,7 +85,7 @@ body {
   background: #FDF5F5;
   position: relative;
   min-height: 100%; }
-  /* line 14, src/assets/scss/_app.scss */
+  /* line 19, src/assets/scss/_app.scss */
   body .container {
     width: 95%;
     margin: 20px auto 150px auto;
@@ -90,24 +95,24 @@ body {
     box-sizing: border-box;
     overflow: hidden; }
     @media (min-width: 768px) {
-      /* line 14, src/assets/scss/_app.scss */
+      /* line 19, src/assets/scss/_app.scss */
       body .container {
         margin: 25px auto -30px auto;
         max-width: 850px;
         padding: 45px 60px 150px;
         min-height: 500px; } }
-  /* line 31, src/assets/scss/_app.scss */
+  /* line 36, src/assets/scss/_app.scss */
   body article + article {
     margin-top: 70px; }
     @media (min-width: 576px) {
-      /* line 31, src/assets/scss/_app.scss */
+      /* line 36, src/assets/scss/_app.scss */
       body article + article {
         margin-top: 100px; } }
-  /* line 41, src/assets/scss/_app.scss */
+  /* line 46, src/assets/scss/_app.scss */
   body .aboutme .subheading {
     margin-top: -20px;
     margin-bottom: 15px; }
-  /* line 46, src/assets/scss/_app.scss */
+  /* line 51, src/assets/scss/_app.scss */
   body .aboutme__image {
     margin: -20px 0 0 10px;
     float: right;
@@ -115,40 +120,40 @@ body {
     width: 130px;
     clip-path: ellipse(45% 47% at 50% 50%); }
     @media (min-width: 576px) {
-      /* line 46, src/assets/scss/_app.scss */
+      /* line 51, src/assets/scss/_app.scss */
       body .aboutme__image {
         width: 200px; } }
-  /* line 59, src/assets/scss/_app.scss */
+  /* line 64, src/assets/scss/_app.scss */
   body .experience {
     margin-top: 50px; }
-    /* line 62, src/assets/scss/_app.scss */
+    /* line 67, src/assets/scss/_app.scss */
     body .experience__title {
       margin-bottom: 5px; }
-    /* line 66, src/assets/scss/_app.scss */
+    /* line 71, src/assets/scss/_app.scss */
     body .experience__subheading {
       color: #999999;
       margin-bottom: 10px; }
-      /* line 73, src/assets/scss/_app.scss */
+      /* line 78, src/assets/scss/_app.scss */
       body .experience__subheading span:before {
         content: " | ";
         margin: 0 5px; }
-    /* line 80, src/assets/scss/_app.scss */
+    /* line 85, src/assets/scss/_app.scss */
     body .experience__logo {
       float: right; }
-    /* line 84, src/assets/scss/_app.scss */
+    /* line 89, src/assets/scss/_app.scss */
     body .experience__intro {
       margin-bottom: 10px; }
-    /* line 88, src/assets/scss/_app.scss */
+    /* line 93, src/assets/scss/_app.scss */
     body .experience ul {
       list-style: none;
       padding: 0;
       margin: 0 0 10px 25px; }
-      /* line 93, src/assets/scss/_app.scss */
+      /* line 98, src/assets/scss/_app.scss */
       body .experience ul li {
         position: relative;
         margin-bottom: 2px;
         line-height: 26px; }
-        /* line 98, src/assets/scss/_app.scss */
+        /* line 103, src/assets/scss/_app.scss */
         body .experience ul li:before {
           content: "·";
           font-size: 30px;
@@ -157,36 +162,36 @@ body {
           position: absolute;
           left: -15px;
           top: 1px; }
-  /* line 111, src/assets/scss/_app.scss */
+  /* line 116, src/assets/scss/_app.scss */
   body .contact__container {
     margin-top: 50px; }
-  /* line 115, src/assets/scss/_app.scss */
+  /* line 120, src/assets/scss/_app.scss */
   body .social-media {
     margin: 0;
     padding: 0;
     margin-left: auto;
     list-style: none; }
-    /* line 121, src/assets/scss/_app.scss */
+    /* line 126, src/assets/scss/_app.scss */
     body .social-media.contact {
       float: none; }
-      /* line 124, src/assets/scss/_app.scss */
+      /* line 129, src/assets/scss/_app.scss */
       body .social-media.contact li:not(:last-of-type) {
         margin-right: 20px; }
-      /* line 128, src/assets/scss/_app.scss */
+      /* line 133, src/assets/scss/_app.scss */
       body .social-media.contact a {
         height: 36px;
         width: 36px; }
-        /* line 132, src/assets/scss/_app.scss */
+        /* line 137, src/assets/scss/_app.scss */
         body .social-media.contact a img {
           width: 26px;
           height: 26px; }
-    /* line 139, src/assets/scss/_app.scss */
+    /* line 144, src/assets/scss/_app.scss */
     body .social-media li {
       float: left; }
-      /* line 142, src/assets/scss/_app.scss */
+      /* line 147, src/assets/scss/_app.scss */
       body .social-media li:not(:last-of-type) {
         margin-right: 10px; }
-      /* line 146, src/assets/scss/_app.scss */
+      /* line 151, src/assets/scss/_app.scss */
       body .social-media li a {
         background: #F5CAC2;
         height: 28px;
@@ -195,14 +200,14 @@ body {
         display: flex;
         justify-content: center;
         align-items: center; }
-        /* line 155, src/assets/scss/_app.scss */
+        /* line 160, src/assets/scss/_app.scss */
         body .social-media li a:hover {
           background: #F0A092; }
-      /* line 160, src/assets/scss/_app.scss */
+      /* line 165, src/assets/scss/_app.scss */
       body .social-media li img {
         height: 20px;
         width: 20px; }
-  /* line 167, src/assets/scss/_app.scss */
+  /* line 172, src/assets/scss/_app.scss */
   body .sidenav-overlay {
     opacity: 0;
     position: fixed;
@@ -212,7 +217,7 @@ body {
     height: 120vh;
     background-color: rgba(0, 0, 0, 0.5); }
 
-/* line 178, src/assets/scss/_app.scss */
+/* line 183, src/assets/scss/_app.scss */
 .sr-only {
   display: none; }
 
@@ -426,100 +431,101 @@ footer {
 .clouds img {
   position: absolute;
   z-index: -1;
-  width: 50px; }
-  /* line 18, src/assets/scss/components/_clouds.scss */
+  width: 50px;
+  opacity: 0; }
+  /* line 19, src/assets/scss/components/_clouds.scss */
   .clouds img:nth-of-type(10) {
     width: 290px;
     top: 55%;
     right: 47%;
-    --opacity: 0.1;
+    --opacity: 0.4;
     animation: movingClouds linear infinite;
     animation-duration: 35s; }
-  /* line 27, src/assets/scss/components/_clouds.scss */
+  /* line 28, src/assets/scss/components/_clouds.scss */
   .clouds img:nth-of-type(9) {
     width: 110px;
     top: 15%;
     right: 70%;
-    --opacity: 0.1;
+    --opacity: 0.4;
     filter: brightness(90%);
     animation: movingClouds linear infinite;
     animation-duration: 38s; }
-  /* line 37, src/assets/scss/components/_clouds.scss */
+  /* line 38, src/assets/scss/components/_clouds.scss */
   .clouds img:nth-of-type(8) {
     width: 160px;
     top: 25%;
     right: 10%;
-    --opacity: 0.1;
+    --opacity: 0.4;
     filter: brightness(90%);
     animation: movingClouds linear infinite;
     animation-duration: 48s; }
-  /* line 47, src/assets/scss/components/_clouds.scss */
+  /* line 48, src/assets/scss/components/_clouds.scss */
   .clouds img:nth-of-type(7) {
     width: 200px;
     top: 17%;
     right: 70%;
-    --opacity: 0.3;
+    --opacity: 0.7;
     animation: movingClouds linear infinite;
     animation-duration: 40s; }
-  /* line 56, src/assets/scss/components/_clouds.scss */
+  /* line 57, src/assets/scss/components/_clouds.scss */
   .clouds img:nth-of-type(6) {
     width: 230px;
     top: 23%;
     right: 72%;
-    --opacity: 0.6;
+    --opacity: 0.9;
     animation: movingClouds linear infinite;
     animation-duration: 30s; }
-  /* line 65, src/assets/scss/components/_clouds.scss */
+  /* line 66, src/assets/scss/components/_clouds.scss */
   .clouds img:nth-of-type(5) {
     width: 170px;
     top: 15%;
     right: 80%;
-    --opacity: 0.5;
+    --opacity: 0.8;
     animation: movingClouds linear infinite;
     animation-duration: 33s; }
-  /* line 74, src/assets/scss/components/_clouds.scss */
+  /* line 75, src/assets/scss/components/_clouds.scss */
   .clouds img:nth-of-type(5) {
     width: 190px;
     top: 52%;
     right: 2%;
-    --opacity: 0.4;
+    --opacity: 0.7;
     animation: movingClouds linear infinite;
     animation-duration: 45s;
     animation-delay: 5s; }
-  /* line 84, src/assets/scss/components/_clouds.scss */
+  /* line 85, src/assets/scss/components/_clouds.scss */
   .clouds img:nth-of-type(5) {
     width: 250px;
     top: 34%;
     right: 95%;
-    --opacity: 0.3;
+    --opacity: 0.8;
     animation: movingClouds linear infinite;
     animation-duration: 30s; }
-  /* line 93, src/assets/scss/components/_clouds.scss */
+  /* line 94, src/assets/scss/components/_clouds.scss */
   .clouds img:nth-of-type(4) {
     width: 260px;
     top: 45%;
     right: 50%;
-    --opacity: 0.2;
+    --opacity: 0.5;
     animation: movingClouds linear infinite;
     animation-duration: 27s; }
-  /* line 102, src/assets/scss/components/_clouds.scss */
+  /* line 103, src/assets/scss/components/_clouds.scss */
   .clouds img:nth-of-type(3) {
     width: 240px;
     top: 34%;
     right: 44%;
-    --opacity: 0.4;
+    --opacity: 0.8;
     animation: movingClouds linear infinite;
     animation-duration: 30s; }
-  /* line 111, src/assets/scss/components/_clouds.scss */
+  /* line 112, src/assets/scss/components/_clouds.scss */
   .clouds img:nth-of-type(2) {
     width: 190px;
     top: 15%;
     right: 0%;
-    --opacity: 0.3;
+    --opacity: 0.7;
     animation: movingClouds linear infinite;
     animation-duration: 35s;
     animation-delay: 15s; }
-  /* line 121, src/assets/scss/components/_clouds.scss */
+  /* line 122, src/assets/scss/components/_clouds.scss */
   .clouds img:nth-of-type(1) {
     width: 200px;
     top: 5%;

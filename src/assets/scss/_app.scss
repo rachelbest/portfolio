@@ -3,6 +3,11 @@ html {
 	box-sizing: border-box;
 }
 
+.App {
+	overflow-x: clip;
+	position: relative;
+}
+
 body {
 	margin: 0;
 	padding: 0;
