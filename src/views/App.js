@@ -4,26 +4,28 @@ import Footer from './Footer';
 import About from './About';
 import Experience from './Experience';
 import Skills from './Skills';
-import Contact from './Contact';
+import Projects from './Projects';
 import Clouds from './components/Clouds';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 class App extends Component {
 	render() {
+		document.body.style.overflow = "hidden";
+		document.body.classList.add("no-scroll");
+
 		return (
 			<Router>
 				<div className="App">
 					<Route component={Clouds} />
 					<Route component={Header} />
-					<nav className="container">
-						<Switch>
-							<Route path="/about" component={About} />
-							<Route path="/experience" component={Experience} />
-							<Route path="/skills" component={Skills} />
-							<Route path="/contact" component={Contact} />
-							<Route component={About} />
-						</Switch>
-					</nav>
+					<div className="container" id="scrollContainer">
+						<div className="main">
+							<About />
+							<Experience />
+							<Skills />
+							<Projects />
+						</div>
+					</div>
 					<Route component={Footer} />
 				</div>
 			</Router>

@@ -8,10 +8,10 @@ export default class Experience extends Component {
 
 	render() {
 		return (
-			<section>
+			<section className="experience" id="sectionExperience">
 				<h2>Experience</h2>
-				<div className="experience">
-					<img className="experience__logo" src={mumsnet} alt="Mumsnet" height="50" width="160" />
+				<article>
+					<img className="experience__logo" src={mumsnet} alt="Mumsnet" height="49" width="140" />
 					<h3 className="experience__title">Frontend Web Developer</h3>
 					<p className="experience__subheading">Mumsnet <span>Nov 2011 – Present</span></p>
 					<p className="experience__intro">An long time team member, delivering responsive and accessible web solutions across multiple platforms for the most trusted, and most influencial website for parents in the UK.</p>
@@ -26,9 +26,9 @@ export default class Experience extends Component {
 						<li>Agile development & working closely with other teams</li>
 					</ul>
 					<p>JS, jQuery, AlpineJS, VueJS, CSS, Sass, Tailwind, Bootstrap, Laravel, Livewire & Haml</p>
-				</div>
-				<div className="experience">
-					<img className="experience__logo" src={incentivated} alt="Incentivated" height="auto" width="160" />
+				</article>
+				<article>
+					<img className="experience__logo" src={incentivated} alt="Incentivated" height="auto" width="150" />
 					<h3 className="experience__title">Designer/Developer</h3>
 					<p className="experience__subheading">Incentivated <span>July – Nov 2011</span></p>
 					<p className="experience__intro">Internship with a split role as a member of IT and Creative/Production teams, creating digital design solutions for mobile applications agency.</p>
@@ -39,9 +39,9 @@ export default class Experience extends Component {
 						<li>Clients whose accounts were worked on included British Airways, Waitrose, PwC, Scottish Power, Jameson & British Heart Foundation</li>
 					</ul>
 					<p>HTML, CSS & jQuery</p>
-				</div>
-				<div className="experience">
-					<img className="experience__logo" src={havillands} alt="Havillands & Co" height="auto" width="160" />
+				</article>
+				<article>
+					<img className="experience__logo" src={havillands} alt="Havillands & Co" height="auto" width="150" />
 					<h3 className="experience__title">Trainee Designer/Developer</h3>
 					<p className="experience__subheading">Havillands & Co. <span>Jan – Mar 2011</span></p>
 					<p className="experience__intro">Part-time role while studying for university degree. Designing and implementing several websites for SEO purposes.</p>
@@ -51,7 +51,7 @@ export default class Experience extends Component {
 						<li>Utilized Google tools to improve SEO</li>
 					</ul>
 					<p>HTML, CSS, & JS</p>
-				</div>
+				</article>
 			</section>
 		)
 	}

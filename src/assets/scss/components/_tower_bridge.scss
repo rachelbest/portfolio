@@ -2,8 +2,8 @@ $stone-color: #E3DAD5; //Beige
 $metal-color: desaturate(lighten(#61BFD4, 5%), 5%); //Turqoise
 $rails-color: desaturate(lighten(#1D65AC, 15%), 30%); //Royal Blue
 $white-color: #E1E1E1;
-$total-width-desktop: 180px;
-$total-height-desktop: 126px;
+$total-width-desktop: 140px;
+$total-height-desktop: 98px;
 $total-width-mobile: 135px;
 $total-height-mobile: 95px;
 
@@ -17,6 +17,7 @@ $mask-height-multiplier: 1.5;
 	position: absolute;
 	bottom: 0;
 	right: -20%;
+	pointer-events: none;
 
 	@include breakpoint-up($lg) {
 		width: $total-width-desktop * $mask-width-multiplier;
@@ -460,7 +461,7 @@ $mask-height-multiplier: 1.5;
 		transform: rotate(0deg);
 	}
 	45%, 55% {
-		transform: rotate(-45deg);
+		transform: rotate(-40deg);
 	}
 }
 
@@ -469,13 +470,13 @@ $mask-height-multiplier: 1.5;
 		transform: rotate(0deg);
 	}
 	45%, 55% {
-		transform: rotate(-45deg);
+		transform: rotate(-40deg);
 	}
 }
 
 .animation-lift-left {
 	transform-origin: left bottom;
-	animation: lift-left linear 20s infinite;
+	animation: lift-left linear 15s infinite;
 }
 
 @-webkit-keyframes lift-right {
@@ -483,7 +484,7 @@ $mask-height-multiplier: 1.5;
 		transform: rotate(0deg);
 	}
 	45%, 55% {
-		transform: rotate(45deg);
+		transform: rotate(40deg);
 	}
 }
 
@@ -492,11 +493,11 @@ $mask-height-multiplier: 1.5;
 		transform: rotate(0deg);
 	}
 	45%, 55% {
-		transform: rotate(45deg);
+		transform: rotate(40deg);
 	}
 }
 
 .animation-lift-right {
 	transform-origin: right bottom;
-	animation: lift-right linear 20s infinite;
+	animation: lift-right linear 15s infinite;
 }

@@ -4,8 +4,8 @@ html {
 }
 
 .App {
-	overflow-x: clip;
 	position: relative;
+	overflow: hidden;
 }
 
 body {
@@ -15,30 +15,58 @@ body {
 	background: $background;
 	position: relative;
 	min-height: 100%;
+	overflow: hidden;
+
+	$container-margin-top: $header-height + 30px;
+	$container-margin-bottom: $footer-height + 30px;
 
 	.container {
-		width: 95%;
-		margin: 20px auto 150px auto;
-		padding: 20px 15px;
-		background: rgb(255,255,255);
-		background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
-		box-sizing: border-box;
+		height: 100%;
 		overflow: hidden;
+		height: calc(100vh - #{$container-margin-top} - #{$container-margin-bottom});
+		overflow-y: scroll;
+		margin-top: $container-margin-top;
+		margin-bottom: $container-margin-bottom;
 
-		@include breakpoint-up($md) {
-			margin: 25px auto (-$footer-height) auto;
-			max-width: $container-width;
-			padding: 45px $container-padding-x 150px;
-			min-height: 500px;
+		/* Hide scrollbar for Chrome, Safari and Opera */
+		&::-webkit-scrollbar {
+			display: none;
 		}
 	}
 
-	article + article {
-		margin-top: 70px;
+	.main {
+		width: 95%;
+		padding: 20px 15px;
+		background: rgba(255,255,255,0.6);
+		box-sizing: border-box;
+		overflow: hidden;
 
-		@include breakpoint-up($sm) {
-			margin-top: 100px;
+
+		@include breakpoint-up($md) {
+			margin: 0 auto 0 auto;
+			max-width: $container-width;
+			padding: 0 $container-padding-x 50px;
 		}
+
+		$section-padding-top: 45px;
+
+		> section {
+			min-height: calc(100vh - #{$container-margin-top} - (#{$section-padding-top} * 2) - #{$container-margin-bottom});
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			padding-bottom: 100px;
+			padding-top: 50px;
+		}
+	}
+
+	h2 {
+		text-align: center;
+		margin-bottom: 80px;
+		margin: 15px auto 50px auto;
+		border-bottom: 1px solid #EEEEEE;
+		width: 70%;
+		padding-bottom: 25px;
 	}
 
 	.aboutme {
@@ -46,10 +74,15 @@ body {
 		.subheading {
 			margin-top: -20px;
 			margin-bottom: 15px;
+			color: #999999;
+			font-weight: 300;
+			border-bottom: #EEEEEE 1px solid;
+			padding-bottom: 24px;
+			width: 60%;
 		}
 
 		&__image {
-			margin: -20px 0 0 10px;
+			margin: 0 0 0 30px;
 			float: right;
 			opacity: 0.8;
 			width: 130px;
@@ -62,7 +95,10 @@ body {
 	}
 
 	.experience {
-		margin-top: 50px;
+
+		article + article {
+			margin-top: 50px;
+		}
 
 		&__title {
 			margin-bottom: 5px;
@@ -84,6 +120,7 @@ body {
 
 		&__logo {
 			float: right;
+			margin-top: 5px;
 		}
 
 		&__intro {

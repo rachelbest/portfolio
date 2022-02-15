@@ -1,4 +1,4 @@
-$eye-size-desktop: 250px;
+$eye-size-desktop: 180px;
 $eye-size-mobile: 180px;
 $full-rotate-time: 100s;
 $carriage-size-mobile: $eye-size-mobile*0.04;
@@ -11,6 +11,7 @@ $carriage-size-desktop: $eye-size-desktop*0.04;
 	opacity: 0.5;
 	padding: 15px 15px 0 15px;
 	overflow: hidden;
+	pointer-events: none;
 
 	@include breakpoint-up($lg) {
 		left: unset;

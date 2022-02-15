@@ -4,12 +4,13 @@
   "private": true,
   "homepage": "https://rachelbest.github.io/portfolio",
   "dependencies": {
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-router": "^5.2.1",
     "react-router-dom": "^5.3.0",
-    "react-scripts": "5.0.0"
+    "react-scripts": "5.0.0",
+    "react-scroll": "^1.8.4"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -1,29 +1,23 @@
-$header-timing: 200ms;
-
-@mixin transitions($timing) {
-	transition: all $timing ease;
-}
-
 .header {
+	position: fixed;
+	top: 0;
 	overflow: hidden;
 	box-sizing: border-box;
 	background: #FFFFFF;
-	border-top: $primary 2px solid;
-	padding: 12px 15px 10px;
+	padding: 0 15px;
 	width: 100%;
 	top: 0;
 	box-shadow: 0 0px 4px 0px rgba(100,100,100,0.3);
-
-	@include breakpoint-up($lg) {
-		padding: 12px 0 10px;
-
-	}
+	pointer-events: none;
+	z-index: 10;
 
 	&__container {
-		max-width: $container-width - ($container-padding-x * 2);
+		height: $header-height;
+		max-width: $container-width - ($container-padding-x / 2);
 		margin: 0 auto;
 		display: flex;
 		align-items: center;
+		pointer-events: all;
 	}
 
 	&__initial {
@@ -56,20 +50,27 @@ $header-timing: 200ms;
 	}
 
 	&__menu-container {
-		width: 34%;
-	}
 
-	&__menu-container.slide-out ~ .nav-overlay {
-		position: absolute;
-		height: 100%;
-		width: 100%;
-		background: rgba(0,0,0,0.3);
-		position: fixed;
-		left: 0;
-		top: 0;
-		margin: 0;
-		z-index: 1;
-		display: block;
+		/* Desktop only */
+		@include breakpoint-up($md) {
+			height: 100%;
+			display: flex;
+			align-items: center;
+		}
+
+		/* Mobile only */
+		&.slide-out ~ .nav-overlay {
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			background: rgba(0,0,0,0.3);
+			position: fixed;
+			left: 0;
+			top: 0;
+			margin: 0;
+			z-index: 1;
+			display: block;
+		}
 	}
 
 	nav {
@@ -84,25 +85,26 @@ $header-timing: 200ms;
 
 		@include breakpoint-up($md) {
 			display: flex;
-			grid-gap: 20px;
-			margin: 0 auto 0 25px;
+			margin: 0 auto 0 15px;
 			position: static;
 			padding: 0;
 		}
 
 		a {
-			font-family: $font-header;
+			font-family: $font-body;
 			display: block;
 			color: $text-color-primary;
 			text-decoration: none;
 			cursor: pointer;
 			padding: 18px 35px 14px 25px;
-			font-size: 20px;
+			font-size: 18px;
 			font-weight: 200;
 
 			@include breakpoint-up($md) {
-				display: inline-block;
-				padding: 0;
+				display: flex;
+				align-items: center;
+				height: calc(100% - 2px);
+				padding: 0 12px;
 			}
 
 			&:hover {
@@ -111,6 +113,7 @@ $header-timing: 200ms;
 
 			&.active {
 				color: $primary;
+				border-bottom: 2px solid $primary;
 			}
 		}
 	}

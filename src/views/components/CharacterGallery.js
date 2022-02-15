@@ -20,27 +20,27 @@ export default class Gallery extends Component {
                 <ul className="css-characters__gallery">
                     <li>
                         <div className="frame">
-                            <a href="http://codepen.io/rachel_web/pen/pjzowB"><img src={minion} alt="minion in pure CSS" width="300" height="auto"/></a>
+                            <a href="http://codepen.io/rachel_web/pen/pjzowB"><img src={minion} alt="minion in pure CSS" width="200" height="auto"/></a>
                         </div>
                     </li><li>
                         <div className="frame">
-                            <a href="http://codepen.io/rachel_web/pen/VveQPW"><img src={brian} alt="brian in pure CSS" width="300" height="auto"/></a>
+                            <a href="http://codepen.io/rachel_web/pen/VveQPW"><img src={brian} alt="brian in pure CSS" width="200" height="auto"/></a>
                         </div>
                     </li><li>
                         <div className="frame">
-                            <a href="http://codepen.io/rachel_web/pen/BoNjOq"><img src={stewie} alt="Stewie in pure CSS" width="300" height="auto"/></a>
+                            <a href="http://codepen.io/rachel_web/pen/BoNjOq"><img src={stewie} alt="Stewie in pure CSS" width="200" height="auto"/></a>
                         </div>
                     </li><li>
                         <div className="frame">
-                            <a href="http://codepen.io/rachel_web/pen/rOLRvM"><img src={lego} alt="Lego man in pure CSS" width="300" height="auto"/></a>
+                            <a href="http://codepen.io/rachel_web/pen/rOLRvM"><img src={lego} alt="Lego man in pure CSS" width="200" height="auto"/></a>
                         </div>
                     </li><li>
                         <div className="frame">
-                            <a href="http://codepen.io/rachel_web/pen/aOeJJq"><img src={spongebob} alt="Spongebob in pure CSS" width="300" height="auto"/></a>
+                            <a href="http://codepen.io/rachel_web/pen/aOeJJq"><img src={spongebob} alt="Spongebob in pure CSS" width="200" height="auto"/></a>
                         </div>
                     </li><li>
                         <div className="frame">
-                            <a href="http://codepen.io/rachel_web/pen/NGqajK"><img src={mike} alt="Mike Monster in pure CSS" width="300" height="auto"/></a>
+                            <a href="http://codepen.io/rachel_web/pen/NGqajK"><img src={mike} alt="Mike Monster in pure CSS" width="200" height="auto"/></a>
                         </div>
                     </li>
                 </ul>

@@ -1,8 +1,9 @@
 $red-color: #C73534;
 $animation-timing: 20s;
+$tube-width: 560px;
 
 .tunnel {
-	height: 30px;
+	height: $footer-height;
 	position: absolute;
 	bottom: 0;
 	width: 100%;
@@ -18,14 +19,13 @@ $animation-timing: 20s;
 		height: 100%;
 		overflow: hidden;
 		border-radius: 20px;
-		background: #EFEFEF;
 		left: 0;
 		top: 0;
-		box-shadow: inset 0 0 5px 0 rgba(0,0,0,0.15);
 
+		$tube-container: $tube-width + 30px;
 		@include breakpoint-up($lg) {
-			width: $container-width;
-			left: calc(50% - (#{$container-width} / 2));
+			width: $tube-container;
+			left: calc(50% - (#{$tube-container} / 2));
 		}
 	}
 
@@ -42,8 +42,8 @@ $animation-timing: 20s;
 		box-shadow: inset 0px -5px 5px 0 rgba(0,0,0,0.3);
 
 		@include breakpoint-up($lg) {
-			width: 660px;
-			left: calc(50% - 330px);
+			width: $tube-width;
+			left: calc(50% - (#{$tube-width} / 2));
 		}
 
 		.driver {

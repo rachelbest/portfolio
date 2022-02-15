@@ -1,3 +1,6 @@
+`npm start` - Will run project locally for developement
+`npm run deploy` - Will run the scripts for predeploy and deploying the site to production.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

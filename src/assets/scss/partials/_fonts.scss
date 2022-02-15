@@ -1,61 +1,59 @@
-$font-header: 'Roboto', sans-serif;
-$font-primary: 'Lato', sans-serif;
+$font-heading: 'Montserrat', sans-serif;
+$font-subheading: 'Montserrat', sans-serif;
+$font-body: 'Lato', sans-serif;
 
-body,
-p {
-    font-family: $font-primary;
+body, p , a {
+    font-family: $font-body;
     font-size: 16px;
     color: $text-color-primary;
-}
-
-h1, .h1,
-h2, .h2,
-h3, .h3 {
-    font-family: $font-header;
-    font-weight: 100;
-    color: $text-color-primary;
-    margin: 15px 0 30px -2px;
 }
 
 h1, .h1 {
     text-transform: uppercase;
     color: $primary;
     font-size: 32px;
+    font-family: $font-heading;
+    font-weight: 100;
+    margin: 15px 0 30px -4px;
 
     @include breakpoint-up($sm) {
-        font-size: 44px;
+        font-size: 50px;
     }
 }
 
 h2, .h2 {
-    font-size: 32px;
+    font-family: $font-subheading;
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 30px;
     color: $primary;
 }
 
 h3, .h3 {
-    font-size: 24px;
+    font-family: "Lato";
+    font-size: 23px;
+    color: $text-color-primary;
+    font-weight: 300;
 }
 
 p {
     margin: 0 0 15px;
-    line-height: 26px;
 }
 
-li {
+p, li, a {
     line-height: 26px;
+    font-weight: 300;
 }
 
 .subheading {
-    font-family: $font-header;
-    font-size: 18px;
-    line-height: 20px;
+    font-family: $font-subheading;
+    font-size: 16px;
     text-transform: uppercase;
-    letter-spacing: 0;
 }
 
 .small {
     font-size: 15px;
-    font-family: $font-header;
+    font-family: $font-heading;
 }
 
 a {

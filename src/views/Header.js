@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
+import { Link, animateScroll as scroll } from 'react-scroll'
 
 import Menu from './../assets/images/menu.svg';
 import twitter from './../assets/images/twitter.svg';
@@ -38,18 +39,51 @@ export default class Header extends Component {
 					</div>
 					<div className="header__menu-container" id="nav-container">
 						<nav>
-							<NavLink to="/about" activeClassName="active" onClick={() => closeMenu()}>
+							<Link
+								activeClass="active"
+								to="sectionAbout"
+								spy={true}
+								smooth={true}
+								offset={0}
+								duration={500}
+								containerId="scrollContainer"
+								onClick={() => closeMenu()}
+							>
 								About
-							</NavLink>
-							<NavLink to="/experience" onClick={() => closeMenu()}>
+							</Link>
+							<Link
+								to="sectionExperience"
+								spy={true}
+								smooth={true}
+								offset={0}
+								duration={500}
+								containerId="scrollContainer"
+								onClick={() => closeMenu()}
+							>
 								Experience
-							</NavLink>
-							<NavLink to="/skills" onClick={() => closeMenu()}>
+							</Link>
+							<Link
+								to="sectionSkills"
+								spy={true}
+								smooth={true}
+								offset={0}
+								duration={500}
+								containerId="scrollContainer"
+								onClick={() => closeMenu()}
+							>
 								Skills
-							</NavLink>
-							<NavLink to="/contact" onClick={() => closeMenu()}>
-								Contact
-							</NavLink>
+							</Link>
+							<Link
+								to="sectionProjects"
+								spy={true}
+								smooth={true}
+								offset={0}
+								duration={500}
+								containerId="scrollContainer"
+								onClick={() => closeMenu()}
+							>
+								Projects
+							</Link>
 						</nav>
 					</div>
 					<div className="nav-overlay" id="nav-overlay" onClick={() => closeMenu()}></div>
@@ -58,10 +92,10 @@ export default class Header extends Component {
 							<a href="https://twitter.com/rachel_web" rel="nofollow"><img src={twitter} alt="twitter" height="20px" width="auto" /></a>
 						</li>
 						<li className="linkedin">
-							<a href="https://uk.linkedin.com/in/rachel-bull-b3535536" rel="nofollow"><img src={linkedin} alt="linkedin" height="20px" width="auto" /></a>
+							<a href="https://www.linkedin.com/in/rachel-best-b3535536/" rel="nofollow"><img src={linkedin} alt="linkedin" height="20px" width="auto" /></a>
 						</li>
 						<li className="email">
-							<a href="mailto:rachel13bull@gmail.com?Subject=Exmail%20afrom%20rachel13bull.github.io" rel="nofollow" target="_top"><img src={email} alt="email" height="20px" width="auto" /></a>
+							<a href="mailto:rachel13bull@gmail.com?Subject=Email%20afrom%20rachelbest.github.io" rel="nofollow" target="_top"><img src={email} alt="email" height="20px" width="auto" /></a>
 						</li>
 					</ul>
 				</div>
