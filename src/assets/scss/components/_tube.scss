@@ -1,11 +1,11 @@
 $red-color: #C73534;
 $animation-timing: 20s;
-$tube-width: 560px;
+$tube-width: 530px;
 
 .tunnel {
-	height: $footer-height;
+	height: 24px;
 	position: absolute;
-	bottom: 0;
+	bottom: 2px;
 	width: 100%;
 	left: 0;
 }
@@ -13,6 +13,7 @@ $tube-width: 560px;
 .tube {
 
 	&__container {
+		background:linear-gradient(to bottom, #EEEEEE 0, #EEEEEE 20%, #E9E9E9 25%, #E3E3E3 50%, #E9E9E9 75%, #EEEEEE 80%, #EEEEEE 100%);
 		width: 100%;
 		margin: 0 auto;
 		position: absolute;

@@ -1,18 +1,14 @@
 @charset "UTF-8";
-/* line 1, src/assets/scss/partials/_reset.scss */
 a {
   text-decoration: none; }
-  /* line 4, src/assets/scss/partials/_reset.scss */
   a:hover {
     text-decoration: underline; }
 
-/* line 5, src/assets/scss/partials/_fonts.scss */
 body, p, a {
   font-family: "Lato", sans-serif;
   font-size: 16px;
   color: #333333; }
 
-/* line 11, src/assets/scss/partials/_fonts.scss */
 h1, .h1 {
   text-transform: uppercase;
   color: #F0A092;
@@ -21,11 +17,9 @@ h1, .h1 {
   font-weight: 100;
   margin: 15px 0 30px -4px; }
   @media (min-width: 576px) {
-    /* line 11, src/assets/scss/partials/_fonts.scss */
     h1, .h1 {
       font-size: 50px; } }
 
-/* line 24, src/assets/scss/partials/_fonts.scss */
 h2, .h2 {
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
@@ -33,90 +27,75 @@ h2, .h2 {
   font-size: 30px;
   color: #F0A092; }
 
-/* line 32, src/assets/scss/partials/_fonts.scss */
 h3, .h3 {
   font-family: "Lato";
   font-size: 23px;
   color: #333333;
   font-weight: 300; }
 
-/* line 39, src/assets/scss/partials/_fonts.scss */
 p {
   margin: 0 0 15px; }
 
-/* line 43, src/assets/scss/partials/_fonts.scss */
 p, li, a {
   line-height: 26px;
   font-weight: 300; }
 
-/* line 48, src/assets/scss/partials/_fonts.scss */
 .subheading {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   text-transform: uppercase; }
 
-/* line 54, src/assets/scss/partials/_fonts.scss */
 .small {
   font-size: 15px;
   font-family: "Montserrat", sans-serif; }
 
-/* line 59, src/assets/scss/partials/_fonts.scss */
 a {
   color: #F0A092; }
 
-/* line 1, src/assets/scss/_app.scss */
 html {
   height: 100%;
   box-sizing: border-box; }
 
-/* line 6, src/assets/scss/_app.scss */
 .App {
   position: relative;
   overflow: hidden; }
 
-/* line 11, src/assets/scss/_app.scss */
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: #FDF5F5;
+  background: #FDF6F6;
   position: relative;
   min-height: 100%;
   overflow: hidden; }
-  /* line 23, src/assets/scss/_app.scss */
   body .container {
     height: 100%;
     overflow: hidden;
-    height: calc(100vh - 90px - 54px);
+    height: calc(100vh - 90px - 62px);
     overflow-y: scroll;
     margin-top: 90px;
-    margin-bottom: 54px;
+    margin-bottom: 62px;
     /* Hide scrollbar for Chrome, Safari and Opera */ }
-    /* line 32, src/assets/scss/_app.scss */
     body .container::-webkit-scrollbar {
       display: none; }
-  /* line 37, src/assets/scss/_app.scss */
   body .main {
     width: 95%;
     padding: 20px 15px;
-    background: rgba(255, 255, 255, 0.6);
+    background: #FFFFFF;
     box-sizing: border-box;
     overflow: hidden; }
     @media (min-width: 768px) {
-      /* line 37, src/assets/scss/_app.scss */
       body .main {
         margin: 0 auto 0 auto;
         max-width: 850px;
         padding: 0 60px 50px; } }
-    /* line 53, src/assets/scss/_app.scss */
     body .main > section {
-      min-height: calc(100vh - 90px - (45px * 2) - 54px);
+      min-height: calc(100vh - 90px - (45px * 2) - 62px);
       display: flex;
       flex-direction: column;
       justify-content: center;
       padding-bottom: 100px;
       padding-top: 50px; }
-  /* line 63, src/assets/scss/_app.scss */
   body h2 {
     text-align: center;
     margin-bottom: 80px;
@@ -124,7 +103,6 @@ body {
     border-bottom: 1px solid #EEEEEE;
     width: 70%;
     padding-bottom: 25px; }
-  /* line 74, src/assets/scss/_app.scss */
   body .aboutme .subheading {
     margin-top: -20px;
     margin-bottom: 15px;
@@ -133,7 +111,6 @@ body {
     border-bottom: #EEEEEE 1px solid;
     padding-bottom: 24px;
     width: 60%; }
-  /* line 84, src/assets/scss/_app.scss */
   body .aboutme__image {
     margin: 0 0 0 30px;
     float: right;
@@ -141,41 +118,31 @@ body {
     width: 130px;
     clip-path: ellipse(45% 47% at 50% 50%); }
     @media (min-width: 576px) {
-      /* line 84, src/assets/scss/_app.scss */
       body .aboutme__image {
         width: 200px; } }
-  /* line 99, src/assets/scss/_app.scss */
   body .experience article + article {
     margin-top: 50px; }
-  /* line 103, src/assets/scss/_app.scss */
   body .experience__title {
     margin-bottom: 5px; }
-  /* line 107, src/assets/scss/_app.scss */
   body .experience__subheading {
     color: #888888;
     margin-bottom: 10px; }
-    /* line 114, src/assets/scss/_app.scss */
     body .experience__subheading span:before {
       content: " | ";
       margin: 0 5px; }
-  /* line 121, src/assets/scss/_app.scss */
   body .experience__logo {
     float: right;
     margin-top: 5px; }
-  /* line 126, src/assets/scss/_app.scss */
   body .experience__intro {
     margin-bottom: 10px; }
-  /* line 130, src/assets/scss/_app.scss */
   body .experience ul {
     list-style: none;
     padding: 0;
     margin: 0 0 10px 25px; }
-    /* line 135, src/assets/scss/_app.scss */
     body .experience ul li {
       position: relative;
       margin-bottom: 2px;
       line-height: 26px; }
-      /* line 140, src/assets/scss/_app.scss */
       body .experience ul li:before {
         content: "·";
         font-size: 30px;
@@ -184,36 +151,27 @@ body {
         position: absolute;
         left: -15px;
         top: 1px; }
-  /* line 153, src/assets/scss/_app.scss */
   body .contact__container {
     margin-top: 50px; }
-  /* line 157, src/assets/scss/_app.scss */
   body .social-media {
     margin: 0;
     padding: 0;
     margin-left: auto;
     list-style: none; }
-    /* line 163, src/assets/scss/_app.scss */
     body .social-media.contact {
       float: none; }
-      /* line 166, src/assets/scss/_app.scss */
       body .social-media.contact li:not(:last-of-type) {
         margin-right: 20px; }
-      /* line 170, src/assets/scss/_app.scss */
       body .social-media.contact a {
         height: 36px;
         width: 36px; }
-        /* line 174, src/assets/scss/_app.scss */
         body .social-media.contact a img {
           width: 26px;
           height: 26px; }
-    /* line 181, src/assets/scss/_app.scss */
     body .social-media li {
       float: left; }
-      /* line 184, src/assets/scss/_app.scss */
       body .social-media li:not(:last-of-type) {
         margin-right: 10px; }
-      /* line 188, src/assets/scss/_app.scss */
       body .social-media li a {
         background: #F5CAC2;
         height: 28px;
@@ -222,14 +180,11 @@ body {
         display: flex;
         justify-content: center;
         align-items: center; }
-        /* line 197, src/assets/scss/_app.scss */
         body .social-media li a:hover {
           background: #F0A092; }
-      /* line 202, src/assets/scss/_app.scss */
       body .social-media li img {
         height: 20px;
         width: 20px; }
-  /* line 209, src/assets/scss/_app.scss */
   body .sidenav-overlay {
     opacity: 0;
     position: fixed;
@@ -239,20 +194,18 @@ body {
     height: 120vh;
     background-color: rgba(0, 0, 0, 0.5); }
 
-/* line 220, src/assets/scss/_app.scss */
 .sr-only {
   display: none; }
 
-/* line 1, src/assets/scss/_footer.scss */
 footer {
-  background: #DFDFDF;
+  background: #EEEEEE;
+  border-top: #E9E9E9 1px solid;
   position: fixed;
   bottom: 0;
   right: 0;
   left: 0;
-  height: 24px; }
+  height: 32px; }
 
-/* line 10, src/assets/scss/_footer.scss */
 .components {
   position: sticky;
   bottom: 0;
@@ -260,11 +213,9 @@ footer {
   margin: 0 auto;
   z-index: -1; }
   @media (min-width: 992px) {
-    /* line 10, src/assets/scss/_footer.scss */
     .components {
       width: 750px; } }
 
-/* line 1, src/assets/scss/_header.scss */
 .header {
   position: fixed;
   top: 0;
@@ -277,7 +228,6 @@ footer {
   box-shadow: 0 0px 4px 0px rgba(100, 100, 100, 0.3);
   pointer-events: none;
   z-index: 10; }
-  /* line 14, src/assets/scss/_header.scss */
   .header__container {
     height: 60px;
     max-width: 820px;
@@ -285,12 +235,10 @@ footer {
     display: flex;
     align-items: center;
     pointer-events: all; }
-  /* line 23, src/assets/scss/_header.scss */
   .header__initial {
     display: flex;
     grid-gap: 20px;
     align-items: center; }
-  /* line 29, src/assets/scss/_header.scss */
   .header__logo {
     height: 42px;
     width: 42px;
@@ -299,28 +247,22 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center; }
-    /* line 38, src/assets/scss/_header.scss */
     .header__logo img {
       height: 26px;
       width: auto; }
-  /* line 44, src/assets/scss/_header.scss */
   .header__menu-button {
     display: block; }
     @media (min-width: 768px) {
-      /* line 44, src/assets/scss/_header.scss */
       .header__menu-button {
         display: none; } }
-  /* line 52, src/assets/scss/_header.scss */
   .header__menu-container {
     /* Desktop only */
     /* Mobile only */ }
     @media (min-width: 768px) {
-      /* line 52, src/assets/scss/_header.scss */
       .header__menu-container {
         height: 100%;
         display: flex;
         align-items: center; } }
-    /* line 62, src/assets/scss/_header.scss */
     .header__menu-container.slide-out ~ .nav-overlay {
       position: absolute;
       height: 100%;
@@ -332,7 +274,6 @@ footer {
       margin: 0;
       z-index: 1;
       display: block; }
-  /* line 76, src/assets/scss/_header.scss */
   .header nav {
     height: 100%;
     background: white;
@@ -343,13 +284,11 @@ footer {
     z-index: 2;
     padding: 20px 5px; }
     @media (min-width: 768px) {
-      /* line 76, src/assets/scss/_header.scss */
       .header nav {
         display: flex;
         margin: 0 auto 0 15px;
         position: static;
         padding: 0; } }
-    /* line 93, src/assets/scss/_header.scss */
     .header nav a {
       font-family: "Lato", sans-serif;
       display: block;
@@ -360,52 +299,42 @@ footer {
       font-size: 18px;
       font-weight: 200; }
       @media (min-width: 768px) {
-        /* line 93, src/assets/scss/_header.scss */
         .header nav a {
           display: flex;
           align-items: center;
           height: calc(100% - 2px);
           padding: 0 12px; } }
-      /* line 110, src/assets/scss/_header.scss */
       .header nav a:hover {
         color: #F0A092; }
-      /* line 114, src/assets/scss/_header.scss */
       .header nav a.active {
         color: #F0A092;
         border-bottom: 2px solid #F0A092; }
   @media (max-width: 768px) {
-    /* line 125, src/assets/scss/_header.scss */
     .header__menu-container nav {
       transition: transform 200ms;
       transform: translate(-100%, 0); }
-    /* line 132, src/assets/scss/_header.scss */
     .header__menu-container.slide-out nav {
       transition: transform 200ms;
       transform: translate(0, 0); } }
 
-/* line 3, src/assets/scss/components/_character_gallery.scss */
 .css-characters__side-text {
   width: 100%; }
   @media (min-width: 576px) {
-    /* line 3, src/assets/scss/components/_character_gallery.scss */
     .css-characters__side-text {
       float: right;
       width: 60%; } }
 
-/* line 12, src/assets/scss/components/_character_gallery.scss */
 .css-characters__gallery {
   margin: 0;
   padding: 0;
   width: 100%;
   margin-top: 30px; }
   @media (min-width: 576px) {
-    /* line 12, src/assets/scss/components/_character_gallery.scss */
     .css-characters__gallery {
       float: left;
       width: 35%;
       margin-right: 5%;
       margin-top: 0; } }
-  /* line 25, src/assets/scss/components/_character_gallery.scss */
   .css-characters__gallery li {
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
@@ -425,15 +354,12 @@ footer {
     overflow: hidden;
     position: relative;
     height: 80px; }
-    /* line 10, src/assets/scss/partials/_animations.scss */
     .css-characters__gallery li:hover {
       -webkit-transform: scale(1.1);
       transform: scale(1.1);
       opacity: 1; }
-    /* line 39, src/assets/scss/components/_character_gallery.scss */
     .css-characters__gallery li:nth-of-type(2n+1) {
       margin-right: 15px; }
-    /* line 43, src/assets/scss/components/_character_gallery.scss */
     .css-characters__gallery li img {
       width: 150%;
       position: absolute;
@@ -442,30 +368,25 @@ footer {
       height: auto;
       vertical-align: bottom; }
       @media (min-width: 992px) {
-        /* line 43, src/assets/scss/components/_character_gallery.scss */
         .css-characters__gallery li img {
           width: 170%;
           top: -5%;
           left: -35%; } }
 
-/* line 3, src/assets/scss/components/_clouds.scss */
 :root {
   --opacity: 0.4; }
 
-/* line 7, src/assets/scss/components/_clouds.scss */
 .clouds {
   z-index: -2;
   height: 100%;
   width: 150%;
   pointer-events: none; }
 
-/* line 14, src/assets/scss/components/_clouds.scss */
 .clouds img {
   position: absolute;
   z-index: -1;
   width: 50px;
   opacity: 0; }
-  /* line 20, src/assets/scss/components/_clouds.scss */
   .clouds img:nth-of-type(10) {
     width: 290px;
     top: 55%;
@@ -473,7 +394,6 @@ footer {
     --opacity: 0.4;
     animation: movingClouds linear infinite;
     animation-duration: 35s; }
-  /* line 29, src/assets/scss/components/_clouds.scss */
   .clouds img:nth-of-type(9) {
     width: 110px;
     top: 15%;
@@ -482,7 +402,6 @@ footer {
     filter: brightness(90%);
     animation: movingClouds linear infinite;
     animation-duration: 38s; }
-  /* line 39, src/assets/scss/components/_clouds.scss */
   .clouds img:nth-of-type(8) {
     width: 160px;
     top: 25%;
@@ -491,7 +410,6 @@ footer {
     filter: brightness(90%);
     animation: movingClouds linear infinite;
     animation-duration: 48s; }
-  /* line 49, src/assets/scss/components/_clouds.scss */
   .clouds img:nth-of-type(7) {
     width: 200px;
     top: 17%;
@@ -499,7 +417,6 @@ footer {
     --opacity: 0.7;
     animation: movingClouds linear infinite;
     animation-duration: 40s; }
-  /* line 58, src/assets/scss/components/_clouds.scss */
   .clouds img:nth-of-type(6) {
     width: 230px;
     top: 23%;
@@ -507,7 +424,6 @@ footer {
     --opacity: 0.9;
     animation: movingClouds linear infinite;
     animation-duration: 30s; }
-  /* line 67, src/assets/scss/components/_clouds.scss */
   .clouds img:nth-of-type(5) {
     width: 170px;
     top: 15%;
@@ -515,7 +431,6 @@ footer {
     --opacity: 0.8;
     animation: movingClouds linear infinite;
     animation-duration: 33s; }
-  /* line 76, src/assets/scss/components/_clouds.scss */
   .clouds img:nth-of-type(5) {
     width: 190px;
     top: 52%;
@@ -524,7 +439,6 @@ footer {
     animation: movingClouds linear infinite;
     animation-duration: 45s;
     animation-delay: 5s; }
-  /* line 86, src/assets/scss/components/_clouds.scss */
   .clouds img:nth-of-type(5) {
     width: 250px;
     top: 34%;
@@ -532,7 +446,6 @@ footer {
     --opacity: 0.8;
     animation: movingClouds linear infinite;
     animation-duration: 30s; }
-  /* line 95, src/assets/scss/components/_clouds.scss */
   .clouds img:nth-of-type(4) {
     width: 260px;
     top: 45%;
@@ -540,7 +453,6 @@ footer {
     --opacity: 0.5;
     animation: movingClouds linear infinite;
     animation-duration: 27s; }
-  /* line 104, src/assets/scss/components/_clouds.scss */
   .clouds img:nth-of-type(3) {
     width: 240px;
     top: 34%;
@@ -548,7 +460,6 @@ footer {
     --opacity: 0.8;
     animation: movingClouds linear infinite;
     animation-duration: 30s; }
-  /* line 113, src/assets/scss/components/_clouds.scss */
   .clouds img:nth-of-type(2) {
     width: 190px;
     top: 15%;
@@ -557,7 +468,6 @@ footer {
     animation: movingClouds linear infinite;
     animation-duration: 35s;
     animation-delay: 15s; }
-  /* line 123, src/assets/scss/components/_clouds.scss */
   .clouds img:nth-of-type(1) {
     width: 200px;
     top: 5%;
@@ -576,16 +486,15 @@ footer {
   100% {
     transform: translateX(-1200px); } }
 
-/* line 5, src/assets/scss/components/_tube.scss */
 .tunnel {
   height: 24px;
   position: absolute;
-  bottom: 0;
+  bottom: 2px;
   width: 100%;
   left: 0; }
 
-/* line 15, src/assets/scss/components/_tube.scss */
 .tube__container {
+  background: linear-gradient(to bottom, #EEEEEE 0, #EEEEEE 20%, #E9E9E9 25%, #E3E3E3 50%, #E9E9E9 75%, #EEEEEE 80%, #EEEEEE 100%);
   width: 100%;
   margin: 0 auto;
   position: absolute;
@@ -595,12 +504,10 @@ footer {
   left: 0;
   top: 0; }
   @media (min-width: 992px) {
-    /* line 15, src/assets/scss/components/_tube.scss */
     .tube__container {
-      width: 590px;
-      left: calc(50% - (590px / 2)); } }
+      width: 560px;
+      left: calc(50% - (560px / 2)); } }
 
-/* line 32, src/assets/scss/components/_tube.scss */
 .tube__train {
   animation: train 20s ease infinite;
   background: #FFFFFF;
@@ -613,39 +520,31 @@ footer {
   overflow: hidden;
   box-shadow: inset 0px -5px 5px 0 rgba(0, 0, 0, 0.3); }
   @media (min-width: 992px) {
-    /* line 32, src/assets/scss/components/_tube.scss */
     .tube__train {
-      width: 560px;
-      left: calc(50% - (560px / 2)); } }
-  /* line 49, src/assets/scss/components/_tube.scss */
+      width: 530px;
+      left: calc(50% - (530px / 2)); } }
   .tube__train .driver {
     position: absolute;
     top: 0;
     height: 100%;
     width: 3%;
     background: #C73534; }
-    /* line 56, src/assets/scss/components/_tube.scss */
     .tube__train .driver:before {
       content: "";
       background: #444444;
       position: absolute;
       height: 80%;
       width: 50%; }
-    /* line 64, src/assets/scss/components/_tube.scss */
     .tube__train .driver--front {
       right: 0; }
-      /* line 67, src/assets/scss/components/_tube.scss */
       .tube__train .driver--front:before {
         right: 0;
         border-radius: 0 0 0 5px; }
-    /* line 73, src/assets/scss/components/_tube.scss */
     .tube__train .driver--back {
       left: 0; }
-      /* line 76, src/assets/scss/components/_tube.scss */
       .tube__train .driver--back:before {
         left: 0;
         border-radius: 0 0 5px 0; }
-  /* line 83, src/assets/scss/components/_tube.scss */
   .tube__train .window {
     position: absolute;
     left: 3%;
@@ -653,7 +552,6 @@ footer {
     width: 94%;
     height: 40%;
     background: #444444; }
-  /* line 92, src/assets/scss/components/_tube.scss */
   .tube__train .door-container {
     width: 80%;
     height: 100%;
@@ -663,16 +561,13 @@ footer {
     display: flex;
     justify-content: space-between; }
   @media (max-width: 576px) {
-    /* line 103, src/assets/scss/components/_tube.scss */
     .tube__train span:nth-child(n+6) {
       display: none; } }
-  /* line 108, src/assets/scss/components/_tube.scss */
   .tube__train .door {
     width: 24px;
     height: 100%;
     background: #555555;
     position: relative; }
-    /* line 115, src/assets/scss/components/_tube.scss */
     .tube__train .door .left,
     .tube__train .door .right {
       background: #C73534;
@@ -680,15 +575,12 @@ footer {
       position: absolute;
       width: 50%;
       height: 100%; }
-    /* line 124, src/assets/scss/components/_tube.scss */
     .tube__train .door .left {
       animation: opencloseleftdoor 20s ease infinite;
       left: 0%; }
-    /* line 129, src/assets/scss/components/_tube.scss */
     .tube__train .door .right {
       animation: opencloserightdoor 20s ease infinite;
       right: 0%; }
-    /* line 134, src/assets/scss/components/_tube.scss */
     .tube__train .door .window {
       position: absolute;
       left: 10%;
@@ -745,7 +637,6 @@ footer {
   60%, 100% {
     transform: translate(0); } }
 
-/* line 13, src/assets/scss/components/_tower_bridge.scss */
 .mask {
   width: 202.5px;
   height: 142.5px;
@@ -755,14 +646,12 @@ footer {
   right: -20%;
   pointer-events: none; }
   @media (min-width: 992px) {
-    /* line 13, src/assets/scss/components/_tower_bridge.scss */
     .mask {
       width: 210px;
       height: 147px;
       right: unset;
       left: 770px; } }
 
-/* line 30, src/assets/scss/components/_tower_bridge.scss */
 .tower-bridge {
   position: absolute;
   left: calc(50% - (135px / 2));
@@ -770,19 +659,16 @@ footer {
   width: 135px;
   height: 95px; }
   @media (min-width: 992px) {
-    /* line 30, src/assets/scss/components/_tower_bridge.scss */
     .tower-bridge {
       width: 140px;
       height: 98px;
       left: calc(50% - (140px / 2)); } }
-  /* line 48, src/assets/scss/components/_tower_bridge.scss */
   .tower-bridge__tower {
     height: 80%;
     width: 16%;
     background: #E3DAD5;
     position: absolute;
     bottom: 20%; }
-    /* line 55, src/assets/scss/components/_tower_bridge.scss */
     .tower-bridge__tower:before {
       content: "";
       position: absolute;
@@ -792,7 +678,6 @@ footer {
       width: 88%;
       background: #E3DAD5;
       clip-path: polygon(0 100%, 50% 0, 100% 100%); }
-    /* line 68, src/assets/scss/components/_tower_bridge.scss */
     .tower-bridge__tower .column {
       height: 105%;
       width: 25%;
@@ -800,7 +685,6 @@ footer {
       background: #E3DAD5;
       bottom: 0;
       box-shadow: inset -3px 0 2px 0 rgba(0, 0, 0, 0.05); }
-      /* line 76, src/assets/scss/components/_tower_bridge.scss */
       .tower-bridge__tower .column:before {
         content: "";
         position: absolute;
@@ -811,35 +695,26 @@ footer {
         background: #E3DAD5;
         clip-path: polygon(0 100%, 50% 0, 100% 100%);
         box-shadow: inherit; }
-      /* line 88, src/assets/scss/components/_tower_bridge.scss */
       .tower-bridge__tower .column--left {
         left: 0; }
-      /* line 92, src/assets/scss/components/_tower_bridge.scss */
       .tower-bridge__tower .column--right {
         right: 0; }
-    /* line 97, src/assets/scss/components/_tower_bridge.scss */
     .tower-bridge__tower .section {
       position: absolute;
       left: 0;
       width: 100%;
       border-bottom: 1px solid #BBBBBB;
       height: 22%; }
-      /* line 104, src/assets/scss/components/_tower_bridge.scss */
       .tower-bridge__tower .section:nth-of-type(-n+3) {
         border-top: 1px solid #BBBBBB; }
-      /* line 110, src/assets/scss/components/_tower_bridge.scss */
       .tower-bridge__tower .section:nth-of-type(1) {
         bottom: calc(23% * (1 - 1) + (1 * 5%)); }
-      /* line 110, src/assets/scss/components/_tower_bridge.scss */
       .tower-bridge__tower .section:nth-of-type(2) {
         bottom: calc(23% * (2 - 1) + (2 * 5%)); }
-      /* line 110, src/assets/scss/components/_tower_bridge.scss */
       .tower-bridge__tower .section:nth-of-type(3) {
         bottom: calc(23% * (3 - 1) + (3 * 5%)); }
-      /* line 110, src/assets/scss/components/_tower_bridge.scss */
       .tower-bridge__tower .section:nth-of-type(4) {
         bottom: calc(23% * (4 - 1) + (4 * 5%)); }
-      /* line 115, src/assets/scss/components/_tower_bridge.scss */
       .tower-bridge__tower .section .window {
         position: absolute;
         bottom: 0;
@@ -847,22 +722,16 @@ footer {
         height: 50%;
         background: #BBBBBB;
         border-radius: 2px 2px 0 0; }
-        /* line 125, src/assets/scss/components/_tower_bridge.scss */
         .tower-bridge__tower .section .window:nth-of-type(1) {
           left: calc((1 * 18%) + 12%); }
-        /* line 125, src/assets/scss/components/_tower_bridge.scss */
         .tower-bridge__tower .section .window:nth-of-type(2) {
           left: calc((2 * 18%) + 12%); }
-        /* line 125, src/assets/scss/components/_tower_bridge.scss */
         .tower-bridge__tower .section .window:nth-of-type(3) {
           left: calc((3 * 18%) + 12%); }
-    /* line 132, src/assets/scss/components/_tower_bridge.scss */
     .tower-bridge__tower--left {
       left: 0; }
-    /* line 136, src/assets/scss/components/_tower_bridge.scss */
     .tower-bridge__tower--right {
       right: 0; }
-  /* line 141, src/assets/scss/components/_tower_bridge.scss */
   .tower-bridge__foot {
     width: 26%;
     height: 20%;
@@ -871,7 +740,6 @@ footer {
     position: absolute;
     bottom: 0;
     box-shadow: inset -5px 0 5px 0 rgba(0, 0, 0, 0.05); }
-    /* line 150, src/assets/scss/components/_tower_bridge.scss */
     .tower-bridge__foot:before {
       content: "";
       position: absolute;
@@ -882,19 +750,14 @@ footer {
       width: 100%;
       height: 70%;
       box-shadow: inset -30px 0 5px -5px rgba(0, 0, 0, 0.1); }
-    /* line 162, src/assets/scss/components/_tower_bridge.scss */
     .tower-bridge__foot--left {
       left: -5%; }
-    /* line 166, src/assets/scss/components/_tower_bridge.scss */
     .tower-bridge__foot--right {
       right: -5%; }
-    /* line 170, src/assets/scss/components/_tower_bridge.scss */
     .tower-bridge__foot--far-left {
       left: -110%; }
-    /* line 174, src/assets/scss/components/_tower_bridge.scss */
     .tower-bridge__foot--far-right {
       right: -110%; }
-  /* line 179, src/assets/scss/components/_tower_bridge.scss */
   .tower-bridge__top-ledge {
     position: absolute;
     bottom: 80%;
@@ -903,7 +766,6 @@ footer {
     width: 68%;
     background: #F6F6F6;
     box-shadow: 0 1px 1px rgba(225, 225, 225, 0.8), 0 2px 1px #79c4d5, 0 4px 1px rgba(0, 0, 0, 0.3), 0 6px 1px #e1e1e1, 0 -1px 1px rgba(225, 225, 225, 0.8), 0 -2px 1px rgba(0, 0, 0, 0.1), 0 -3px 1px #79c4d5; }
-    /* line 194, src/assets/scss/components/_tower_bridge.scss */
     .tower-bridge__top-ledge .emblem {
       height: 130%;
       width: 8%;
@@ -914,12 +776,10 @@ footer {
       bottom: -34%;
       transform: translate(-50%);
       z-index: 10; }
-    /* line 206, src/assets/scss/components/_tower_bridge.scss */
     .tower-bridge__top-ledge span {
       position: absolute;
       bottom: -1px;
       height: 130%; }
-      /* line 211, src/assets/scss/components/_tower_bridge.scss */
       .tower-bridge__top-ledge span:before, .tower-bridge__top-ledge span:after {
         position: absolute;
         bottom: 0;
@@ -928,73 +788,50 @@ footer {
         width: 3px;
         height: 100%;
         background: #E1E1E1; }
-      /* line 221, src/assets/scss/components/_tower_bridge.scss */
       .tower-bridge__top-ledge span:before {
         transform: rotate(50deg); }
-      /* line 225, src/assets/scss/components/_tower_bridge.scss */
       .tower-bridge__top-ledge span:after {
         transform: rotate(-50deg); }
-      /* line 232, src/assets/scss/components/_tower_bridge.scss */
       .tower-bridge__top-ledge span:nth-of-type(1) {
         left: 2.2%; }
-      /* line 232, src/assets/scss/components/_tower_bridge.scss */
       .tower-bridge__top-ledge span:nth-of-type(2) {
         left: 7.7%; }
-      /* line 232, src/assets/scss/components/_tower_bridge.scss */
       .tower-bridge__top-ledge span:nth-of-type(3) {
         left: 13.2%; }
-      /* line 232, src/assets/scss/components/_tower_bridge.scss */
       .tower-bridge__top-ledge span:nth-of-type(4) {
         left: 18.7%; }
-      /* line 232, src/assets/scss/components/_tower_bridge.scss */
       .tower-bridge__top-ledge span:nth-of-type(5) {
         left: 24.2%; }
-      /* line 232, src/assets/scss/components/_tower_bridge.scss */
       .tower-bridge__top-ledge span:nth-of-type(6) {
         left: 29.7%; }
-      /* line 232, src/assets/scss/components/_tower_bridge.scss */
       .tower-bridge__top-ledge span:nth-of-type(7) {
         left: 35.2%; }
-      /* line 232, src/assets/scss/components/_tower_bridge.scss */
       .tower-bridge__top-ledge span:nth-of-type(8) {
         left: 40.7%; }
-      /* line 232, src/assets/scss/components/_tower_bridge.scss */
       .tower-bridge__top-ledge span:nth-of-type(9) {
         left: 46.2%; }
-      /* line 232, src/assets/scss/components/_tower_bridge.scss */
       .tower-bridge__top-ledge span:nth-of-type(10) {
         left: 51.7%; }
-      /* line 232, src/assets/scss/components/_tower_bridge.scss */
       .tower-bridge__top-ledge span:nth-of-type(11) {
         left: 57.2%; }
-      /* line 232, src/assets/scss/components/_tower_bridge.scss */
       .tower-bridge__top-ledge span:nth-of-type(12) {
         left: 62.7%; }
-      /* line 232, src/assets/scss/components/_tower_bridge.scss */
       .tower-bridge__top-ledge span:nth-of-type(13) {
         left: 68.2%; }
-      /* line 232, src/assets/scss/components/_tower_bridge.scss */
       .tower-bridge__top-ledge span:nth-of-type(14) {
         left: 73.7%; }
-      /* line 232, src/assets/scss/components/_tower_bridge.scss */
       .tower-bridge__top-ledge span:nth-of-type(15) {
         left: 79.2%; }
-      /* line 232, src/assets/scss/components/_tower_bridge.scss */
       .tower-bridge__top-ledge span:nth-of-type(16) {
         left: 84.7%; }
-      /* line 232, src/assets/scss/components/_tower_bridge.scss */
       .tower-bridge__top-ledge span:nth-of-type(17) {
         left: 90.2%; }
-      /* line 232, src/assets/scss/components/_tower_bridge.scss */
       .tower-bridge__top-ledge span:nth-of-type(18) {
         left: 95.7%; }
-      /* line 232, src/assets/scss/components/_tower_bridge.scss */
       .tower-bridge__top-ledge span:nth-of-type(19) {
         left: 101.2%; }
-      /* line 232, src/assets/scss/components/_tower_bridge.scss */
       .tower-bridge__top-ledge span:nth-of-type(20) {
         left: 106.7%; }
-  /* line 239, src/assets/scss/components/_tower_bridge.scss */
   .tower-bridge__ramp {
     position: absolute;
     bottom: 18%;
@@ -1002,7 +839,6 @@ footer {
     width: 34%;
     background: #5b8bbb;
     box-shadow: 0 1px 1px #999999; }
-    /* line 247, src/assets/scss/components/_tower_bridge.scss */
     .tower-bridge__ramp:before {
       content: "";
       position: absolute;
@@ -1011,7 +847,6 @@ footer {
       left: 1px;
       bottom: 2px;
       border-bottom: 2px dashed #EFEFEF; }
-    /* line 257, src/assets/scss/components/_tower_bridge.scss */
     .tower-bridge__ramp .ramp-bottom {
       position: absolute;
       bottom: -8px;
@@ -1021,12 +856,10 @@ footer {
       background: #EFEFEF;
       border-bottom: 2px solid #79c4d5;
       overflow: hidden; }
-    /* line 268, src/assets/scss/components/_tower_bridge.scss */
     .tower-bridge__ramp span {
       position: absolute;
       bottom: -1px;
       height: 140%; }
-      /* line 273, src/assets/scss/components/_tower_bridge.scss */
       .tower-bridge__ramp span:before, .tower-bridge__ramp span:after {
         position: absolute;
         bottom: -1px;
@@ -1035,54 +868,38 @@ footer {
         width: 1px;
         height: 100%;
         background: #79c4d5; }
-      /* line 286, src/assets/scss/components/_tower_bridge.scss */
       .tower-bridge__ramp span:nth-of-type(1) {
         left: 14.28571%; }
-      /* line 286, src/assets/scss/components/_tower_bridge.scss */
       .tower-bridge__ramp span:nth-of-type(2) {
         left: 28.57143%; }
-      /* line 286, src/assets/scss/components/_tower_bridge.scss */
       .tower-bridge__ramp span:nth-of-type(3) {
         left: 42.85714%; }
-      /* line 286, src/assets/scss/components/_tower_bridge.scss */
       .tower-bridge__ramp span:nth-of-type(4) {
         left: 57.14286%; }
-      /* line 286, src/assets/scss/components/_tower_bridge.scss */
       .tower-bridge__ramp span:nth-of-type(5) {
         left: 71.42857%; }
-      /* line 286, src/assets/scss/components/_tower_bridge.scss */
       .tower-bridge__ramp span:nth-of-type(6) {
         left: 85.71429%; }
-      /* line 286, src/assets/scss/components/_tower_bridge.scss */
       .tower-bridge__ramp span:nth-of-type(7) {
         left: 100%; }
-    /* line 292, src/assets/scss/components/_tower_bridge.scss */
     .tower-bridge__ramp--left {
       left: 16%; }
-      /* line 295, src/assets/scss/components/_tower_bridge.scss */
       .tower-bridge__ramp--left span:after {
         transform: rotate(-50deg); }
-      /* line 299, src/assets/scss/components/_tower_bridge.scss */
       .tower-bridge__ramp--left span:before {
         margin-left: 6px; }
-      /* line 303, src/assets/scss/components/_tower_bridge.scss */
       .tower-bridge__ramp--left .ramp-bottom {
         clip-path: polygon(0 0, 100% 100%, 0 100%);
         transform: rotate(-13deg); }
-    /* line 309, src/assets/scss/components/_tower_bridge.scss */
     .tower-bridge__ramp--right {
       right: 16%; }
-      /* line 312, src/assets/scss/components/_tower_bridge.scss */
       .tower-bridge__ramp--right span:after {
         transform: rotate(50deg); }
-      /* line 316, src/assets/scss/components/_tower_bridge.scss */
       .tower-bridge__ramp--right span:before {
         margin-left: -6px; }
-      /* line 320, src/assets/scss/components/_tower_bridge.scss */
       .tower-bridge__ramp--right .ramp-bottom {
         clip-path: polygon(0 100%, 100% 0, 100% 100%);
         transform: rotate(13deg); }
-  /* line 327, src/assets/scss/components/_tower_bridge.scss */
   .tower-bridge__road {
     position: absolute;
     bottom: 18%;
@@ -1090,7 +907,6 @@ footer {
     width: 100%;
     background: #5b8bbb;
     box-shadow: 0 1px 1px #777777, 0 1px 1px #333333; }
-    /* line 336, src/assets/scss/components/_tower_bridge.scss */
     .tower-bridge__road:before {
       content: "";
       position: absolute;
@@ -1099,13 +915,10 @@ footer {
       left: 1px;
       bottom: 2px;
       border-bottom: 3px dashed #EFEFEF; }
-    /* line 346, src/assets/scss/components/_tower_bridge.scss */
     .tower-bridge__road--left {
       left: -100%; }
-    /* line 350, src/assets/scss/components/_tower_bridge.scss */
     .tower-bridge__road--right {
       right: -100%; }
-  /* line 355, src/assets/scss/components/_tower_bridge.scss */
   .tower-bridge__curve {
     position: absolute;
     bottom: 23%;
@@ -1114,102 +927,73 @@ footer {
     border: solid 2px #79c4d5;
     border-color: transparent transparent #79c4d5 transparent;
     border-radius: 0 0 50% 50%; }
-    /* line 364, src/assets/scss/components/_tower_bridge.scss */
     .tower-bridge__curve--left {
       left: -124%;
       transform: rotate(-18deg); }
-      /* line 368, src/assets/scss/components/_tower_bridge.scss */
       .tower-bridge__curve--left.top {
         left: -120%;
         transform: rotate(-21deg); }
-    /* line 374, src/assets/scss/components/_tower_bridge.scss */
     .tower-bridge__curve--right {
       right: -124%;
       transform: rotate(18deg); }
-      /* line 378, src/assets/scss/components/_tower_bridge.scss */
       .tower-bridge__curve--right.top {
         right: -120%;
         transform: rotate(21deg); }
-    /* line 384, src/assets/scss/components/_tower_bridge.scss */
     .tower-bridge__curve.top {
       height: 140%;
       bottom: 31%; }
-  /* line 390, src/assets/scss/components/_tower_bridge.scss */
   .tower-bridge__lines {
     position: absolute;
     bottom: 18%;
     width: 100%;
     height: 80%; }
-    /* line 396, src/assets/scss/components/_tower_bridge.scss */
     .tower-bridge__lines--left {
       left: -100%; }
-      /* line 399, src/assets/scss/components/_tower_bridge.scss */
       .tower-bridge__lines--left span {
         border-radius: 10px 0 0 0; }
-        /* line 404, src/assets/scss/components/_tower_bridge.scss */
         .tower-bridge__lines--left span:nth-of-type(1) {
           right: 6%; }
-        /* line 404, src/assets/scss/components/_tower_bridge.scss */
         .tower-bridge__lines--left span:nth-of-type(2) {
           right: 18%; }
-        /* line 404, src/assets/scss/components/_tower_bridge.scss */
         .tower-bridge__lines--left span:nth-of-type(3) {
           right: 30%; }
-        /* line 404, src/assets/scss/components/_tower_bridge.scss */
         .tower-bridge__lines--left span:nth-of-type(4) {
           right: 42%; }
-        /* line 404, src/assets/scss/components/_tower_bridge.scss */
         .tower-bridge__lines--left span:nth-of-type(5) {
           right: 54%; }
-        /* line 404, src/assets/scss/components/_tower_bridge.scss */
         .tower-bridge__lines--left span:nth-of-type(6) {
           right: 66%; }
-    /* line 411, src/assets/scss/components/_tower_bridge.scss */
     .tower-bridge__lines--right {
       right: -100%; }
-      /* line 414, src/assets/scss/components/_tower_bridge.scss */
       .tower-bridge__lines--right span {
         border-radius: 0 10px 0 0; }
-        /* line 419, src/assets/scss/components/_tower_bridge.scss */
         .tower-bridge__lines--right span:nth-of-type(1) {
           left: 6%; }
-        /* line 419, src/assets/scss/components/_tower_bridge.scss */
         .tower-bridge__lines--right span:nth-of-type(2) {
           left: 18%; }
-        /* line 419, src/assets/scss/components/_tower_bridge.scss */
         .tower-bridge__lines--right span:nth-of-type(3) {
           left: 30%; }
-        /* line 419, src/assets/scss/components/_tower_bridge.scss */
         .tower-bridge__lines--right span:nth-of-type(4) {
           left: 42%; }
-        /* line 419, src/assets/scss/components/_tower_bridge.scss */
         .tower-bridge__lines--right span:nth-of-type(5) {
           left: 54%; }
-        /* line 419, src/assets/scss/components/_tower_bridge.scss */
         .tower-bridge__lines--right span:nth-of-type(6) {
           left: 66%; }
-    /* line 426, src/assets/scss/components/_tower_bridge.scss */
     .tower-bridge__lines span {
       position: absolute;
       bottom: 0;
       width: 2%;
       background: #E1E1E1; }
-      /* line 432, src/assets/scss/components/_tower_bridge.scss */
       .tower-bridge__lines span:nth-of-type(1) {
         height: 58%; }
-      /* line 436, src/assets/scss/components/_tower_bridge.scss */
       .tower-bridge__lines span:nth-of-type(2) {
         height: 40%; }
-      /* line 440, src/assets/scss/components/_tower_bridge.scss */
       .tower-bridge__lines span:nth-of-type(3) {
         height: 28%; }
-      /* line 444, src/assets/scss/components/_tower_bridge.scss */
       .tower-bridge__lines span:nth-of-type(4) {
         height: 20%; }
-      /* line 448, src/assets/scss/components/_tower_bridge.scss */
       .tower-bridge__lines span:nth-of-type(5) {
         height: 15%; }
-      /* line 452, src/assets/scss/components/_tower_bridge.scss */
       .tower-bridge__lines span:nth-of-type(6) {
         height: 14%; }
 
@@ -1225,7 +1009,6 @@ footer {
   45%, 55% {
     transform: rotate(-40deg); } }
 
-/* line 477, src/assets/scss/components/_tower_bridge.scss */
 .animation-lift-left {
   transform-origin: left bottom;
   animation: lift-left linear 15s infinite; }
@@ -1242,12 +1025,10 @@ footer {
   45%, 55% {
     transform: rotate(40deg); } }
 
-/* line 500, src/assets/scss/components/_tower_bridge.scss */
 .animation-lift-right {
   transform-origin: right bottom;
   animation: lift-right linear 15s infinite; }
 
-/* line 7, src/assets/scss/components/_london_eye.scss */
 .london-eye {
   position: absolute;
   left: -20%;
@@ -1258,15 +1039,12 @@ footer {
   pointer-events: none;
   /* Animation */ }
   @media (min-width: 992px) {
-    /* line 7, src/assets/scss/components/_london_eye.scss */
     .london-eye {
       left: unset;
       right: 770px; } }
-  /* line 21, src/assets/scss/components/_london_eye.scss */
   .london-eye .london-eye-container {
     position: relative;
     padding-bottom: 8%; }
-  /* line 26, src/assets/scss/components/_london_eye.scss */
   .london-eye__wheel {
     position: relative;
     height: 180px;
@@ -1275,11 +1053,9 @@ footer {
     border-radius: 50%;
     box-shadow: inset 0 0 1px 1px #888888; }
     @media (min-width: 992px) {
-      /* line 26, src/assets/scss/components/_london_eye.scss */
       .london-eye__wheel {
         height: 180px;
         width: 180px; } }
-    /* line 39, src/assets/scss/components/_london_eye.scss */
     .london-eye__wheel section {
       position: absolute;
       top: 0;
@@ -1288,7 +1064,6 @@ footer {
       transform-origin: center bottom;
       height: 50%;
       width: 6%; }
-      /* line 47, src/assets/scss/components/_london_eye.scss */
       .london-eye__wheel section:before, .london-eye__wheel section:after {
         content: "";
         position: absolute;
@@ -1296,17 +1071,14 @@ footer {
         height: 88%;
         width: 100%;
         transform-origin: center bottom; }
-      /* line 56, src/assets/scss/components/_london_eye.scss */
       .london-eye__wheel section:after {
         left: 50%;
         border-left: 1px solid #BBBBBB;
         transform: rotate(3deg); }
-      /* line 62, src/assets/scss/components/_london_eye.scss */
       .london-eye__wheel section:before {
         right: 50%;
         border-right: 1px solid #BBBBBB;
         transform: rotate(-3deg); }
-      /* line 68, src/assets/scss/components/_london_eye.scss */
       .london-eye__wheel section .carriage {
         height: 7.2px;
         width: 7.2px;
@@ -1317,19 +1089,16 @@ footer {
         top: -11%;
         left: calc(50% - (7.2px / 2)); }
         @media (min-width: 992px) {
-          /* line 68, src/assets/scss/components/_london_eye.scss */
           .london-eye__wheel section .carriage {
             height: 7.2px;
             width: 7.2px;
             left: calc(50% - (7.2px / 2)); } }
-      /* line 85, src/assets/scss/components/_london_eye.scss */
       .london-eye__wheel section span {
         height: 12%;
         width: 1%;
         position: absolute;
         top: 0%;
         left: 12%; }
-        /* line 92, src/assets/scss/components/_london_eye.scss */
         .london-eye__wheel section span:before, .london-eye__wheel section span:after {
           content: "";
           position: absolute;
@@ -1338,23 +1107,17 @@ footer {
           width: 100%;
           background: #AAAAAA;
           transform-origin: center bottom; }
-        /* line 102, src/assets/scss/components/_london_eye.scss */
         .london-eye__wheel section span:before {
           transform: rotate(-25deg); }
-        /* line 106, src/assets/scss/components/_london_eye.scss */
         .london-eye__wheel section span:after {
           transform: rotate(20deg); }
-        /* line 110, src/assets/scss/components/_london_eye.scss */
         .london-eye__wheel section span:nth-of-type(2) {
           right: 12%;
           left: unset; }
-          /* line 114, src/assets/scss/components/_london_eye.scss */
           .london-eye__wheel section span:nth-of-type(2):before {
             transform: rotate(-20deg); }
-          /* line 118, src/assets/scss/components/_london_eye.scss */
           .london-eye__wheel section span:nth-of-type(2):after {
             transform: rotate(25deg); }
-    /* line 125, src/assets/scss/components/_london_eye.scss */
     .london-eye__wheel--inner {
       position: absolute;
       top: calc(6% - 2px);
@@ -1364,7 +1127,6 @@ footer {
       border: 2px solid #BBBBBB;
       border-radius: 50%;
       box-shadow: inset 0 0 1px 1px #666666; }
-    /* line 136, src/assets/scss/components/_london_eye.scss */
     .london-eye__wheel--center {
       position: absolute;
       top: calc(50% - 5px);
@@ -1373,7 +1135,6 @@ footer {
       width: 10px;
       background: #666666;
       border-radius: 50%; }
-  /* line 147, src/assets/scss/components/_london_eye.scss */
   .london-eye__leg {
     position: absolute;
     top: 49%;
@@ -1384,15 +1145,12 @@ footer {
     border-left: 1px solid #999999;
     border-radius: 10px 10px 0 0;
     transform-origin: center top; }
-    /* line 158, src/assets/scss/components/_london_eye.scss */
     .london-eye__leg--left {
       left: calc(50% - 4px);
       transform: rotate(15deg); }
-    /* line 163, src/assets/scss/components/_london_eye.scss */
     .london-eye__leg--right {
       right: calc(50% - 4px);
       transform: rotate(-15deg); }
-  /* line 169, src/assets/scss/components/_london_eye.scss */
   .london-eye__stand {
     position: absolute;
     bottom: 0;
@@ -1412,102 +1170,69 @@ footer {
     transform: rotate(0deg); }
   100% {
     transform: rotate(360deg); } }
-  /* line 198, src/assets/scss/components/_london_eye.scss */
   .london-eye__wheel {
     animation: rotate linear 100s infinite; }
-    /* line 206, src/assets/scss/components/_london_eye.scss */
     .london-eye__wheel section:nth-of-type(1) {
       transform: rotate(11.25deg); }
-    /* line 206, src/assets/scss/components/_london_eye.scss */
     .london-eye__wheel section:nth-of-type(2) {
       transform: rotate(22.5deg); }
-    /* line 206, src/assets/scss/components/_london_eye.scss */
     .london-eye__wheel section:nth-of-type(3) {
       transform: rotate(33.75deg); }
-    /* line 206, src/assets/scss/components/_london_eye.scss */
     .london-eye__wheel section:nth-of-type(4) {
       transform: rotate(45deg); }
-    /* line 206, src/assets/scss/components/_london_eye.scss */
     .london-eye__wheel section:nth-of-type(5) {
       transform: rotate(56.25deg); }
-    /* line 206, src/assets/scss/components/_london_eye.scss */
     .london-eye__wheel section:nth-of-type(6) {
       transform: rotate(67.5deg); }
-    /* line 206, src/assets/scss/components/_london_eye.scss */
     .london-eye__wheel section:nth-of-type(7) {
       transform: rotate(78.75deg); }
-    /* line 206, src/assets/scss/components/_london_eye.scss */
     .london-eye__wheel section:nth-of-type(8) {
       transform: rotate(90deg); }
-    /* line 206, src/assets/scss/components/_london_eye.scss */
     .london-eye__wheel section:nth-of-type(9) {
       transform: rotate(101.25deg); }
-    /* line 206, src/assets/scss/components/_london_eye.scss */
     .london-eye__wheel section:nth-of-type(10) {
       transform: rotate(112.5deg); }
-    /* line 206, src/assets/scss/components/_london_eye.scss */
     .london-eye__wheel section:nth-of-type(11) {
       transform: rotate(123.75deg); }
-    /* line 206, src/assets/scss/components/_london_eye.scss */
     .london-eye__wheel section:nth-of-type(12) {
       transform: rotate(135deg); }
-    /* line 206, src/assets/scss/components/_london_eye.scss */
     .london-eye__wheel section:nth-of-type(13) {
       transform: rotate(146.25deg); }
-    /* line 206, src/assets/scss/components/_london_eye.scss */
     .london-eye__wheel section:nth-of-type(14) {
       transform: rotate(157.5deg); }
-    /* line 206, src/assets/scss/components/_london_eye.scss */
     .london-eye__wheel section:nth-of-type(15) {
       transform: rotate(168.75deg); }
-    /* line 206, src/assets/scss/components/_london_eye.scss */
     .london-eye__wheel section:nth-of-type(16) {
       transform: rotate(180deg); }
-    /* line 206, src/assets/scss/components/_london_eye.scss */
     .london-eye__wheel section:nth-of-type(17) {
       transform: rotate(191.25deg); }
-    /* line 206, src/assets/scss/components/_london_eye.scss */
     .london-eye__wheel section:nth-of-type(18) {
       transform: rotate(202.5deg); }
-    /* line 206, src/assets/scss/components/_london_eye.scss */
     .london-eye__wheel section:nth-of-type(19) {
       transform: rotate(213.75deg); }
-    /* line 206, src/assets/scss/components/_london_eye.scss */
     .london-eye__wheel section:nth-of-type(20) {
       transform: rotate(225deg); }
-    /* line 206, src/assets/scss/components/_london_eye.scss */
     .london-eye__wheel section:nth-of-type(21) {
       transform: rotate(236.25deg); }
-    /* line 206, src/assets/scss/components/_london_eye.scss */
     .london-eye__wheel section:nth-of-type(22) {
       transform: rotate(247.5deg); }
-    /* line 206, src/assets/scss/components/_london_eye.scss */
     .london-eye__wheel section:nth-of-type(23) {
       transform: rotate(258.75deg); }
-    /* line 206, src/assets/scss/components/_london_eye.scss */
     .london-eye__wheel section:nth-of-type(24) {
       transform: rotate(270deg); }
-    /* line 206, src/assets/scss/components/_london_eye.scss */
     .london-eye__wheel section:nth-of-type(25) {
       transform: rotate(281.25deg); }
-    /* line 206, src/assets/scss/components/_london_eye.scss */
     .london-eye__wheel section:nth-of-type(26) {
       transform: rotate(292.5deg); }
-    /* line 206, src/assets/scss/components/_london_eye.scss */
     .london-eye__wheel section:nth-of-type(27) {
       transform: rotate(303.75deg); }
-    /* line 206, src/assets/scss/components/_london_eye.scss */
     .london-eye__wheel section:nth-of-type(28) {
       transform: rotate(315deg); }
-    /* line 206, src/assets/scss/components/_london_eye.scss */
     .london-eye__wheel section:nth-of-type(29) {
       transform: rotate(326.25deg); }
-    /* line 206, src/assets/scss/components/_london_eye.scss */
     .london-eye__wheel section:nth-of-type(30) {
       transform: rotate(337.5deg); }
-    /* line 206, src/assets/scss/components/_london_eye.scss */
     .london-eye__wheel section:nth-of-type(31) {
       transform: rotate(348.75deg); }
-    /* line 206, src/assets/scss/components/_london_eye.scss */
     .london-eye__wheel section:nth-of-type(32) {
       transform: rotate(360deg); }
