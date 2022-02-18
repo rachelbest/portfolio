@@ -12,11 +12,11 @@ export default class Header extends Component {
 
 	render() {
 		function openMenu() {
-			document.getElementById("nav-container").classList.add("slide-out")
+			document.body.classList.add("slide-out")
 		}
 
 		function closeMenu() {
-			document.getElementById("nav-container").classList.remove("slide-out")
+			document.body.classList.remove("slide-out")
 		}
 
 		function resizeWindow() {
@@ -29,14 +29,9 @@ export default class Header extends Component {
 		return (
 			<header className="header">
 				<div className="header__container">
-					<div className="header__initial">
-						<a href="#" className="header__menu-button" onClick={() => openMenu()} rel="nofollow">
-							<img src={Menu} alt="Menu" height="30px" width="auto" />
-						</a>
-						<NavLink to="/about" className="header__logo">
-							<img src={logo} alt="logo" height="30"/>
-						</NavLink>
-					</div>
+					<NavLink to="/about" className="header__logo">
+						<img src={logo} alt="logo" height="30"/>
+					</NavLink>
 					<div className="header__menu-container" id="nav-container">
 						<nav>
 							<Link
@@ -85,8 +80,8 @@ export default class Header extends Component {
 								Projects
 							</Link>
 						</nav>
+						<div className="nav-overlay" id="nav-overlay" onClick={() => closeMenu()}></div>
 					</div>
-					<div className="nav-overlay" id="nav-overlay" onClick={() => closeMenu()}></div>
 					<ul className="social-media">
 						<li className="twitter">
 							<a href="https://twitter.com/rachel_web" rel="nofollow"><img src={twitter} alt="twitter" height="20px" width="auto" /></a>
@@ -98,6 +93,9 @@ export default class Header extends Component {
 							<a href="mailto:rachel13bull@gmail.com?Subject=Email%20afrom%20rachelbest.github.io" rel="nofollow" target="_top"><img src={email} alt="email" height="20px" width="auto" /></a>
 						</li>
 					</ul>
+					<a href="#" className="header__menu-button" onClick={() => openMenu()} rel="nofollow">
+						<img src={Menu} alt="Menu" height="30px" width="auto" />
+					</a>
 				</div>
 			</header>
 		)

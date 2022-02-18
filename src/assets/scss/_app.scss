@@ -17,16 +17,22 @@ body {
 	min-height: 100%;
 	overflow: hidden;
 
-	$container-margin-top: $header-height + 30px;
-	$container-margin-bottom: $footer-height + 30px;
+	$container-margin-top: $header-height + $below-header-space;
+	$container-margin-top--desktop: $header-height + $below-header-space--desktop;
+	$container-margin-bottom--desktop: $footer-height + $below-header-space--desktop;
 
 	.container {
 		height: 100%;
 		overflow: hidden;
-		height: calc(100vh - #{$container-margin-top} - #{$container-margin-bottom});
 		overflow-y: scroll;
+		height: calc(100vh - #{$container-margin-top});
 		margin-top: $container-margin-top;
-		margin-bottom: $container-margin-bottom;
+
+		@include breakpoint-up($md) {
+			height: calc(100vh - #{$container-margin-top--desktop} - #{$container-margin-bottom--desktop});
+			margin-top: $container-margin-top--desktop;
+			margin-bottom: $container-margin-bottom--desktop;
+		}
 
 		/* Hide scrollbar for Chrome, Safari and Opera */
 		&::-webkit-scrollbar {
@@ -35,60 +41,83 @@ body {
 	}
 
 	.main {
-		width: 95%;
-		padding: 20px 15px;
+		width: 92%;
+		padding: 0 20px;
 		background: #FFFFFF;
 		box-sizing: border-box;
 		overflow: hidden;
-
+		margin-left: 4%;
+		margin-bottom: 180px;
+		z-index: 10;
 
 		@include breakpoint-up($md) {
+			padding: 20px 15px;
 			margin: 0 auto 0 auto;
 			max-width: $container-width;
 			padding: 0 $container-padding-x 50px;
 		}
 
-		$section-padding-top: 45px;
-
 		> section {
-			min-height: calc(100vh - #{$container-margin-top} - (#{$section-padding-top} * 2) - #{$container-margin-bottom});
+			min-height: calc(100vh - #{$container-margin-top} - (#{$section-padding-top} * 2));
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
-			padding-bottom: 100px;
-			padding-top: 50px;
+			padding-bottom: 50px;
+			padding-top: $section-padding-top;
+
+			@include breakpoint-up($md) {
+				min-height: calc(100vh - #{$container-margin-top--desktop} - (#{$section-padding-top--desktop} * 2) - #{$container-margin-bottom--desktop});
+				padding-top: $section-padding-top--desktop;
+				padding-bottom: 100px;
+			}
 		}
 	}
 
 	h2 {
 		text-align: center;
-		margin-bottom: 80px;
-		margin: 15px auto 50px auto;
+		margin: 15px auto 35px auto;
 		border-bottom: 1px solid #EEEEEE;
-		width: 70%;
-		padding-bottom: 25px;
+		width: 100%;
+		padding-bottom: 20px;
+
+		@include breakpoint-up($md) {
+			margin: 15px auto 50px auto;
+			padding-bottom: 25px;
+			width: 70%;
+		}
 	}
 
 	.aboutme {
 
 		.subheading {
-			margin-top: -20px;
-			margin-bottom: 15px;
+			margin-bottom: 22px;
 			color: #999999;
 			font-weight: 300;
 			border-bottom: #EEEEEE 1px solid;
-			padding-bottom: 24px;
-			width: 60%;
+			padding-bottom: 18px;
+
+			@include breakpoint-up($sm) {
+				margin-bottom: 15px;
+				padding-bottom: 25px;
+				width: 60%;
+			}
 		}
 
 		&__image {
-			margin: 0 0 0 30px;
+			display: none;;
+			margin: 0 0 0 15px;
 			float: right;
 			opacity: 0.8;
-			width: 130px;
+			width: 120px;
 			clip-path: ellipse(45% 47% at 50% 50%);
 
 			@include breakpoint-up($sm) {
+				display: block;
+				margin: 0 0 0 30px;
+				width: 150px;
+			}
+
+			@include breakpoint-up($md) {
 				width: 200px;
 			}
 		}
@@ -97,7 +126,11 @@ body {
 	.experience {
 
 		article + article {
-			margin-top: 50px;
+			margin-top: 30px;
+
+			@include breakpoint-up($md) {
+				margin-top: 50px;
+			}
 		}
 
 		&__title {
@@ -108,19 +141,19 @@ body {
 			color: $text-color-secondary;
 			margin-bottom: 10px;
 
-			span {
-
-
-				&:before {
-					content: " | ";
-					margin: 0 5px;
-				}
+			span:before {
+				content: " | ";
+				margin: 0 5px;
 			}
 		}
 
 		&__logo {
-			float: right;
-			margin-top: 5px;
+			display: none;
+
+			@include breakpoint-up($md) {
+				display: block;
+				float: right;
+			}
 		}
 
 		&__intro {
@@ -157,8 +190,13 @@ body {
 	.social-media {
 		margin: 0;
 		padding: 0;
-		margin-left: auto;
 		list-style: none;
+		margin-left: auto;
+		margin-right: 15px;
+
+		@include breakpoint-up($md) {
+			margin-right: 0;
+		}
 
 		&.contact {
 			float: none;

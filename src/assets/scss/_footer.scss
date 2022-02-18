@@ -1,11 +1,16 @@
 footer {
 	background: #EEEEEE;
 	border-top: #E9E9E9 1px solid;
-	position: fixed;
-	bottom: 0;
-	right: 0;
-	left: 0;
 	height: $footer-height;
+	position: relative;
+	z-index: 100;
+
+	@include breakpoint-up($md) {
+		position: fixed;
+		bottom: 0;
+		right: 0;
+		left: 0;
+	}
 }
 
 .components {

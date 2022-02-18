@@ -25,8 +25,8 @@ class App extends Component {
 							<Skills />
 							<Projects />
 						</div>
+						<Route component={Footer} />
 					</div>
-					<Route component={Footer} />
 				</div>
 			</Router>
 		);
