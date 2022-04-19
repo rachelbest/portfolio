@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.20e36b9f.css",
-    "main.js": "/portfolio/static/js/main.37f3cddb.js",
+    "main.css": "/portfolio/static/css/main.d5e65a4b.css",
+    "main.js": "/portfolio/static/js/main.b015403c.js",
     "static/media/rachel.png": "/portfolio/static/media/rachel.1d76fec0a52a9311c166.png",
     "static/media/mike.png": "/portfolio/static/media/mike.2919b1e3191775b01629.png",
     "static/media/stewie.png": "/portfolio/static/media/stewie.95b58464c1b3fea8f0f8.png",
@@ -11,17 +11,18 @@
     "static/media/lego.png": "/portfolio/static/media/lego.ebf02fca0b3194839f2f.png",
     "static/media/mumsnet_logo.svg": "/portfolio/static/media/mumsnet_logo.9ef87d4225157ee3438583c6848fa02a.svg",
     "static/media/havillands_logo.jpg": "/portfolio/static/media/havillands_logo.95ec8982044ba84e9523.jpg",
+    "static/media/logo.svg": "/portfolio/static/media/logo.5155f3a421f6af37558d3f3debdb34ad.svg",
     "static/media/email.svg": "/portfolio/static/media/email.cb987df247a751f5f1c4d71ef789a7d7.svg",
     "static/media/twitter.svg": "/portfolio/static/media/twitter.6219f292a4cec04d1a77cfc2caf689a3.svg",
     "index.html": "/portfolio/index.html",
     "static/media/linkedin.svg": "/portfolio/static/media/linkedin.ccc67c89b2011a6e7b975d53f1301c0a.svg",
     "static/media/menu.svg": "/portfolio/static/media/menu.b7c7bbb4b06666300c4bea9f255d51eb.svg",
     "static/media/cloud.svg": "/portfolio/static/media/cloud.13ea414a5bc4caed31230d7901d13d3a.svg",
-    "main.20e36b9f.css.map": "/portfolio/static/css/main.20e36b9f.css.map",
-    "main.37f3cddb.js.map": "/portfolio/static/js/main.37f3cddb.js.map"
+    "main.d5e65a4b.css.map": "/portfolio/static/css/main.d5e65a4b.css.map",
+    "main.b015403c.js.map": "/portfolio/static/js/main.b015403c.js.map"
   },
   "entrypoints": [
-    "static/css/main.20e36b9f.css",
-    "static/js/main.37f3cddb.js"
+    "static/css/main.d5e65a4b.css",
+    "static/js/main.b015403c.js"
   ]
 }
