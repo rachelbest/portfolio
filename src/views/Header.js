@@ -6,7 +6,7 @@ import Menu from './../assets/images/menu.svg';
 import twitter from './../assets/images/twitter.svg';
 import linkedin from './../assets/images/linkedin.svg';
 import email from './../assets/images/email.svg';
-import logo from './../assets/images/logo.png';
+import logo from './../assets/images/logo.svg';
 
 export default class Header extends Component {
 
