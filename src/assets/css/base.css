@@ -640,7 +640,7 @@ body.slide-out .nav-overlay {
 .tunnel {
   height: 24px;
   position: absolute;
-  bottom: 2px;
+  bottom: 4px;
   width: 100%;
   left: 0; }
 
