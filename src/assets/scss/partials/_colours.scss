@@ -1,5 +1,30 @@
-$text-color-primary: #444444;
-$text-color-secondary: #888888;
-$primary: #F0A092;
-$secondary: #F5CAC2;
-$background: #FDF6F6;
+
+
+// Colour Scheme
+
+$mineral-green-50: #f5f8f6;
+$mineral-green-100: #dee9e4;
+$mineral-green-200: #bed1ca;
+$mineral-green-300: #95b3a7;
+$mineral-green-400: #6f9286;
+$mineral-green-500: #54786c;
+$mineral-green-600: #49695f;
+
+$coral-pink-50: #fdf4f3;
+$coral-pink-100: #fce6e4;
+$coral-pink-200: #fbd2cd;
+$coral-pink-300: #f6b3ab;
+$coral-pink-400: #f29b91;
+
+// Theme
+
+$text-color-primary: #333333;
+$text-color-secondary: #777777;
+$text-color-tertiary: #999999;
+
+$primary: $coral-pink-400;
+$secondary: $coral-pink-300;
+
+$background: $mineral-green-100;
+$header: #FFFFFF;
+$footer: $mineral-green-300;

@@ -1,6 +1,7 @@
 $red-color: #C73534;
 $animation-timing: 20s;
 $tube-width: 530px;
+$tunnel-color: $mineral-green-50;
 
 .tunnel {
 	height: 24px;
@@ -13,7 +14,7 @@ $tube-width: 530px;
 .tube {
 
 	&__container {
-		background:linear-gradient(to bottom, #EEEEEE 0, #EEEEEE 20%, #E9E9E9 25%, #E3E3E3 50%, #E9E9E9 75%, #EEEEEE 80%, #EEEEEE 100%);
+		background:linear-gradient(to bottom, lighten($tunnel-color, 50%) 0, lighten($tunnel-color, 50%) 10%, $tunnel-color 50%, lighten($tunnel-color, 50%) 90%, lighten($tunnel-color, 50%) 100%);
 		width: 100%;
 		margin: 0 auto;
 		position: absolute;
