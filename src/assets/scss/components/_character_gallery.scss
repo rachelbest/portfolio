@@ -1,11 +1,18 @@
-.css-characters {
+.splitmediablock {
+	margin-bottom: 70px;
 
-	&__side-text {
-		width: 100%;
+	@include breakpoint-up($sm) {
+		display: flex;
+		gap: 30px;
+	}
 
-		@include breakpoint-up($sm) {
-			float: right;
-			width: 60%;
+	&__text {
+		flex-shrink: 1;
+
+		img {
+			border-radius: 50%;
+			float: left;
+			margin: 10px 20px 5px 0;
 		}
 	}
 
@@ -14,11 +21,10 @@
 		padding: 0;
 		width: 100%;
 		margin-top: 30px;
+		flex-shrink: 0;
 
 		@include breakpoint-up($sm) {
-			float: left;
 			width: 35%;
-			margin-right: 5%;
 			margin-top: 0;
 		}
 
@@ -34,19 +40,28 @@
 			box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 			overflow: hidden;
 			position: relative;
-			height: 80px;
+			height: 90px;
 
 			&:nth-of-type(2n+1){
 				margin-right: 15px;
 			}
 
 			img {
-				width: 150%;
 				position: absolute;
-				top: -5%;
-				left: -25%;
 				height: auto;
 				vertical-align: bottom;
+
+				.splitmediablock--characters & {
+					top: -5%;
+					left: -25%;
+					width: 150%;
+				}
+
+				.splitmediablock--crochet & {
+					top: -10%;
+					left: 0%;
+					width: 100%;
+				}
 
 				@include breakpoint-up ($lg) {
 					width: 170%;

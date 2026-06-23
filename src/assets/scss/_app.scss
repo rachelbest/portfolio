@@ -43,7 +43,7 @@ body {
 	.main {
 		width: 92%;
 		padding: 0 20px;
-		background: #FFFFFF;
+		background: rgba(#FFFFFF, 0.8);
 		box-sizing: border-box;
 		overflow: hidden;
 		margin-left: 4%;
@@ -89,7 +89,11 @@ body {
 
 	.aboutme {
 
-		.subheading {
+		article {
+			display: flex;
+		}
+
+		&__text--subheading {
 			margin-bottom: 22px;
 			color: $text-color-tertiary;
 			font-weight: 300;
@@ -99,26 +103,26 @@ body {
 			@include breakpoint-up($sm) {
 				margin-bottom: 15px;
 				padding-bottom: 25px;
-				width: 60%;
 			}
 		}
 
 		&__image {
-			display: none;;
-			margin: 0 0 0 15px;
-			float: right;
-			opacity: 0.8;
-			width: 120px;
-			clip-path: ellipse(45% 47% at 50% 50%);
+			margin: 0 0 0 30px;
 
-			@include breakpoint-up($sm) {
-				display: block;
-				margin: 0 0 0 30px;
-				width: 150px;
-			}
+			img {
+				display: none;
+				opacity: 0.8;
+				width: 120px;
+				clip-path: ellipse(45% 47% at 50% 50%);
 
-			@include breakpoint-up($md) {
-				width: 200px;
+				@include breakpoint-up($sm) {
+					display: block;
+					width: 150px;
+				}
+
+				@include breakpoint-up($md) {
+					width: 200px;
+				}
 			}
 		}
 	}
@@ -179,6 +183,29 @@ body {
 					left: -15px;
 					top: 1px;
 				}
+			}
+		}
+	}
+
+	.skills__icons {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+
+		div {
+			margin: 0 20px 40px;
+			text-align: center;
+
+			svg {
+				height: 50px;
+
+				@include breakpoint-up($md) {
+					height: 70px;
+				}
+			}
+
+			p {
+				margin: 0;
 			}
 		}
 	}

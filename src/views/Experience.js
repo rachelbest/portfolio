@@ -25,7 +25,7 @@ export default class Experience extends Component {
 						<li>Competent peer reviews, quality checking & pair programming</li>
 						<li>Agile development & working closely with other teams</li>
 					</ul>
-					<p>JS, jQuery, AlpineJS, VueJS, CSS, Sass, Tailwind, Bootstrap, Laravel, Livewire & Haml</p>
+					<p>JavaScript, jQuery, AlpineJS, VueJS, CSS, Sass, Tailwind, Bootstrap, PHP, Laravel, Livewire & Haml</p>
 				</article>
 				<article>
 					<img className="experience__logo" src={incentivated} alt="Incentivated" height="auto" width="150" />
@@ -50,7 +50,7 @@ export default class Experience extends Component {
 						<li>Worked alongside senior developers to learn new skills</li>
 						<li>Utilized Google tools to improve SEO</li>
 					</ul>
-					<p>HTML, CSS, & JS</p>
+					<p>HTML, CSS, & JavaScript</p>
 				</article>
 			</section>
 		)
